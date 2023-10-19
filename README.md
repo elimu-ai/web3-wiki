@@ -1,4 +1,4 @@
-# elimu.ai Web3 Wiki
+# elimu.ai Web3 Wiki 💎
 Wiki related to Web3 &amp; finances
 
 ## About elimu.ai
@@ -10,11 +10,14 @@ The product built by elimu.ai is Free and Open Source Software (FOSS), and the o
 ## Decentralized Autonomous Organization
 The open source project is organized as a Decentralized Autonomous Organization (DAO): **Ξlimu DAO**
 
-The *Ξlimu DAO* is the financial layer surrounding the elimu.ai software, enabling contributor coordination and contributor rewards.
+The *Ξlimu DAO* is the financial layer surrounding the elimu.ai software, enabling contributor coordination and contributor rewards. You can learn more about elimu.ai at https://github.com/elimu-ai/wiki.
 
-## Web3 Tools
+### What is `$ELIMU`? 💎
+[`$ELIMU`](https://etherscan.io/token/0xe29797910d413281d2821d5d9a989262c8121cc2) is the governance token used by the Ξlimu DAO.
 
-The Ξlimu DAO uses a combination of Web3 tools for handling organizational mechanisms like voting, fundraising, payments, etc.
+### Web3 Tools
+
+The Ξlimu DAO uses a combination of Web3 tools for handling organizational mechanisms like voting, fundraising, payments, etc:
 
 - Governance token: [`$ELIMU`](https://etherscan.io/token/0xe29797910d413281d2821d5d9a989262c8121cc2)
 - Voting (off-chain): [Snapshot](https://snapshot.org/#/elimu.eth)
