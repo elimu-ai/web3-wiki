@@ -29,8 +29,9 @@ The Ξlimu DAO uses a combination of Web3 tools for handling organizational mech
 - Multi-signature account (`safe.elimu.eth`): [Safe{Wallet}](https://app.safe.global/home?safe=eth:0xD452c1321E03c6e34aD8c6F60b694b1E780c4B75)
 - Paid tasks: [Dework](https://app.dework.xyz/elimuai)
 
+
 ---
 
 elimu.ai - Free personalized learning for every child on Earth 🌍🌏🌎
 
-[Website 🌐](https://elimu.ai) | [Wiki 📃](https://github.com/elimu-ai/wiki#readme) | [Projects 👩🏽‍💻](https://github.com/elimu-ai/wiki/projects) | [Milestones 🎯](https://github.com/elimu-ai/wiki/milestones) | [Community 👋🏽](https://github.com/elimu-ai/wiki#open-source-community)
+[Website 🌐](https://elimu.ai) &nbsp; [Wiki 📃](https://github.com/elimu-ai/wiki#readme) &nbsp; [Projects 👩🏽‍💻](https://github.com/elimu-ai/wiki/projects) &nbsp; [Milestones 🎯](https://github.com/elimu-ai/wiki/milestones) &nbsp; [Community 👋🏽](https://github.com/elimu-ai/wiki#open-source-community)
