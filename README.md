@@ -32,6 +32,6 @@ The Ξlimu DAO uses a combination of Web3 tools for handling organizational mech
 
 ---
 
-elimu.ai - Free personalized learning for every child on Earth 🌍🌏🌎
+elimu.ai - Free open source learning software for out-of-school children ✨🚀
 
-[Website 🌐](https://elimu.ai) &nbsp; [Wiki 📃](https://github.com/elimu-ai/wiki#readme) &nbsp; [Projects 👩🏽‍💻](https://github.com/elimu-ai/wiki/projects) &nbsp; [Milestones 🎯](https://github.com/elimu-ai/wiki/milestones) &nbsp; [Community 👋🏽](https://github.com/elimu-ai/wiki#open-source-community)
+[Website 🌐](https://elimu.ai) &nbsp; [Wiki 📃](https://github.com/elimu-ai/wiki#readme) &nbsp; [Projects 👩🏽‍💻](https://github.com/orgs/elimu-ai/projects?query=is%3Aopen) &nbsp; [Milestones 🎯](https://github.com/elimu-ai/wiki/milestones) &nbsp; [Community 👋🏽](https://github.com/elimu-ai/wiki#open-source-community)
