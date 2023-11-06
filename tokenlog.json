@@ -1,5 +1,6 @@
 {
     "org": "elimu-ai",
     "repo": "web3-wiki",
-    "tokenAddress": "0xe29797910D413281d2821D5d9a989262c8121CC2"
+    "tokenAddress": "0xe29797910D413281d2821D5d9a989262c8121CC2",
+    "votingMethod": "STANDARD"
 }
