@@ -1,7 +1,12 @@
 {
-    "org": "elimu-ai",
-    "repo": "web3-wiki",
-    "tokenAddress": "0xe29797910d413281d2821d5d9a989262c8121cc2",
-    "votingMethod": "STANDARD",
-    "chainId": 1
+	"method": "STANDARD",
+	"strategy": [{
+		"name": "erc20-balance-of",
+		"params": {
+			"address": "0xe29797910D413281d2821D5d9a989262c8121CC2",
+			"symbol": "ELIMU",
+			"decimals": 18
+		}
+	}],
+	"chainId": 1
 }
