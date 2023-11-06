@@ -32,7 +32,7 @@ The Ξlimu DAO uses a combination of Web3 tools for handling organizational mech
 
 ## Fundraising 🌱
 
-Donations can be sent to the organization's smart contract address: `0x1703ed1bfacc04b7eb654b297aa4e52ebc008722` [(`elimu.dao.eth`)](https://app.aragon.org/#/daos/ethereum/elimu.dao.eth)
+Donations can be sent to the organization's smart contract address: `0x1703ed1bfacc04b7eb654b297aa4e52ebc008722` ([`elimu.dao.eth`](https://app.aragon.org/#/daos/ethereum/elimu.dao.eth))
 
 Holders of the organization's governance token will then decide how to proportionally invest the funds into the following categories of work:
 
