@@ -2,7 +2,7 @@
 Wiki related to Web3 &amp; finances
 
 ## About elimu.ai
-The mission of elimu.ai is to build technology that enables personalized learning for every child on Earth. You can read more at https://github.com/elimu-ai/wiki#readme
+The mission of elimu.ai is to build innovative learning software that empowers out-of-school children to teach themselves basic reading📖, writing✍🏽 and math🔢. You can read more at https://github.com/elimu-ai/wiki#readme
 
 ## Organization
 The product built by elimu.ai is Free and Open Source Software (FOSS), and the organization building it is structured as a non-profit. Any type of income (e.g. donations) or profit will be re-invested into the organization's purpose—enabling free personalized learning for every child on Earth.
