@@ -5,17 +5,17 @@ Wiki related to Web3 &amp; finances
 The mission of elimu.ai is to build innovative learning software that empowers out-of-school children to teach themselves basic reading📖, writing✍🏽 and math🔢. You can read more at https://github.com/elimu-ai/wiki#readme
 
 ## Organization
-The product built by elimu.ai is Free and Open Source Software (FOSS), and the organization building it is structured as a non-profit. Any type of income (e.g. donations) or profit will be re-invested into the organization's purpose—enabling free personalized learning for every child on Earth.
+The product built by elimu.ai is Free and Open Source Software (FOSS), and the organization building it is structured as a non-profit. Any type of income (e.g. donations) or profit will be re-invested into the organization's purpose—solving the global learning crisis.
 
 ## Decentralized Autonomous Organization
 The open source project is organized as a Decentralized Autonomous Organization (DAO): **Ξlimu DAO**
 
-The *Ξlimu DAO* is the financial layer surrounding the elimu.ai software, enabling contributor coordination and contributor rewards. You can learn more about elimu.ai at https://github.com/elimu-ai/wiki.
+The *Ξlimu DAO* is the financial layer surrounding the elimu.ai software, enabling contributor coordination, contributor rewards and fundraising. You can learn more about elimu.ai at https://github.com/elimu-ai/wiki.
 
 ### What is `$ELIMU`? 💎
-[`$ELIMU`](https://etherscan.io/token/0xe29797910d413281d2821d5d9a989262c8121cc2) is the governance token used by the Ξlimu DAO.
+[`$ELIMU`](https://etherscan.io/token/0xe29797910d413281d2821d5d9a989262c8121cc2) is the governance token used by the Ξlimu DAO. You can read more in this [2021 announcement](https://medium.com/elimu-ai/introducing-elimu-our-community-token-7767eebed862).
 
-### Web3 Tools
+### Web3 Tools 🔨
 
 The Ξlimu DAO uses a combination of Web3 tools for handling organizational mechanisms like voting, fundraising, payments, etc:
 
@@ -29,6 +29,17 @@ The Ξlimu DAO uses a combination of Web3 tools for handling organizational mech
 - Multi-signature account (`safe.elimu.eth`): [Safe{Wallet}](https://app.safe.global/home?safe=eth:0xD452c1321E03c6e34aD8c6F60b694b1E780c4B75)
 - Paid tasks: [Dework](https://app.dework.xyz/elimuai)
 
+## Fundraising 🌱
+
+Donations can be sent to the organization's smart contract address: `0x1703ed1bfacc04b7eb654b297aa4e52ebc008722` [`elimu.dao.eth`](https://app.aragon.org/#/daos/ethereum/elimu.dao.eth)
+
+Holders of the organization's governance token will then decide how to proportionally invest the funds into the following categories of work:
+
+1. [Content Creation 🎶🎙️](https://github.com/orgs/elimu-ai/projects/6/views/1?pane=info)
+2. [Engineering & AI/ML 👩🏽‍💻📱](https://github.com/orgs/elimu-ai/projects/3/views/3?pane=info)
+3. [Distribution & Data Collection 🛵💨](https://github.com/orgs/elimu-ai/projects/5/views/1?pane=info)
+
+Only investments aligned with the organization's quarterly [Objectives and Key Results](https://github.com/elimu-ai/wiki/milestones) will be accepted.
 
 ---
 
