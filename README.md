@@ -22,7 +22,7 @@ The Ξlimu DAO uses a combination of Web3 tools for handling organizational mech
 - Governance token: [`$ELIMU`](https://etherscan.io/token/0xe29797910d413281d2821d5d9a989262c8121cc2)
 - Voting (off-chain): [Snapshot](https://snapshot.org/#/elimu.eth)
 - Voting (on-chain): [Aragon](https://app.aragon.org/#/daos/ethereum/elimu.dao.eth/governance)
-- Finance (`elimu.dao.eth`): [Aragon](https://app.aragon.org/#/daos/ethereum/elimu.dao.eth/finance)
+- Finance & fundraising (`elimu.dao.eth`): [Aragon](https://app.aragon.org/#/daos/ethereum/elimu.dao.eth/finance)
 - Token liquidity provider rewards program: [rewards.elimu.ai](https://rewards.elimu.ai)
 - Role management: [Guild.xyz](https://guild.xyz/elimu)
 - Contributor rewards: [Coordinape](https://app.coordinape.com/welcome/deff2c27-10c2-4264-a859-d135aa344090)
@@ -31,7 +31,7 @@ The Ξlimu DAO uses a combination of Web3 tools for handling organizational mech
 
 ## Fundraising 🌱
 
-Donations can be sent to the organization's smart contract address: `0x1703ed1bfacc04b7eb654b297aa4e52ebc008722` [`elimu.dao.eth`](https://app.aragon.org/#/daos/ethereum/elimu.dao.eth)
+Donations can be sent to the organization's smart contract address: `0x1703ed1bfacc04b7eb654b297aa4e52ebc008722` [(`elimu.dao.eth`)](https://app.aragon.org/#/daos/ethereum/elimu.dao.eth)
 
 Holders of the organization's governance token will then decide how to proportionally invest the funds into the following categories of work:
 
