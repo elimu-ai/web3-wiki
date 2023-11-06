@@ -13,7 +13,7 @@ The open source project is organized as a Decentralized Autonomous Organization 
 The *Ξlimu DAO* is the financial layer surrounding the elimu.ai software, enabling contributor coordination, contributor rewards and fundraising. You can learn more about elimu.ai at https://github.com/elimu-ai/wiki.
 
 ### What is `$ELIMU`? 💎
-[`$ELIMU`](https://etherscan.io/token/0xe29797910d413281d2821d5d9a989262c8121cc2) is the governance token used by the Ξlimu DAO. You can read more in this [2021 announcement](https://medium.com/elimu-ai/introducing-elimu-our-community-token-7767eebed862).
+[`$ELIMU`](https://etherscan.io/token/0xe29797910d413281d2821d5d9a989262c8121cc2) is the governance token used by the Ξlimu DAO. Active contributors get rewarded with `$ELIMU` tokens, and token holders can participate in the organization’s decision-making. You can read more in the [2021 announcement](https://medium.com/elimu-ai/introducing-elimu-our-community-token-7767eebed862).
 
 ### Web3 Tools 🔨
 
