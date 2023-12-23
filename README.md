@@ -29,6 +29,7 @@ The Ξlimu DAO uses a combination of Web3 tools for handling organizational mech
 - Role management: [Guild.xyz](https://guild.xyz/elimu)
 - Contributor rewards: [Coordinape](https://app.coordinape.com/welcome/deff2c27-10c2-4264-a859-d135aa344090)
 - Token dashboards and queries: [Dune Analytics](https://dune.com/elimu_ai)
+  - [Token Overview Metrics](https://dune.com/ilemi/Token-Overview-Metrics?Token+Address_t429b9=0xe29797910d413281d2821d5d9a989262c8121cc2&Start+Date_d511e8=2021-06-01+00%3A00%3A00)
 - Multi-signature account (`safe.elimu.eth`): [Safe{Wallet}](https://app.safe.global/home?safe=eth:0xD452c1321E03c6e34aD8c6F60b694b1E780c4B75)
 - Paid tasks: [Dework](https://app.dework.xyz/elimuai)
 
