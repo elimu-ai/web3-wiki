@@ -27,6 +27,7 @@ The Ξlimu DAO uses a combination of Web3 tools for handling organizational mech
 - Open source fundraising: [Drips](https://www.drips.network/app/projects/github/elimu-ai/webapp)
   - [Drip List](https://www.drips.network/app/drip-lists/35900993181752993950558363225546133197549412121456994051111517254786)
 - Token liquidity provider rewards program: [rewards.elimu.ai](https://rewards.elimu.ai)
+  - [Smart contracts](https://github.com/elimu-ai/web3-smart-contracts/tree/main/liquidity-rewards)
 - Role management: [Guild.xyz](https://guild.xyz/elimu)
 - Contributor rewards: [Coordinape](https://app.coordinape.com/welcome/deff2c27-10c2-4264-a859-d135aa344090)
 - Token dashboards and queries: [Dune Analytics](https://dune.com/elimu_ai)
@@ -49,6 +50,20 @@ Only investments aligned with the organization's quarterly [Objectives and Key R
 
 ---
 
-elimu.ai - Free open source learning software for out-of-school children ✨🚀
-
-[Website 🌐](https://elimu.ai) &nbsp; [Wiki 📃](https://github.com/elimu-ai/wiki#readme) &nbsp; [Projects 👩🏽‍💻](https://github.com/orgs/elimu-ai/projects?query=is%3Aopen) &nbsp; [Milestones 🎯](https://github.com/elimu-ai/wiki/milestones) &nbsp; [Community 👋🏽](https://github.com/elimu-ai/wiki#open-source-community)
+<p align="center">
+  <img src="https://github.com/elimu-ai/webapp/blob/main/src/main/webapp/static/img/logo-text-256x78.png" />
+</p>
+<p align="center">
+  elimu.ai - Free open source learning software for out-of-school children ✨🚀
+</p>
+<p align="center">
+  <a href="https://elimu.ai">Website 🌐</a>
+  &nbsp;•&nbsp;
+  <a href="https://github.com/elimu-ai/wiki#readme">Wiki 📃</a>
+  &nbsp;•&nbsp;
+  <a href="https://github.com/orgs/elimu-ai/projects?query=is%3Aopen">Projects 👩🏽‍💻</a>
+  &nbsp;•&nbsp;
+  <a href="https://github.com/elimu-ai/wiki/milestones">Milestones 🎯</a>
+  &nbsp;•&nbsp;
+  <a href="https://github.com/elimu-ai/wiki#open-source-community">Community 👋🏽</a>
+</p>
