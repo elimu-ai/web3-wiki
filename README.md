@@ -31,27 +31,6 @@ The Ξlimu DAO uses a combination of Web3 tools for handling organizational mech
 - Multi-signature account (`safe.elimu.eth`): [Safe{Wallet}](https://app.safe.global/home?safe=eth:0xD452c1321E03c6e34aD8c6F60b694b1E780c4B75)
 - Paid tasks: [Dework](https://app.dework.xyz/elimuai)
 
-<a name="funding"></a>
-## Fundraising 🌱
-
-### Past Work
-
-Donations for _past work_ can be sent via the organization's Drip List: https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698
-
-[<img src="https://github.com/elimu-ai/web3-wiki/assets/15718174/a2994d7d-feaf-4783-8a9d-c35a081964ea" width="640" />](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698)
-
-### Future Work
-
-Donations for _future work_ can be sent to the organization's smart contract address: https://app.aragon.org/#/daos/ethereum/elimu.dao.eth
-
-Holders of the organization's [governance token](#what-is-elimu-) will then decide how to proportionally invest the funds into the following categories of work:
-
-1. [Content Creation 🎶🎙️](https://github.com/orgs/elimu-ai/projects/6?pane=info)
-2. [Engineering & AI/ML 👩🏽‍💻📱](https://github.com/orgs/elimu-ai/projects/3?pane=info)
-3. [Distribution & Data Collection 🛵💨](https://github.com/orgs/elimu-ai/projects/5?pane=info)
-
-Only investments aligned with the organization's quarterly [Objectives and Key Results](https://github.com/elimu-ai/wiki/milestones) will be accepted.
-
 ---
 
 <p align="center">
