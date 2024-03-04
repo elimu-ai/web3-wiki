@@ -49,12 +49,11 @@ For weekly updates of the token supply, see our [Dune Analytics dashboard](https
 sankey-beta
 
 %% source,target,value
-60%,Work,1935000
-Work,Content Creation,645000
-Work,Engineering & AI/ML,645000
-Work,Distribution & Data Collection,645000
-40%,DAO Treasury,645000
-40%,LP Rewards,645000
+Contributor Rewards,Content Creation,645000
+Contributor Rewards,Engineering & AI/ML,645000
+Contributor Rewards,Distribution & Data Collection,645000
+Reserve for the Future,DAO Treasury,645000
+Token Liquidity,LP Rewards,645000
 ```
 
 The remaining 40% are directed to liquidity provider (LP) rewards (20%) and to the DAO Treasury (20%).
