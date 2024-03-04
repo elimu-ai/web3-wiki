@@ -39,7 +39,7 @@ xychart-beta
     line [38700000, 77400000, 116100000, 154800000, 193500000, 232200000, 270900000, 309600000, 348300000, 387000000, 387000000]
 ```
 
-For weekly updates of the token supply, see our [Dune Analytics dashboard](https://dune.com/elimu_ai/dao-token).
+For weekly updates of the token supply, see our [Dune Analytics dashboard](https://dune.com/elimu_ai/dao-token). Also find the most up-to-date numbers of circulating supply, total supply, and max supply at https://token-api.elimu.ai.
 
 ## Monthly Token Allocation
 
