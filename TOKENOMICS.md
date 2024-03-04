@@ -76,7 +76,7 @@ DAO members can use their governance tokens to vote on how to spend from the DAO
 
 ### Token Liquidity
 
-People who contribute liquidity to the token economy can deposit their liquidity pool tokens and receive rewards. The dAapp for liquidity provider rewards is available at https://rewards.elimu.ai.
+People who contribute liquidity to the token economy can deposit their liquidity pool tokens and receive rewards. The DApp for liquidity provider rewards is available at https://rewards.elimu.ai.
 
 ## DAO Governance
 
