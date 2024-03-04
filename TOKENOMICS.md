@@ -80,7 +80,7 @@ People who contribute liquidity to the token economy can deposit their liquidity
 
 ## DAO Governance
 
-In order to initate a new proposal on https://snapshot.org/#/elimu.eth, a DAO member must hold at least 387,000 `$ELIMU` tokens.
+In order to initiate a new proposal on https://snapshot.org/#/elimu.eth, a DAO member must hold at least 387,000 `$ELIMU` tokens.
 
 The monthly token allocations described above can be adjusted through future DAO proposals. Any holder of the `$ELIMU` token can vote on proposals, for example how to allocate funds donated to the DAO's treasury.
 
