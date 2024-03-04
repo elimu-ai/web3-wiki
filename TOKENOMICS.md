@@ -39,6 +39,8 @@ xychart-beta
     line [38700000, 77400000, 116100000, 154800000, 193500000, 232200000, 270900000, 309600000, 348300000, 387000000, 387000000]
 ```
 
+For weekly updates of the token supply, see our [Dune Analytics dashboard](https://dune.com/elimu_ai/dao-token).
+
 ## Monthly Token Allocation
 
 10% of the token supply per year equals 3,225,000 `$ELIMU` per month. And at the end of each month, 60% of the `$ELIMU` tokens are equally split between rewarding work on content creation, engineering, and distribution:
