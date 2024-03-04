@@ -49,11 +49,69 @@ For weekly updates of the token supply, see our [Dune Analytics dashboard](https
 sankey-beta
 
 %% source,target,value
-Contributor Rewards,Content Creation,645000
-Contributor Rewards,Engineering & AI/ML,645000
-Contributor Rewards,Distribution & Data Collection,645000
+Contributor Rewards,Drip List,1935000
+Drip List,Content,645000
+Drip List,Engineering,645000
+Drip List,Distribution,645000
 Reserve for the Future,DAO Treasury,645000
 Token Liquidity,LP Rewards,645000
+LP Rewards,Uniswap,64500
+LP Rewards,SushiSwap,258000
+LP Rewards,Balancer,322500
 ```
 
-The remaining 40% are directed to liquidity provider (LP) rewards (20%) and to the DAO Treasury (20%).
+The remaining 40% are directed to the DAO Treasury (20%) and to liquidity provider (LP) rewards (20%).
+
+### Contributor Rewards
+
+The 1,935,000 `$ELIMU` tokens reserved for contributor rewards are distributed through the elimu.ai [Drip List 💧](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698), which automatically splits the tokens between `Content Creation 🎶🎙️`, `Engineering & AI/ML 👩🏽‍💻📱`, and `Distribution & Data Collection 🛵💨`.
+
+![Drip List 💧](https://github.com/elimu-ai/web3-wiki/assets/15718174/f7684d02-659e-4b06-8b21-20d3d39ea961)
+
+### Token Reserve for the Future
+
+The 645,000 `$ELIMU` tokens that are being set aside each month gets added to the DAO's treasury: https://app.aragon.org/#/daos/ethereum/elimu.dao.eth/finance
+
+DAO members can use their governance tokens to vote on how to spend from the DAO's treasury to fund future projects, as long as they align with the organization's mission—Building free open-source learning software for out-of-school children ✨🚀
+
+### Token Liquidity
+
+People who contribute liquidity to the token economy can deposit their liquidity pool tokens and receive rewards. The dAapp for liquidity provider rewards is available at https://rewards.elimu.ai.
+
+## DAO Governance
+
+In order to initate a new proposal on https://snapshot.org/#/elimu.eth, a DAO member must hold at least 387,000 `$ELIMU` tokens.
+
+The monthly token allocations described above can be adjusted through future DAO proposals. Any holder of the `$ELIMU` token can vote on proposals, for example how to allocate funds donated to the DAO's treasury.
+
+The DAO can also decide to adjust the monthly liquidity provider rewards.
+
+### Donated Funds
+
+Donors have two options when making a donation to the organization: 1) Drip List, 2) DAO Treasury
+
+1. If a donor chooses to use the elimu.ai [Drip List 💧](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698) to donate funds, there is no need to manually handle the allocation of funds because they will be split automatically.
+
+2. On the other hand, if a donor wants the funds to be handled differently, a donation can be sent to the DAO's Treasury smart contract at `elimu.dao.eth`. And DAO members can then use their `$ELIMU` governance tokens to vote on how to allocate the donated funds.
+
+---
+
+<p align="center">
+  <img src="https://github.com/elimu-ai/webapp/blob/main/src/main/webapp/static/img/logo-text-256x78.png" />
+</p>
+<p align="center">
+  elimu.ai - Free open source learning software for out-of-school children ✨🚀
+</p>
+<p align="center">
+  <a href="https://elimu.ai">Website 🌐</a>
+  &nbsp;•&nbsp;
+  <a href="https://github.com/elimu-ai/wiki#readme">Wiki 📃</a>
+  &nbsp;•&nbsp;
+  <a href="https://github.com/orgs/elimu-ai/projects?query=is%3Aopen">Projects 👩🏽‍💻</a>
+  &nbsp;•&nbsp;
+  <a href="https://github.com/elimu-ai/wiki/milestones">Milestones 🎯</a>
+  &nbsp;•&nbsp;
+  <a href="https://github.com/elimu-ai/wiki#open-source-community">Community 👋🏽</a>
+  &nbsp;•&nbsp;
+  <a href="https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698">Drips 💧</a>
+</p>
