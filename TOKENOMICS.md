@@ -38,3 +38,21 @@ xychart-beta
     %% #673AB7
     line [38700000, 77400000, 116100000, 154800000, 193500000, 232200000, 270900000, 309600000, 348300000, 387000000, 387000000]
 ```
+
+## Monthly Token Allocation
+
+10% of the token supply per year equals 3,225,000 `$ELIMU` per month. And at the end of each month, 60% of the `$ELIMU` tokens are equally split between rewarding work on content creation, engineering, and distribution:
+
+```mermaid
+sankey-beta
+
+%% source,target,value
+60%,Work,1935000
+Work,Content Creation,645000
+Work,Engineering & AI/ML,645000
+Work,Distribution & Data Collection,645000
+40%,DAO Treasury,645000
+40%,LP Rewards,645000
+```
+
+The remaining 40% are directed to liquidity provider (LP) rewards (20%) and to the DAO Treasury (20%).
