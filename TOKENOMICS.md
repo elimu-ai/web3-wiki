@@ -3,7 +3,7 @@
 ```mermaid
 %%{init: {"pie": {"textPosition": 0.5}, "themeVariables": {"pie1": "#d8d2e7", "pie2": "#b2a7d2", "pie3": "#c1d5b0", "pie4": "#aac1f0", "pieOuterStrokeWidth": "5px", "fontFamily": "arial"}} }%%
 pie showData
-    "Past open source contributors 🙌🏽": 38700000
+    "Past open-source contributors 🙌🏽": 38700000
     "Future Content Creation 🎶🎙️": 116100000
     "Future Engineering & AI/ML 👩🏽‍💻📱": 116100000
     "Future Distribution & Data Collection 🛵💨": 116100000
@@ -11,7 +11,7 @@ pie showData
 
 ## Past Contributors
 
-The elimu.ai software started out as an open source project in 2015. During the first six years, more than [40 people](https://github.com/elimu-ai/wiki/blob/main/CONTRIBUTING.md#elimuai---open-source-contributors-) made contributions. And 10% of the max token supply was distributed to these past contributors when the `$ELIMU` token was [announced](https://medium.com/elimu-ai/introducing-elimu-our-community-token-7767eebed862) in July 2021.
+The elimu.ai software started out as an open-source project in 2015. During the first six years, more than [40 people](https://github.com/elimu-ai/wiki/blob/main/CONTRIBUTING.md#elimuai---open-source-contributors-) made contributions. And 10% of the max token supply was distributed to these past contributors when the `$ELIMU` token was [announced](https://medium.com/elimu-ai/introducing-elimu-our-community-token-7767eebed862) in July 2021.
 
 ## Max Supply
 
@@ -100,7 +100,7 @@ Donors have two options when making a donation to the organization: 1) Drip List
   <img src="https://github.com/elimu-ai/webapp/blob/main/src/main/webapp/static/img/logo-text-256x78.png" />
 </p>
 <p align="center">
-  elimu.ai - Free open source learning software for out-of-school children ✨🚀
+  elimu.ai - Free open-source learning software for out-of-school children ✨🚀
 </p>
 <p align="center">
   <a href="https://elimu.ai">Website 🌐</a>
