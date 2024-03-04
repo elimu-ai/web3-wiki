@@ -1,5 +1,11 @@
 # `$ELIMU` Tokenomics 💎
 
+## About elimu.ai
+
+The mission of elimu.ai is to build innovative learning software that empowers out-of-school children to teach themselves basic reading📖, writing✍🏽 and math🔢. You can read more at https://github.com/elimu-ai/wiki#readme
+
+## Past Contributors
+
 ```mermaid
 %%{init: {"pie": {"textPosition": 0.5}, "themeVariables": {"pie1": "#d8d2e7", "pie2": "#b2a7d2", "pie3": "#c1d5b0", "pie4": "#aac1f0", "pieOuterStrokeWidth": "5px", "fontFamily": "arial"}} }%%
 pie showData
@@ -8,8 +14,6 @@ pie showData
     "Future Engineering & AI/ML 👩🏽‍💻📱": 116100000
     "Future Distribution & Data Collection 🛵💨": 116100000
 ```
-
-## Past Contributors
 
 The elimu.ai software started out as an open-source project in 2015. During the first six years, more than [40 people](https://github.com/elimu-ai/wiki/blob/main/CONTRIBUTING.md#elimuai---open-source-contributors-) made contributions. And 10% of the max token supply was distributed to these past contributors when the `$ELIMU` token was [announced](https://medium.com/elimu-ai/introducing-elimu-our-community-token-7767eebed862) in July 2021.
 
