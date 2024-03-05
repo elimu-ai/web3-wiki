@@ -4,6 +4,14 @@
 
 The mission of elimu.ai is to build innovative learning software that empowers out-of-school children to teach themselves basic reading📖, writing✍🏽 and math🔢. You can read more at https://github.com/elimu-ai/wiki#readme
 
+### DAO
+
+The product built by elimu.ai is Free and Open Source Software (FOSS). The open source project is organized as a Decentralized Autonomous Organization: **Ξlimu DAO**
+
+The Ξlimu DAO is the financial layer surrounding the elimu.ai software product, enabling contributor coordination, contributor rewards and fundraising.
+
+`$ELIMU` is the governance token used by the Ξlimu DAO. Contributors get rewarded with `$ELIMU` tokens, and token holders can participate in the organization's decision-making.
+
 ## Past Contributors
 
 ```mermaid
@@ -47,7 +55,7 @@ For weekly updates of the token supply, see our [Dune Analytics dashboard](https
 
 ## Monthly Token Allocation
 
-10% of the token supply per year equals 3,225,000 `$ELIMU` per month. And at the end of each month, 60% of the `$ELIMU` tokens are equally split between rewarding work on content creation, engineering, and distribution:
+10% of the token supply per year is 38,700,000 `$ELIMU`, which equals 3,225,000 `$ELIMU` per month. And at the end of each month, 60% of the `$ELIMU` tokens are equally split between rewarding work on content creation, engineering, and distribution:
 
 ```mermaid
 sankey-beta
@@ -86,13 +94,13 @@ People who contribute liquidity to the token economy can deposit their liquidity
 
 In order to initiate a new proposal on https://snapshot.org/#/elimu.eth, a DAO member must hold at least 387,000 `$ELIMU` tokens.
 
-The monthly token allocations described above can be adjusted through future DAO proposals. Any holder of the `$ELIMU` token can vote on proposals, for example how to allocate funds donated to the DAO's treasury.
+The monthly token allocations described above can be adjusted through future DAO proposals. Any holder of the `$ELIMU` token can vote on proposals, how to allocate funds donated to the DAO's treasury, for example.
 
 The DAO can also decide to adjust the monthly liquidity provider rewards.
 
 ### Donated Funds
 
-Donors have two options when making a donation to the organization: 1) Drip List, 2) DAO Treasury
+Donors have two options when making a donation to the organization: 1) via Drip List, 2) via DAO Treasury
 
 1. If a donor chooses to use the elimu.ai [Drip List 💧](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698) to donate funds, there is no need to manually handle the allocation of funds because they will be split automatically.
 
