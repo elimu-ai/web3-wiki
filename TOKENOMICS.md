@@ -51,7 +51,25 @@ xychart-beta
     line [38700000, 77400000, 116100000, 154800000, 193500000, 232200000, 270900000, 309600000, 348300000, 387000000, 387000000]
 ```
 
-For weekly updates of the token supply, see our [Dune Analytics dashboard](https://dune.com/elimu_ai/dao-token). Also find the most up-to-date numbers of circulating supply, total supply, and max supply at https://token-api.elimu.ai.
+### Annual Growth Rate
+
+```mermaid
+---
+config:
+    themeVariables:
+        fontFamily: "arial"
+        xyChart:
+            plotColorPalette: "#673AB7"
+---
+xychart-beta
+    title "Annual Growth Rate, %"
+    x-axis "Year" [2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032]
+    y-axis "%" 0 --> 100
+    %% #673AB7
+    line [100, 50, 33.33, 25, 20, 16.67, 14.29, 12.5, 11.11, 0, 0]
+```
+
+For weekly updates of the token supply, see our [Dune Analytics dashboard](https://dune.com/elimu_ai/dao-token). Also find the most up-to-date numbers of circulating supply, and total supply at https://token-api.elimu.ai.
 
 ## Monthly Token Allocation
 
