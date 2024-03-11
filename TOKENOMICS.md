@@ -23,7 +23,7 @@ pie showData
     "Future Distribution & Data Collection 🛵💨": 116100000
 ```
 
-The elimu.ai software started out as an open-source project in 2015. During the first six years, more than [40 people](https://github.com/elimu-ai/wiki/blob/main/CONTRIBUTING.md#elimuai---open-source-contributors-) made contributions. And 10% of the max token supply was distributed to these past contributors when the `$ELIMU` token was [announced](https://medium.com/elimu-ai/introducing-elimu-our-community-token-7767eebed862) in July 2021.
+The elimu.ai software started out as an open-source project in 2015. During the first six years, more than [40 people](https://github.com/elimu-ai/wiki/blob/main/CONTRIBUTORS.md) made contributions. And 10% of the max token supply was distributed to these past contributors when the `$ELIMU` token was [announced](https://medium.com/elimu-ai/introducing-elimu-our-community-token-7767eebed862) in July 2021.
 
 ## Max Supply
 
