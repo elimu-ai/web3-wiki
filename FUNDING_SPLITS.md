@@ -2,13 +2,13 @@
 
 A list of GitHub repos to be included in the elimu.ai [Drip List](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698):
 
-- Content Creation 🎶🎙️
+- **Content Creation 🎶🎙️**
   - English Language 🍔🏈
   - Hindi Language 🏏🐯
   - OERs 📚🎬
   - Tagalog Language 🏝️🦎
   - https://github.com/elimu-ai/crowdsource
-- Engineering & AI/ML 👩🏽‍💻📱
+- **Engineering & AI/ML 👩🏽‍💻📱**
   - https://github.com/elimu-ai/CameraColorPicker
   - https://github.com/elimu-ai/VoltAir
   - https://github.com/elimu-ai/android_packages_apps_Calculator
@@ -36,7 +36,7 @@ A list of GitHub repos to be included in the elimu.ai [Drip List](https://www.dr
   - https://github.com/elimu-ai/vitabu
   - https://github.com/elimu-ai/walezi-android
   - https://github.com/elimu-ai/webapp
-- Distribution & Data Collection 🛵💨
+- **Distribution & Data Collection 🛵💨**
   - https://github.com/elimu-ai/analytics
   - https://github.com/elimu-ai/appstore
   - https://github.com/elimu-ai/launcher
