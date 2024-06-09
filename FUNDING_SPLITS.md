@@ -1,6 +1,6 @@
 # Funding Splits 💦
 
-A list of GitHub repos to be included in the elimu.ai [Drip List](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698):
+An overview of initiatives included in the elimu.ai [Drip List](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698):
 
 - **Content Creation 🎶🎙️**
   - English Language 🍔🏈
