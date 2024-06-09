@@ -63,5 +63,5 @@ A list of GitHub repos to be included in the elimu.ai [Drip List](https://www.dr
   &nbsp;•&nbsp;
   <a href="https://github.com/elimu-ai/wiki#open-source-community">Community 👋🏽</a>
   &nbsp;•&nbsp;
-  <a href="https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698">Drips 💧</a>
+  <a href="https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698">Support 💜</a>
 </p>
