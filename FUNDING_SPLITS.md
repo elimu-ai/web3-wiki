@@ -42,6 +42,7 @@ A list of GitHub repos to be included in the elimu.ai [Drip List](https://www.dr
   - https://github.com/elimu-ai/launcher
   - https://github.com/elimu-ai/ml-authentication
   - https://github.com/elimu-ai/start-guide
+  - https://github.com/elimu-ai/website
 
 ---
 
