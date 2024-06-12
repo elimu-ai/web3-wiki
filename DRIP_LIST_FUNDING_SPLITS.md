@@ -5,9 +5,9 @@
 The top-level Drip List is owned by the `elimu.eth` ENS name, while each sub-list (and its projects) is owned by an ENS subname:
 ```
 elimu.eth
-|- content.elimu.eth
-|- engineering.elimu.eth
-|- distribution.elimu.eth
+├─── content.elimu.eth
+├─── engineering.elimu.eth
+└─── distribution.elimu.eth
 ```
 
 ## 1. Content Creation 🎶🎙️
