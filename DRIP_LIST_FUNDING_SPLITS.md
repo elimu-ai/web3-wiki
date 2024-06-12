@@ -6,6 +6,10 @@ The top-level Drip List is owned by the `elimu.eth` ENS name, while each sub-lis
 ```
 elimu.eth
 ├─── content.elimu.eth
+│    ├─── eng.content.elimu.eth
+│    ├─── hin.content.elimu.eth
+│    ├─── oers.content.elimu.eth
+│    └─── tgl.content.elimu.eth
 ├─── engineering.elimu.eth
 └─── distribution.elimu.eth
 ```
@@ -16,10 +20,10 @@ Drip list: https://www.drips.network/app/drip-lists/4423395489934383199506221727
 
 | Project | Owner | Funding Splits |
 | --- | --- | --- |
-| English Language 🍔🏈 | `content.elimu.eth` |  |
-| Hindi Language 🏏🐯 | `content.elimu.eth` |  |
-| OERs 📚🎬 | `content.elimu.eth` |  |
-| Tagalog Language 🏝️🦎 | `content.elimu.eth` |  |
+| English Language 🍔🏈 | `eng.content.elimu.eth` |  |
+| Hindi Language 🏏🐯 | `hin.content.elimu.eth` |  |
+| OERs 📚🎬 | `oers.content.elimu.eth` |  |
+| Tagalog Language 🏝️🦎 | `tgl.content.elimu.eth` |  |
 | [crowdsource](https://github.com/elimu-ai/crowdsource) | `content.elimu.eth` |  |
 
 ## 2. Engineering & AI/ML 👩🏽‍💻📱
