@@ -41,7 +41,6 @@ Drip list: https://www.drips.network/app/drip-lists/4130517859444261688977861014
 | [keyboard](https://github.com/elimu-ai/keyboard) | `engineering.elimu.eth` |  |
 | [kukariri](https://github.com/elimu-ai/kukariri) | `engineering.elimu.eth` |  |
 | [model](https://github.com/elimu-ai/model) | `engineering.elimu.eth` |  |
-| [shapi](https://github.com/elimu-ai/shapi) | `engineering.elimu.eth` |  |
 | [soga](https://github.com/elimu-ai/soga) | `engineering.elimu.eth` |  |
 | [webapp](https://github.com/elimu-ai/webapp) | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/webapp/blob/main/FUNDING_SPLITS.csv) |
 | [VoltAir](https://github.com/elimu-ai/VoltAir) | `literacy.engineering.elimu.eth` |  |
@@ -62,6 +61,7 @@ Drip list: https://www.drips.network/app/drip-lists/4130517859444261688977861014
 | [nambari](https://github.com/elimu-ai/nambari) | `numeracy.engineering.elimu.eth` |  |
 | [nyas-space-quest](https://github.com/elimu-ai/nyas-space-quest) | `numeracy.engineering.elimu.eth` |  |
 | [nyas-space-quest-qd](https://github.com/elimu-ai/nyas-space-quest-qd) | `numeracy.engineering.elimu.eth` |  |
+| [shapi](https://github.com/elimu-ai/shapi) | `numeracy.engineering.elimu.eth` |  |
 | [tilt-game](https://github.com/elimu-ai/tilt-game) | `numeracy.engineering.elimu.eth` |  |
 
 ## 3. Distribution & Data Collection 🛵💨
