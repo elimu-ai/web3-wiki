@@ -20,6 +20,16 @@ elimu.eth
 
 ## 1. Content Creation 🎶🎙️
 
+```mermaid
+sankey-beta
+
+%% source,target,value
+content.elimu.eth,hin.content.elimu.eth,38.4
+content.elimu.eth,oers.content.elimu.eth,20
+content.elimu.eth,tgl.content.elimu.eth,19.2
+content.elimu.eth,eng.content.elimu.eth,6.4
+```
+
 Drip list: https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849646413826815741964161
 
 | Project | Manager | Funding Splits |
@@ -31,6 +41,14 @@ Drip list: https://www.drips.network/app/drip-lists/4423395489934383199506221727
 | Tagalog Language 🏝️🦎 | `tgl.content.elimu.eth` |  |
 
 ## 2. Engineering & AI/ML 👩🏽‍💻📱
+
+```mermaid
+sankey-beta
+
+%% source,target,value
+engineering.elimu.eth,literacy.engineering.elimu.eth,50
+engineering.elimu.eth,numeracy.engineering.elimu.eth,25
+```
 
 Drip list: https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636699
 
@@ -65,6 +83,14 @@ Drip list: https://www.drips.network/app/drip-lists/4130517859444261688977861014
 | [tilt-game](https://github.com/elimu-ai/tilt-game) | `numeracy.engineering.elimu.eth` |  |
 
 ## 3. Distribution & Data Collection 🛵💨
+
+```mermaid
+sankey-beta
+
+%% source,target,value
+distribution.elimu.eth,hin.distribution.elimu.eth,40
+distribution.elimu.eth,tgl.distribution.elimu.eth,10
+```
 
 Drip list: https://www.drips.network/app/drip-lists/31191755684409194768993126690116100972451994534322097113232155071146
 
