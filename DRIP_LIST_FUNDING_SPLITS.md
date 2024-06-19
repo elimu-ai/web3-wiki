@@ -101,7 +101,7 @@ Drip list: https://www.drips.network/app/drip-lists/3119175568440919476899312669
 | [launcher](https://github.com/elimu-ai/launcher) | `distribution.elimu.eth` |  |
 | [ml-authentication](https://github.com/elimu-ai/ml-authentication) | `distribution.elimu.eth` |  |
 | [start-guide](https://github.com/elimu-ai/start-guide) | `distribution.elimu.eth` |  |
-| [website](https://github.com/elimu-ai/website) | `distribution.elimu.eth` |  |
+| [website](https://github.com/elimu-ai/website) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/website/blob/main/FUNDING_SPLITS.csv) |
 | Hindi Language 🏏🐯 | `hin.distribution.elimu.eth` |  |
 | Tagalog Language 🏝️🦎 | `tgl.distribution.elimu.eth` |  |
 
