@@ -85,9 +85,9 @@ Drip List,Engineering,645000
 Drip List,Distribution,645000
 Reserve for the Future,DAO Treasury,645000
 Token Liquidity,LP Rewards,645000
-LP Rewards,Uniswap,64500
-LP Rewards,SushiSwap,258000
 LP Rewards,Balancer,322500
+LP Rewards,SushiSwap,258000
+LP Rewards,Uniswap,64500
 ```
 
 The remaining 40% are directed to the DAO Treasury (20%) and to liquidity provider (LP) rewards (20%).
