@@ -71,7 +71,7 @@ Drip list: https://www.drips.network/app/drip-lists/4130517859444261688977861014
 | [sound-cards](https://github.com/elimu-ai/sound-cards) | `literacy.engineering.elimu.eth` |  |
 | [storybooks](https://github.com/elimu-ai/storybooks) | `literacy.engineering.elimu.eth` |  |
 | [visemes](https://github.com/elimu-ai/visemes) | `literacy.engineering.elimu.eth` |  |
-| [vitabu](https://github.com/elimu-ai/vitabu) | `literacy.engineering.elimu.eth` |  |
+| [vitabu](https://github.com/elimu-ai/vitabu) | `literacy.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/vitabu/blob/main/FUNDING_SPLITS.csv) |
 | [walezi-android](https://github.com/elimu-ai/walezi-android) | `literacy.engineering.elimu.eth` |  |
 | [android_packages_apps_Calculator](https://github.com/elimu-ai/android_packages_apps_Calculator) | `numeracy.engineering.elimu.eth` |  |
 | [handwriting-numbers](https://github.com/elimu-ai/handwriting-numbers) | `numeracy.engineering.elimu.eth` |  |
