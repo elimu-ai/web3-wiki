@@ -6,13 +6,14 @@ The top-level Drip List is managed by the `elimu.eth` ENS name, while each sub-l
 ```
 elimu.eth
 ├─── content.elimu.eth
-│    ├─── eng.content.elimu.eth
 │    ├─── hin.content.elimu.eth
-│    ├─── oers.content.elimu.eth
-│    └─── tgl.content.elimu.eth
+│    ├─── tgl.content.elimu.eth
+│    ├─── eng.content.elimu.eth
+│    └─── oers.content.elimu.eth
 ├─── engineering.elimu.eth
-│    ├─── literacy.engineering.elimu.eth
-│    └─── numeracy.engineering.elimu.eth
+│    ├─── reading.engineering.elimu.eth
+│    ├─── writing.engineering.elimu.eth
+│    └─── math.engineering.elimu.eth
 └─── distribution.elimu.eth
      ├─── hin.distribution.elimu.eth
      └─── tgl.distribution.elimu.eth
@@ -25,9 +26,9 @@ sankey-beta
 
 %% source,target,value
 content.elimu.eth,hin.content.elimu.eth,38.4
-content.elimu.eth,oers.content.elimu.eth,20
 content.elimu.eth,tgl.content.elimu.eth,19.2
 content.elimu.eth,eng.content.elimu.eth,6.4
+content.elimu.eth,oers.content.elimu.eth,20
 ```
 
 Drip list: https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849646413826815741964161
@@ -35,10 +36,10 @@ Drip list: https://www.drips.network/app/drip-lists/4423395489934383199506221727
 | Project | Manager | Funding Splits |
 | --- | --- | --- |
 | [crowdsource](https://github.com/elimu-ai/crowdsource) | `content.elimu.eth` |  |
-| English Language 🍔🏈 | `eng.content.elimu.eth` |  |
 | Hindi Language 🏏🐯 | `hin.content.elimu.eth` |  |
-| OERs 📚🎬 | `oers.content.elimu.eth` |  |
 | Tagalog Language 🏝️🦎 | `tgl.content.elimu.eth` |  |
+| English Language 🍔🏈 | `eng.content.elimu.eth` |  |
+| OERs 📚🎬 | `oers.content.elimu.eth` |  |
 
 ## 2. Engineering & AI/ML 👩🏽‍💻📱
 
@@ -46,8 +47,9 @@ Drip list: https://www.drips.network/app/drip-lists/4423395489934383199506221727
 sankey-beta
 
 %% source,target,value
-engineering.elimu.eth,literacy.engineering.elimu.eth,50
-engineering.elimu.eth,numeracy.engineering.elimu.eth,25
+engineering.elimu.eth,reading.engineering.elimu.eth,60
+engineering.elimu.eth,writing.engineering.elimu.eth,10
+engineering.elimu.eth,math.engineering.elimu.eth,30
 ```
 
 Drip list: https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636699
@@ -61,26 +63,26 @@ Drip list: https://www.drips.network/app/drip-lists/4130517859444261688977861014
 | [model](https://github.com/elimu-ai/model) | `engineering.elimu.eth` |  |
 | [soga](https://github.com/elimu-ai/soga) | `engineering.elimu.eth` |  |
 | [webapp](https://github.com/elimu-ai/webapp) | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/webapp/blob/main/FUNDING_SPLITS.csv) |
-| [VoltAir](https://github.com/elimu-ai/VoltAir) | `literacy.engineering.elimu.eth` |  |
-| [chat](https://github.com/elimu-ai/chat) | `literacy.engineering.elimu.eth` |  |
-| [familiar-word-reading](https://github.com/elimu-ai/familiar-word-reading) | `literacy.engineering.elimu.eth` |  |
-| [handwriting-letters](https://github.com/elimu-ai/handwriting-letters) | `literacy.engineering.elimu.eth` |  |
-| [herufi](https://github.com/elimu-ai/herufi) | `literacy.engineering.elimu.eth` |  |
-| [image-picker](https://github.com/elimu-ai/image-picker) | `literacy.engineering.elimu.eth` |  |
-| [silabi](https://github.com/elimu-ai/silabi) | `literacy.engineering.elimu.eth` |  |
-| [sound-cards](https://github.com/elimu-ai/sound-cards) | `literacy.engineering.elimu.eth` |  |
-| [storybooks](https://github.com/elimu-ai/storybooks) | `literacy.engineering.elimu.eth` |  |
-| [visemes](https://github.com/elimu-ai/visemes) | `literacy.engineering.elimu.eth` |  |
-| [vitabu](https://github.com/elimu-ai/vitabu) | `literacy.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/vitabu/blob/main/FUNDING_SPLITS.csv) |
-| [walezi-android](https://github.com/elimu-ai/walezi-android) | `literacy.engineering.elimu.eth` |  |
-| [android_packages_apps_Calculator](https://github.com/elimu-ai/android_packages_apps_Calculator) | `numeracy.engineering.elimu.eth` |  |
-| [handwriting-numbers](https://github.com/elimu-ai/handwriting-numbers) | `numeracy.engineering.elimu.eth` |  |
-| [missing-number](https://github.com/elimu-ai/missing-number) | `numeracy.engineering.elimu.eth` |  |
-| [nambari](https://github.com/elimu-ai/nambari) | `numeracy.engineering.elimu.eth` |  |
-| [nyas-space-quest](https://github.com/elimu-ai/nyas-space-quest) | `numeracy.engineering.elimu.eth` |  |
-| [nyas-space-quest-qd](https://github.com/elimu-ai/nyas-space-quest-qd) | `numeracy.engineering.elimu.eth` |  |
-| [shapi](https://github.com/elimu-ai/shapi) | `numeracy.engineering.elimu.eth` |  |
-| [tilt-game](https://github.com/elimu-ai/tilt-game) | `numeracy.engineering.elimu.eth` |  |
+| [VoltAir](https://github.com/elimu-ai/VoltAir) | `reading.engineering.elimu.eth` |  |
+| [familiar-word-reading](https://github.com/elimu-ai/familiar-word-reading) | `reading.engineering.elimu.eth` |  |
+| [herufi](https://github.com/elimu-ai/herufi) | `reading.engineering.elimu.eth` |  |
+| [image-picker](https://github.com/elimu-ai/image-picker) | `reading.engineering.elimu.eth` |  |
+| [silabi](https://github.com/elimu-ai/silabi) | `reading.engineering.elimu.eth` |  |
+| [sound-cards](https://github.com/elimu-ai/sound-cards) | `reading.engineering.elimu.eth` |  |
+| [storybooks](https://github.com/elimu-ai/storybooks) | `reading.engineering.elimu.eth` |  |
+| [visemes](https://github.com/elimu-ai/visemes) | `reading.engineering.elimu.eth` |  |
+| [vitabu](https://github.com/elimu-ai/vitabu) | `reading.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/vitabu/blob/main/FUNDING_SPLITS.csv) |
+| [walezi-android](https://github.com/elimu-ai/walezi-android) | `reading.engineering.elimu.eth` |  |
+| [chat](https://github.com/elimu-ai/chat) | `writing.engineering.elimu.eth` |  |
+| [handwriting-letters](https://github.com/elimu-ai/handwriting-letters) | `writing.engineering.elimu.eth` |  |
+| [handwriting-numbers](https://github.com/elimu-ai/handwriting-numbers) | `writing.engineering.elimu.eth` |  |
+| [android_packages_apps_Calculator](https://github.com/elimu-ai/android_packages_apps_Calculator) | `math.engineering.elimu.eth` |  |
+| [missing-number](https://github.com/elimu-ai/missing-number) | `math.engineering.elimu.eth` |  |
+| [nambari](https://github.com/elimu-ai/nambari) | `math.engineering.elimu.eth` |  |
+| [nyas-space-quest](https://github.com/elimu-ai/nyas-space-quest) | `math.engineering.elimu.eth` |  |
+| [nyas-space-quest-qd](https://github.com/elimu-ai/nyas-space-quest-qd) | `math.engineering.elimu.eth` |  |
+| [shapi](https://github.com/elimu-ai/shapi) | `math.engineering.elimu.eth` |  |
+| [tilt-game](https://github.com/elimu-ai/tilt-game) | `math.engineering.elimu.eth` |  |
 
 ## 3. Distribution & Data Collection 🛵💨
 
