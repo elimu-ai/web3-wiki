@@ -26,6 +26,7 @@ The Ξlimu DAO uses a combination of Web3 tools for handling organizational mech
 - Finance & treasury (`elimu.dao.eth`): [Aragon](https://app.aragon.org/#/daos/ethereum/elimu.dao.eth/finance)
 - Open source fundraising: [Drips](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698)
 - Token liquidity provider rewards program: [rewards.elimu.ai](https://rewards.elimu.ai)
+- Education sponsorship program: [sponsors.elimu.ai](https://sponsors.elimu.ai)
 - Role management: [Guild.xyz](https://guild.xyz/elimu)
 - Token dashboards and queries: [Dune Analytics](https://dune.com/elimu_ai)
 - Multi-signature account (`safe.elimu.eth`): [Safe{Wallet}](https://app.safe.global/home?safe=eth:0xD452c1321E03c6e34aD8c6F60b694b1E780c4B75)
