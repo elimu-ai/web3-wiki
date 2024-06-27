@@ -47,9 +47,9 @@ Drip list: https://www.drips.network/app/drip-lists/4423395489934383199506221727
 sankey-beta
 
 %% source,target,value
-engineering.elimu.eth,reading.engineering.elimu.eth,60
-engineering.elimu.eth,writing.engineering.elimu.eth,10
-engineering.elimu.eth,math.engineering.elimu.eth,30
+engineering.elimu.eth,reading.engineering.elimu.eth,36
+engineering.elimu.eth,writing.engineering.elimu.eth,6
+engineering.elimu.eth,math.engineering.elimu.eth,18
 ```
 
 Drip list: https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636699
