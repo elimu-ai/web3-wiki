@@ -10,7 +10,7 @@ The product built by elimu.ai is Free and Open Source Software (FOSS), and the o
 ## Decentralized Autonomous Organization
 The open source project is organized as a Decentralized Autonomous Organization: **Ξlimu DAO**
 
-The *Ξlimu DAO* is the financial layer surrounding the elimu.ai software, enabling contributor coordination, contributor rewards and fundraising. You can learn more about elimu.ai at https://github.com/elimu-ai/wiki.
+The Ξlimu DAO is the financial layer surrounding the elimu.ai software, enabling contributor coordination, contributor rewards and fundraising. You can learn more about elimu.ai at https://github.com/elimu-ai/wiki.
 
 ### What is `$ELIMU`? 💎
 [`$ELIMU`](https://etherscan.io/token/0xe29797910d413281d2821d5d9a989262c8121cc2) is the governance token used by the Ξlimu DAO. Contributors get rewarded with `$ELIMU` tokens, and token holders can participate in the organization’s decision-making. You can read more in the [2021 announcement](https://medium.com/elimu-ai/introducing-elimu-our-community-token-7767eebed862) and in [`TOKENOMICS.md`](TOKENOMICS.md).
@@ -29,6 +29,7 @@ The Ξlimu DAO uses a combination of Web3 tools for handling organizational mech
 - Education sponsorship program: [sponsors.elimu.ai](https://sponsors.elimu.ai)
 - Role management: [Guild.xyz](https://guild.xyz/elimu)
 - Token dashboards and queries: [Dune Analytics](https://dune.com/elimu_ai)
+- Token data API: [token-api.elimu.ai](https://token-api.elimu.ai)
 - Multi-signature account (`safe.elimu.eth`): [Safe{Wallet}](https://app.safe.global/home?safe=eth:0xD452c1321E03c6e34aD8c6F60b694b1E780c4B75)
 - Paid tasks: [Dework](https://app.dework.xyz/elimuai)
 
