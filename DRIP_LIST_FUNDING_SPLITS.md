@@ -21,6 +21,8 @@ elimu.eth
 
 ## 1. Content Creation 🎶🎙️
 
+[Drip list💧](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849646413826815741964161)
+
 ```mermaid
 sankey-beta
 
@@ -30,8 +32,6 @@ content.elimu.eth,tgl.content.elimu.eth,19.2
 content.elimu.eth,eng.content.elimu.eth,6.4
 content.elimu.eth,oers.content.elimu.eth,20
 ```
-
-[Drip list💧](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849646413826815741964161)
 
 | Project | Manager | Funding Splits |
 | --- | --- | --- |
@@ -43,6 +43,8 @@ content.elimu.eth,oers.content.elimu.eth,20
 
 ## 2. Engineering & AI/ML 👩🏽‍💻📱
 
+[Drip list💧](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636699)
+
 ```mermaid
 sankey-beta
 
@@ -51,8 +53,6 @@ engineering.elimu.eth,reading.engineering.elimu.eth,36
 engineering.elimu.eth,writing.engineering.elimu.eth,6
 engineering.elimu.eth,math.engineering.elimu.eth,18
 ```
-
-[Drip list💧](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636699)
 
 | Project | Manager | Funding Splits |
 | --- | --- | --- |
@@ -86,6 +86,8 @@ engineering.elimu.eth,math.engineering.elimu.eth,18
 
 ## 3. Distribution & Data Collection 🛵💨
 
+[Drip list💧](https://www.drips.network/app/drip-lists/31191755684409194768993126690116100972451994534322097113232155071146)
+
 ```mermaid
 sankey-beta
 
@@ -93,8 +95,6 @@ sankey-beta
 distribution.elimu.eth,hin.distribution.elimu.eth,40
 distribution.elimu.eth,tgl.distribution.elimu.eth,10
 ```
-
-[Drip list💧](https://www.drips.network/app/drip-lists/31191755684409194768993126690116100972451994534322097113232155071146)
 
 | Project | Manager | Funding Splits |
 | --- | --- | --- |
