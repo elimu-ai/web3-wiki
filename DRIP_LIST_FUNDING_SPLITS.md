@@ -2,6 +2,9 @@
 
 > An overview of projects included in the elimu.ai [Drip List 💧](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698)
 
+> [!NOTE]
+> The Drip List is used both for external fundraising and for our internal [monthly token allocation](https://github.com/elimu-ai/web3-wiki/blob/main/TOKENOMICS.md#monthly-token-allocation).
+
 The top-level Drip List is managed by the `elimu.eth` ENS name, while each sub-list (and its projects) is managed by an ENS subname:
 ```
 elimu.eth
