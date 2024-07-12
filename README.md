@@ -19,7 +19,7 @@ The Ξlimu DAO is the financial layer surrounding the elimu.ai software, enablin
 
 The Ξlimu DAO uses a combination of Web3 tools for handling organizational mechanisms like voting, fundraising, payments, etc:
 
-- Governance token: [`$ELIMU💎`](https://etherscan.io/token/0xe29797910d413281d2821d5d9a989262c8121cc2)
+- Governance token: [`$ELIMU`💎](https://etherscan.io/token/0xe29797910d413281d2821d5d9a989262c8121cc2)
 - Token-weighted backlogs: [Tokenlog⬆️](https://tokenlog.generalmagic.io/elimu-ai/web3-wiki)
 - Voting (off-chain): [Snapshot⚡](https://snapshot.org/#/elimu.eth)
 - Voting (on-chain): [Aragon🦅](https://app.aragon.org/#/daos/ethereum/elimu.dao.eth/governance)
