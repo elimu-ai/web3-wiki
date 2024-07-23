@@ -39,8 +39,8 @@ content.elimu.eth,oers.content.elimu.eth,20
 | Project | Manager | Funding Splits |
 | --- | --- | --- |
 | [crowdsource](https://github.com/elimu-ai/crowdsource) | `content.elimu.eth` |  |
-| Hindi Language 🏏🐯 | `hin.content.elimu.eth` | [`FUNDING_SPLITS_HIN.csv`](https://github.com/elimu-ai/webapp/blob/main/FUNDING_SPLITS_HIN.csv) |
-| Tagalog Language 🏝️🦎 | `tgl.content.elimu.eth` |  |
+| Hindi Language 🏏🐯 | `hin.content.elimu.eth` | [`FUNDING_SPLITS_HIN.csv`](./funding-splits/content/FUNDING_SPLITS_HIN.csv) |
+| Tagalog Language 🏝️🦎 | `tgl.content.elimu.eth` | [`FUNDING_SPLITS_TGL.csv`](./funding-splits/content/FUNDING_SPLITS_TGL.csv) |
 | English Language 🍔🏈 | `eng.content.elimu.eth` |  |
 | OERs 📚🎬 | `oers.content.elimu.eth` |  |
 
