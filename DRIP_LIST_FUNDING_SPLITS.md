@@ -30,6 +30,7 @@ elimu.eth
 sankey-beta
 
 %% source,target,value
+content.elimu.eth,infrastructural-apps,16
 content.elimu.eth,hin.content.elimu.eth,38.4
 content.elimu.eth,tgl.content.elimu.eth,19.2
 content.elimu.eth,eng.content.elimu.eth,6.4
@@ -52,6 +53,7 @@ content.elimu.eth,oers.content.elimu.eth,20
 sankey-beta
 
 %% source,target,value
+engineering.elimu.eth,infrastructural-apps,40
 engineering.elimu.eth,reading.engineering.elimu.eth,36
 engineering.elimu.eth,writing.engineering.elimu.eth,6
 engineering.elimu.eth,math.engineering.elimu.eth,18
@@ -95,6 +97,7 @@ engineering.elimu.eth,math.engineering.elimu.eth,18
 sankey-beta
 
 %% source,target,value
+distribution.elimu.eth,infrastructural-apps,50
 distribution.elimu.eth,hin.distribution.elimu.eth,40
 distribution.elimu.eth,tgl.distribution.elimu.eth,10
 ```
