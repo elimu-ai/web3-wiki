@@ -61,12 +61,12 @@ engineering.elimu.eth,math.engineering.elimu.eth,18
 
 | Project | Manager | Funding Splits |
 | --- | --- | --- |
-| [CameraColorPicker](https://github.com/elimu-ai/CameraColorPicker) | `engineering.elimu.eth` |  |
+| [CameraColorPicker](https://github.com/elimu-ai/CameraColorPicker) |  |  |
 | [content-provider](https://github.com/elimu-ai/content-provider) | `engineering.elimu.eth` |  |
 | [keyboard](https://github.com/elimu-ai/keyboard) | `engineering.elimu.eth` |  |
 | [kukariri](https://github.com/elimu-ai/kukariri) | `engineering.elimu.eth` |  |
 | [model](https://github.com/elimu-ai/model) | `engineering.elimu.eth` |  |
-| [soga](https://github.com/elimu-ai/soga) | `engineering.elimu.eth` |  |
+| [soga](https://github.com/elimu-ai/soga) |  |  |
 | [webapp](https://github.com/elimu-ai/webapp) | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/webapp/blob/main/FUNDING_SPLITS.csv) |
 | [VoltAir](https://github.com/elimu-ai/VoltAir) | `reading.engineering.elimu.eth` |  |
 | [familiar-word-reading](https://github.com/elimu-ai/familiar-word-reading) | `reading.engineering.elimu.eth` |  |
