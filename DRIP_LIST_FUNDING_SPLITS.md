@@ -61,12 +61,10 @@ engineering.elimu.eth,math.engineering.elimu.eth,18
 
 | Project | Manager | Funding Splits |
 | --- | --- | --- |
-| [CameraColorPicker](https://github.com/elimu-ai/CameraColorPicker) |  |  |
 | [content-provider](https://github.com/elimu-ai/content-provider) | `engineering.elimu.eth` |  |
 | [keyboard](https://github.com/elimu-ai/keyboard) | `engineering.elimu.eth` |  |
 | [kukariri](https://github.com/elimu-ai/kukariri) | `engineering.elimu.eth` |  |
 | [model](https://github.com/elimu-ai/model) | `engineering.elimu.eth` |  |
-| [soga](https://github.com/elimu-ai/soga) |  |  |
 | [webapp](https://github.com/elimu-ai/webapp) | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/webapp/blob/main/FUNDING_SPLITS.csv) |
 | [VoltAir](https://github.com/elimu-ai/VoltAir) | `reading.engineering.elimu.eth` |  |
 | [familiar-word-reading](https://github.com/elimu-ai/familiar-word-reading) | `reading.engineering.elimu.eth` |  |
@@ -81,12 +79,14 @@ engineering.elimu.eth,math.engineering.elimu.eth,18
 | [chat](https://github.com/elimu-ai/chat) | `writing.engineering.elimu.eth` |  |
 | [handwriting-letters](https://github.com/elimu-ai/handwriting-letters) | `writing.engineering.elimu.eth` |  |
 | [handwriting-numbers](https://github.com/elimu-ai/handwriting-numbers) | `writing.engineering.elimu.eth` |  |
+| [CameraColorPicker](https://github.com/elimu-ai/CameraColorPicker) |  | `math.engineering.elimu.eth` |
 | [android_packages_apps_Calculator](https://github.com/elimu-ai/android_packages_apps_Calculator) | `math.engineering.elimu.eth` |  |
 | [missing-number](https://github.com/elimu-ai/missing-number) | `math.engineering.elimu.eth` |  |
 | [nambari](https://github.com/elimu-ai/nambari) | `math.engineering.elimu.eth` |  |
 | [nyas-space-quest](https://github.com/elimu-ai/nyas-space-quest) | `math.engineering.elimu.eth` |  |
 | [nyas-space-quest-qd](https://github.com/elimu-ai/nyas-space-quest-qd) | `math.engineering.elimu.eth` |  |
 | [shapi](https://github.com/elimu-ai/shapi) | `math.engineering.elimu.eth` |  |
+| [soga](https://github.com/elimu-ai/soga) | `math.engineering.elimu.eth` |  |
 | [tilt-game](https://github.com/elimu-ai/tilt-game) | `math.engineering.elimu.eth` |  |
 
 ## 3. Distribution & Data Collection 🛵💨
