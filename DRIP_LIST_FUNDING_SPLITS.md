@@ -79,7 +79,7 @@ engineering.elimu.eth,math.engineering.elimu.eth,18
 | [chat](https://github.com/elimu-ai/chat) | `writing.engineering.elimu.eth` |  |
 | [handwriting-letters](https://github.com/elimu-ai/handwriting-letters) | `writing.engineering.elimu.eth` |  |
 | [handwriting-numbers](https://github.com/elimu-ai/handwriting-numbers) | `writing.engineering.elimu.eth` |  |
-| [CameraColorPicker](https://github.com/elimu-ai/CameraColorPicker) |  | `math.engineering.elimu.eth` |
+| [CameraColorPicker](https://github.com/elimu-ai/CameraColorPicker) | `math.engineering.elimu.eth` |  |
 | [android_packages_apps_Calculator](https://github.com/elimu-ai/android_packages_apps_Calculator) | `math.engineering.elimu.eth` |  |
 | [missing-number](https://github.com/elimu-ai/missing-number) | `math.engineering.elimu.eth` |  |
 | [nambari](https://github.com/elimu-ai/nambari) | `math.engineering.elimu.eth` |  |
