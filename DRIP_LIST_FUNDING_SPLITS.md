@@ -105,7 +105,7 @@ distribution.elimu.eth,tgl.distribution.elimu.eth,10
 | Project | Manager | Funding Splits |
 | --- | --- | --- |
 | [analytics](https://github.com/elimu-ai/analytics) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/analytics/blob/main/FUNDING_SPLITS.csv) |
-| [appstore](https://github.com/elimu-ai/appstore) | `distribution.elimu.eth` |  |
+| [appstore](https://github.com/elimu-ai/appstore) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/appstore/blob/main/FUNDING_SPLITS.csv) |
 | [launcher](https://github.com/elimu-ai/launcher) | `distribution.elimu.eth` |  |
 | [ml-authentication](https://github.com/elimu-ai/ml-authentication) | `distribution.elimu.eth` |  |
 | [start-guide](https://github.com/elimu-ai/start-guide) | `distribution.elimu.eth` |  |
