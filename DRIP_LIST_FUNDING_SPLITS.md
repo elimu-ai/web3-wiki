@@ -66,7 +66,7 @@ engineering.elimu.eth,math.engineering.elimu.eth,18
 | [kukariri](https://github.com/elimu-ai/kukariri) | `engineering.elimu.eth` |  |
 | [model](https://github.com/elimu-ai/model) | `engineering.elimu.eth` |  |
 | [webapp](https://github.com/elimu-ai/webapp) | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/webapp/blob/main/FUNDING_SPLITS.csv) |
-| [VoltAir](https://github.com/elimu-ai/VoltAir) | `reading.engineering.elimu.eth` |  |
+| [VoltAir](https://github.com/elimu-ai/VoltAir) | `reading.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/VoltAir/blob/master/FUNDING_SPLITS.csv) |
 | [familiar-word-reading](https://github.com/elimu-ai/familiar-word-reading) | `reading.engineering.elimu.eth` |  |
 | [herufi](https://github.com/elimu-ai/herufi) | `reading.engineering.elimu.eth` |  |
 | [image-picker](https://github.com/elimu-ai/image-picker) | `reading.engineering.elimu.eth` |  |
