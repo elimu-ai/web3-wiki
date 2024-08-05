@@ -1,5 +1,6 @@
 # elimu.ai Web3 Wiki 💎
-Wiki related to Web3 &amp; finances
+
+> Wiki related to Web3 &amp; finances
 
 ## About elimu.ai
 The mission of elimu.ai is to build innovative learning software that empowers out-of-school children to teach themselves basic reading📖, writing✍🏽 and math🔢. You can read more at https://github.com/elimu-ai/wiki#readme
@@ -20,6 +21,7 @@ The Ξlimu DAO is the financial layer surrounding the elimu.ai software, enablin
 The Ξlimu DAO uses a combination of Web3 tools for handling organizational mechanisms like voting, fundraising, payments, etc:
 
 - Governance token: [`$ELIMU`💎](https://etherscan.io/token/0xe29797910d413281d2821d5d9a989262c8121cc2)
+  - See [`TOKENOMICS.md`](./TOKENOMICS.md)
 - Token-weighted backlogs: [Tokenlog⬆️](https://tokenlog.generalmagic.io/elimu-ai/web3-wiki)
 - Voting (off-chain): [Snapshot⚡](https://snapshot.org/#/elimu.eth)
 - Voting (on-chain): [Aragon🦅](https://app.aragon.org/#/daos/ethereum/elimu.dao.eth/governance)
