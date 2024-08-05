@@ -19,5 +19,5 @@ npx tsc
 ## Run the JavaScript
 
 ```bash
-node ./fetch-sponsorship-events.js
+node ./query-sponsorship-events.js
 ```

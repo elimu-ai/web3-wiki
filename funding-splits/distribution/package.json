@@ -9,6 +9,7 @@
   "author": "Ξlimu DAO",
   "license": "MIT",
   "devDependencies": {
+    "ethers": "^6.13.2",
     "typescript": "^5.5.4"
   }
 }
