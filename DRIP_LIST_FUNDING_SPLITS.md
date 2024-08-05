@@ -22,6 +22,8 @@ elimu.eth
      └─── tgl.distribution.elimu.eth
 ```
 
+<a name="content"></a>
+
 ## 1. Content Creation 🎶🎙️
 
 [Drip list💧](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849646413826815741964161)
@@ -44,6 +46,8 @@ content.elimu.eth,oers.content.elimu.eth,20
 | Tagalog Language 🏝️🦎 | `tgl.content.elimu.eth` | [`FUNDING_SPLITS_TGL.csv`](./funding-splits/content/FUNDING_SPLITS_TGL.csv) |
 | English Language 🍔🏈 | `eng.content.elimu.eth` |  |
 | OERs 📚🎬 | `oers.content.elimu.eth` |  |
+
+<a name="engineering"></a>
 
 ## 2. Engineering & AI/ML 👩🏽‍💻📱
 
@@ -88,6 +92,8 @@ engineering.elimu.eth,math.engineering.elimu.eth,18
 | [shapi](https://github.com/elimu-ai/shapi) | `math.engineering.elimu.eth` |  |
 | [soga](https://github.com/elimu-ai/soga) | `math.engineering.elimu.eth` |  |
 | [tilt-game](https://github.com/elimu-ai/tilt-game) | `math.engineering.elimu.eth` |  |
+
+<a name="distribution"></a>
 
 ## 3. Distribution & Data Collection 🛵💨
 
