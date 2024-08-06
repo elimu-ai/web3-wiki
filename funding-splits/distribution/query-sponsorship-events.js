@@ -58,12 +58,12 @@ function query() {
                 eventData.push([estimatedCost, timestamp, sponsorAddress]);
             }
         });
-        exportToCsv(eventData);
+        prepareCsvData(eventData);
     });
 }
-function exportToCsv(eventData) {
+function prepareCsvData(eventData) {
     return __awaiter(this, void 0, void 0, function* () {
-        console.log('exportToCsv');
+        console.log('prepareCsvData');
         console.log('eventData.length:', eventData.length);
         // Count events per sponsor address
         const csvData = [];
@@ -94,8 +94,7 @@ function exportToCsv(eventData) {
                 const newData = {
                     ethereum_address: sponsorAddress,
                     sponsorship_count: 1,
-                    distribution_count: 0,
-                    impact_percentage: 0 // TODO
+                    distribution_count: 0
                 };
                 csvData.push(newData);
             }
@@ -104,8 +103,32 @@ function exportToCsv(eventData) {
                 existingData.sponsorship_count++;
             }
         });
-        console.log('csvData:\n', csvData);
-        // Export to CSV
-        // TODO
+        console.log('csvData:', csvData);
+        calculateImpactPercentages(csvData);
+        exportToCsv(csvData);
     });
+}
+function calculateImpactPercentages(csvData) {
+    console.log('calculateImpactPercentages');
+    let sponsorshipCountTotal = 0;
+    let distributionCountTotal = 0;
+    csvData.forEach(csvDataRow => {
+        sponsorshipCountTotal += csvDataRow.sponsorship_count;
+        distributionCountTotal += csvDataRow.distribution_count;
+    });
+    console.log('sponsorshipCountTotal:', sponsorshipCountTotal);
+    console.log('distributionCountTotal:', distributionCountTotal);
+    // Calculate the impact percentage for each sponsor address
+    csvData.forEach(csvDataRow => {
+        const impactPercentage = 100
+            * (csvDataRow.sponsorship_count + csvDataRow.distribution_count)
+            / (sponsorshipCountTotal + distributionCountTotal);
+        // console.log('impactPercentage:', impactPercentage)
+        csvDataRow.impact_percentage = impactPercentage;
+    });
+    console.log('csvData:', csvData);
+}
+function exportToCsv(csvData) {
+    console.log('exportToCsv');
+    // TODO
 }

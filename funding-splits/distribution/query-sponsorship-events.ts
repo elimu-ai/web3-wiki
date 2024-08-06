@@ -64,11 +64,11 @@ async function query() {
         }
     })
 
-    exportToCsv(eventData)
+    prepareCsvData(eventData)
 }
 
-async function exportToCsv(eventData: any[]) {
-    console.log('exportToCsv')
+async function prepareCsvData(eventData: any[]) {
+    console.log('prepareCsvData')
 
     console.log('eventData.length:', eventData.length)
 
@@ -104,8 +104,7 @@ async function exportToCsv(eventData: any[]) {
             const newData = {
                 ethereum_address: sponsorAddress,
                 sponsorship_count: 1,
-                distribution_count: 0,
-                impact_percentage: 0 // TODO
+                distribution_count: 0
             }
             csvData.push(newData)
         } else {
@@ -114,8 +113,38 @@ async function exportToCsv(eventData: any[]) {
             existingData.sponsorship_count++
         }
     })
-    console.log('csvData:\n', csvData)
+    console.log('csvData:', csvData)
 
-    // Export to CSV
+    calculateImpactPercentages(csvData)
+
+    exportToCsv(csvData)
+}
+
+function calculateImpactPercentages(csvData: any[]) {
+    console.log('calculateImpactPercentages')
+
+    let sponsorshipCountTotal: number = 0
+    let distributionCountTotal: number = 0
+    csvData.forEach(csvDataRow => {
+        sponsorshipCountTotal += csvDataRow.sponsorship_count
+        distributionCountTotal += csvDataRow.distribution_count
+    })
+    console.log('sponsorshipCountTotal:', sponsorshipCountTotal)
+    console.log('distributionCountTotal:', distributionCountTotal)
+
+    // Calculate the impact percentage for each sponsor address
+    csvData.forEach(csvDataRow => {
+        const impactPercentage: number = 100
+                                         * (csvDataRow.sponsorship_count + csvDataRow.distribution_count) 
+                                         / (sponsorshipCountTotal + distributionCountTotal)
+        // console.log('impactPercentage:', impactPercentage)
+        csvDataRow.impact_percentage = impactPercentage
+    })
+    console.log('csvData:', csvData)
+}
+
+function exportToCsv(csvData: any[]) {
+    console.log('exportToCsv')
+
     // TODO
 }
