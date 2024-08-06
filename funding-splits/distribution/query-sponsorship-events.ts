@@ -1,5 +1,6 @@
 import { Contract, ethers, EventLog, JsonRpcProvider, Log, Result } from 'ethers'
 import SponsorshipQueue from './abis/SponsorshipQueue.json'
+import { createObjectCsvWriter as createCsvWriter } from 'csv-writer'
 
 const rpcServerAddress: string = 'https://base-sepolia.blockpi.network/v1/rpc/public'
 console.log('rpcServerAddress:', rpcServerAddress)
@@ -146,5 +147,21 @@ function calculateImpactPercentages(csvData: any[]) {
 function exportToCsv(csvData: any[]) {
     console.log('exportToCsv')
 
-    // TODO
+    const outputPath: string = 'FUNDING_SPLITS_HIN.csv'
+    console.log('outputPath:', outputPath)
+    const csvWriter = createCsvWriter({
+        path: outputPath,
+        header: [
+            {id: 'ethereum_address', title: 'ethereum_address'},
+            {id: 'sponsorship_count', title: 'sponsorship_count'},
+            {id: 'distribution_count', title: 'distribution_count'},
+            {id: 'impact_percentage', title: 'impact_percentage'}
+        ]
+    })
+
+    csvWriter
+        .writeRecords(csvData)
+        .then(() => {
+            console.log('The CSV file was written successfully:', outputPath)
+        })
 }

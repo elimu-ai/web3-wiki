@@ -14,6 +14,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const ethers_1 = require("ethers");
 const SponsorshipQueue_json_1 = __importDefault(require("./abis/SponsorshipQueue.json"));
+const csv_writer_1 = require("csv-writer");
 const rpcServerAddress = 'https://base-sepolia.blockpi.network/v1/rpc/public';
 console.log('rpcServerAddress:', rpcServerAddress);
 const provider = new ethers_1.ethers.JsonRpcProvider(rpcServerAddress);
@@ -130,5 +131,20 @@ function calculateImpactPercentages(csvData) {
 }
 function exportToCsv(csvData) {
     console.log('exportToCsv');
-    // TODO
+    const outputPath = 'FUNDING_SPLITS_HIN.csv';
+    console.log('outputPath:', outputPath);
+    const csvWriter = (0, csv_writer_1.createObjectCsvWriter)({
+        path: outputPath,
+        header: [
+            { id: 'ethereum_address', title: 'ethereum_address' },
+            { id: 'sponsorship_count', title: 'sponsorship_count' },
+            { id: 'distribution_count', title: 'distribution_count' },
+            { id: 'impact_percentage', title: 'impact_percentage' }
+        ]
+    });
+    csvWriter
+        .writeRecords(csvData)
+        .then(() => {
+        console.log('The CSV file was written successfully:', outputPath);
+    });
 }
