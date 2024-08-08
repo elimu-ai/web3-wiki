@@ -115,7 +115,7 @@ distribution.elimu.eth,tgl.distribution.elimu.eth,10
 | [appstore](https://github.com/elimu-ai/appstore) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/appstore/blob/main/FUNDING_SPLITS.csv) |
 | [launcher](https://github.com/elimu-ai/launcher) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/launcher/blob/main/FUNDING_SPLITS.csv) |
 | [ml-authentication](https://github.com/elimu-ai/ml-authentication) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/ml-authentication/blob/main/FUNDING_SPLITS.csv) |
-| [start-guide](https://github.com/elimu-ai/start-guide) | `distribution.elimu.eth` |  |
+| [start-guide](https://github.com/elimu-ai/start-guide) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/start-guide/blob/main/FUNDING_SPLITS.csv) |
 | [website](https://github.com/elimu-ai/website) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/website/blob/main/FUNDING_SPLITS.csv) |
 | [web3-sponsors](https://github.com/elimu-ai/web3-sponsors) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/web3-sponsors/blob/main/FUNDING_SPLITS.csv) |
 | Hindi Language 🏏🐯 | `hin.distribution.elimu.eth` | [`FUNDING_SPLITS_HIN.csv`](./funding-splits/distribution/FUNDING_SPLITS_HIN.csv) |
