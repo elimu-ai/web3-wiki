@@ -89,7 +89,7 @@ engineering.elimu.eth,math.engineering.elimu.eth,18
 | [missing-number](https://github.com/elimu-ai/missing-number) | `math.engineering.elimu.eth` |  |
 | [nambari](https://github.com/elimu-ai/nambari) | `math.engineering.elimu.eth` |  |
 | [nyas-space-quest](https://github.com/elimu-ai/nyas-space-quest) | `math.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/nyas-space-quest/blob/main/FUNDING_SPLITS.csv) |
-| [nyas-space-quest-qd](https://github.com/elimu-ai/nyas-space-quest-qd) | `math.engineering.elimu.eth` |  |
+| [nyas-space-quest-qd](https://github.com/elimu-ai/nyas-space-quest-qd) | `math.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/nyas-space-quest-qd/blob/main/FUNDING_SPLITS.csv) |
 | [shapi](https://github.com/elimu-ai/shapi) | `math.engineering.elimu.eth` |  |
 | [soga](https://github.com/elimu-ai/soga) | `math.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/soga/blob/main/FUNDING_SPLITS.csv) |
 | [tilt-game](https://github.com/elimu-ai/tilt-game) | `math.engineering.elimu.eth` |  |
