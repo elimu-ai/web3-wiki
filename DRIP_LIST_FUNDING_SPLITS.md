@@ -32,16 +32,17 @@ elimu.eth
 sankey-beta
 
 %% source,target,value
-content.elimu.eth,infrastructural-apps,16
+content.elimu.eth,infrastructural-apps,26
 content.elimu.eth,hin.content.elimu.eth,38.4
 content.elimu.eth,tgl.content.elimu.eth,19.2
 content.elimu.eth,eng.content.elimu.eth,6.4
-content.elimu.eth,oers.content.elimu.eth,20
+content.elimu.eth,oers.content.elimu.eth,10
 ```
 
 | Project | Manager | Funding Splits |
 | --- | --- | --- |
 | [crowdsource](https://github.com/elimu-ai/crowdsource) | `content.elimu.eth` |  |
+| [webapp](https://github.com/elimu-ai/webapp) | `content.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/webapp/blob/main/FUNDING_SPLITS.csv) |
 | Hindi Language 🏏🐯 | `hin.content.elimu.eth` | [`FUNDING_SPLITS_HIN.csv`](./funding-splits/content/FUNDING_SPLITS_HIN.csv) |
 | Tagalog Language 🏝️🦎 | `tgl.content.elimu.eth` | [`FUNDING_SPLITS_TGL.csv`](./funding-splits/content/FUNDING_SPLITS_TGL.csv) |
 | English Language 🍔🏈 | `eng.content.elimu.eth` |  |
@@ -70,7 +71,6 @@ engineering.elimu.eth,math.engineering.elimu.eth,18
 | [kukariri](https://github.com/elimu-ai/kukariri) | `engineering.elimu.eth` |  |
 | [ml-storybook-reading-level](https://github.com/elimu-ai/ml-storybook-reading-level) | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/ml-storybook-reading-level/blob/main/FUNDING_SPLITS.csv) |
 | [model](https://github.com/elimu-ai/model) | `engineering.elimu.eth` |  |
-| [webapp](https://github.com/elimu-ai/webapp) | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/webapp/blob/main/FUNDING_SPLITS.csv) |
 | [VoltAir](https://github.com/elimu-ai/VoltAir) | `reading.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/VoltAir/blob/master/FUNDING_SPLITS.csv) |
 | [familiar-word-reading](https://github.com/elimu-ai/familiar-word-reading) | `reading.engineering.elimu.eth` |  |
 | [herufi](https://github.com/elimu-ai/herufi) | `reading.engineering.elimu.eth` |  |
