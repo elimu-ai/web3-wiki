@@ -39,7 +39,7 @@ content.elimu.eth,eng.content.elimu.eth,6.4
 content.elimu.eth,oers.content.elimu.eth,10
 ```
 
-| Project | Manager | Funding Splits |
+| Project | Manager | Funding Split CSV |
 | --- | --- | --- |
 | [crowdsource](https://github.com/elimu-ai/crowdsource) | `content.elimu.eth` |  |
 | [webapp](https://github.com/elimu-ai/webapp) | `content.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/webapp/blob/main/FUNDING_SPLITS.csv) |
@@ -64,7 +64,7 @@ engineering.elimu.eth,writing.engineering.elimu.eth,6
 engineering.elimu.eth,math.engineering.elimu.eth,18
 ```
 
-| Project | Manager | Funding Splits |
+| Project | Manager | Funding Split CSV |
 | --- | --- | --- |
 | [content-provider](https://github.com/elimu-ai/content-provider) | `engineering.elimu.eth` |  |
 | [keyboard](https://github.com/elimu-ai/keyboard) | `engineering.elimu.eth` |  |
@@ -109,7 +109,7 @@ distribution.elimu.eth,hin.distribution.elimu.eth,40
 distribution.elimu.eth,tgl.distribution.elimu.eth,10
 ```
 
-| Project | Manager | Funding Splits |
+| Project | Manager | Funding Split CSV |
 | --- | --- | --- |
 | [analytics](https://github.com/elimu-ai/analytics) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/analytics/blob/main/FUNDING_SPLITS.csv) |
 | [appstore](https://github.com/elimu-ai/appstore) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/appstore/blob/main/FUNDING_SPLITS.csv) |
