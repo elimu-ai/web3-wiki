@@ -73,7 +73,7 @@ For weekly updates of the token supply, see our [Dune Analytics dashboard](https
 
 ## Monthly Token Allocation
 
-10% of the token supply per year is 38,700,000 `$ELIMU`, which equals 3,225,000 `$ELIMU` per month. And at the end of each month, 60% of the `$ELIMU` tokens are equally split between rewarding work on content creation, engineering, and distribution:
+10% of the token supply per year is 38,700,000 `$ELIMU`, which equals 3,225,000 `$ELIMU` per month. And at the end of each month, `$ELIMU` tokens are equally split between rewarding work on content creation, engineering, and distribution:
 
 ```mermaid
 sankey-beta
@@ -90,7 +90,7 @@ LP Rewards,SushiSwap,258000
 LP Rewards,Uniswap,64500
 ```
 
-The remaining 40% are directed to the DAO Treasury (20%) and to liquidity provider (LP) rewards (20%).
+60% of the monthly budget is reserved for rewarding work on content creation, engineering, and distribution. And the remaining 40% are directed to the DAO Treasury (20%) and to liquidity provider rewards (20%).
 
 ### Contributor Rewards
 
