@@ -90,7 +90,7 @@ LP Rewards,SushiSwap,258000
 LP Rewards,Uniswap,64500
 ```
 
-60% of the monthly budget is reserved for rewarding work on content creation, engineering, and distribution. And the remaining 40% are directed to the DAO Treasury (20%) and to liquidity provider rewards (20%).
+60% of the monthly budget is reserved for contributor rewards, and the remaining 40% are directed to the DAO Treasury (20%) and to liquidity provider rewards (20%).
 
 ### Contributor Rewards
 
