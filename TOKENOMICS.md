@@ -96,7 +96,7 @@ While 60% of the monthly token allocation is directed to contributor rewards, th
 
 The 1,935,000 `$ELIMU` tokens reserved for contributor rewards are distributed through the elimu.ai [Drip List 💧](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698), which automatically splits the tokens between `Content Creation 🎶🎙️`, `Engineering & AI/ML 👩🏽‍💻📱`, and `Distribution & Data Collection 🛵💨`.
 
-![Drip List 💧](https://github.com/elimu-ai/web3-wiki/assets/15718174/f7684d02-659e-4b06-8b21-20d3d39ea961)
+[![Drip List 💧](https://github.com/elimu-ai/web3-wiki/assets/15718174/f7684d02-659e-4b06-8b21-20d3d39ea961)](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698)
 
 ### Token Reserve for the Future
 
