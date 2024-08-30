@@ -5,9 +5,9 @@
 > [!NOTE]
 > The Drip List is used both for external fundraising and for our internal [monthly token allocation](https://github.com/elimu-ai/web3-wiki/blob/main/TOKENOMICS.md#monthly-token-allocation).
 
-The top-level Drip List is managed by the `elimu.eth` ENS name, while each sub-list (and its projects) is managed by an ENS subname:
+The top-level Drip List is owned by the `elimu.dao.eth` ENS name, while each sub-list (and its projects) is managed by an ENS subname:
 ```
-elimu.eth
+elimu.dao.eth
 ├─── content.elimu.eth
 │    ├─── hin.content.elimu.eth
 │    ├─── tgl.content.elimu.eth
@@ -127,7 +127,7 @@ distribution.elimu.eth,tgl.distribution.elimu.eth,10
   <img src="https://github.com/elimu-ai/webapp/blob/main/src/main/webapp/static/img/logo-text-256x78.png" />
 </p>
 <p align="center">
-  elimu.ai - Free open-source learning software for out-of-school children ✨🚀
+  elimu.ai - Free open-source learning software for out-of-school children 🚀✨
 </p>
 <p align="center">
   <a href="https://elimu.ai">Website 🌐</a>
