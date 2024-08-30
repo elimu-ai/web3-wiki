@@ -8,6 +8,7 @@ The mission of elimu.ai is to build innovative learning software that empowers o
 ## Organization
 The product built by elimu.ai is Free and Open Source Software (FOSS), and the organization building it is structured as a non-profit. Any type of income (e.g. donations) or profit will be re-invested into the organization's purpose—solving the global learning crisis.
 
+<a name="dao"></a>
 ## Decentralized Autonomous Organization
 The open source project is organized as part of a Decentralized Autonomous Organization: **Ξlimu DAO**
 
