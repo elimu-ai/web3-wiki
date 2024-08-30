@@ -90,7 +90,7 @@ LP Rewards,SushiSwap,258000
 LP Rewards,Uniswap,64500
 ```
 
-While 60% of the monthly token allocation is directed to contributor rewards, the remaining 40% is directed to the DAO Treasury (20%) and to Liquidity Provider (LP) rewards (20%).
+While 60% of the monthly token allocation is directed to contributor rewards, the remaining 40% is directed to the [DAO Treasury](https://app.aragon.org/#/daos/ethereum/elimu.dao.eth) (20%) and to [Liquidity Provider (LP) rewards](https://rewards.elimu.ai) (20%).
 
 ### Contributor Rewards
 
