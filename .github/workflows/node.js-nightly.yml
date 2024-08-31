@@ -26,6 +26,8 @@ jobs:
     - run: npm ci
     - run: npx tsc
 
+    - run: node ./query-events.js
+
     - name: Git Config
       run: |
         git config user.name 'Nya Ξlimu'
