@@ -36,7 +36,7 @@ jobs:
     - name: Git Commit
       run: |
         git add *.csv
-        git commit -m 'chore(distribution): nightly build
+        git commit -m 'chore(distribution): nightly build'
 
     - name: Git Push
       run: |
