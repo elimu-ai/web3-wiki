@@ -70,6 +70,7 @@ engineering.elimu.eth,math.engineering.elimu.eth,18
 | [keyboard](https://github.com/elimu-ai/keyboard) | `engineering.elimu.eth` |  |
 | [kukariri](https://github.com/elimu-ai/kukariri) | `engineering.elimu.eth` |  |
 | [ml-storybook-reading-level](https://github.com/elimu-ai/ml-storybook-reading-level) | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/ml-storybook-reading-level/blob/main/FUNDING_SPLITS.csv) |
+| [ml-storybook-recommender](https://github.com/elimu-ai/ml-storybook-recommender) | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/ml-storybook-recommender/blob/main/FUNDING_SPLITS.csv) |
 | [model](https://github.com/elimu-ai/model) | `engineering.elimu.eth` |  |
 | [VoltAir](https://github.com/elimu-ai/VoltAir) | `reading.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/VoltAir/blob/master/FUNDING_SPLITS.csv) |
 | [familiar-word-reading](https://github.com/elimu-ai/familiar-word-reading) | `reading.engineering.elimu.eth` |  |
