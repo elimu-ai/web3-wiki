@@ -69,6 +69,7 @@ engineering.elimu.eth,math.engineering.elimu.eth,18
 | [content-provider](https://github.com/elimu-ai/content-provider) | `engineering.elimu.eth` |  |
 | [keyboard](https://github.com/elimu-ai/keyboard) | `engineering.elimu.eth` |  |
 | [kukariri](https://github.com/elimu-ai/kukariri) | `engineering.elimu.eth` |  |
+| [ml-event-simulator](https://github.com/elimu-ai/ml-event-simulator) | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/ml-event-simulator/blob/main/FUNDING_SPLITS.csv) |
 | [ml-storybook-reading-level](https://github.com/elimu-ai/ml-storybook-reading-level) | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/ml-storybook-reading-level/blob/main/FUNDING_SPLITS.csv) |
 | [ml-storybook-recommender](https://github.com/elimu-ai/ml-storybook-recommender) | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/ml-storybook-recommender/blob/main/FUNDING_SPLITS.csv) |
 | [model](https://github.com/elimu-ai/model) | `engineering.elimu.eth` |  |
