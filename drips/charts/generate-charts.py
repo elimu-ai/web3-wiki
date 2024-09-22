@@ -68,6 +68,12 @@ for repo in repos:
     print('splits_csv.columns:', splits_csv.columns)
     print('splits_csv.columns[1:]:', splits_csv.columns[1:])
 
+    # Sort values based on the most recent split event
+    last_column = splits_csv.columns[-1]
+    print('last_column:', last_column)
+    splits_csv = splits_csv.sort_values(by=last_column, ascending=False)
+    print('splits_csv: \n', splits_csv)
+
     splits_set_event_blocks = splits_csv.columns[1:].values
     print('splits_set_event_blocks:', splits_set_event_blocks)
 
