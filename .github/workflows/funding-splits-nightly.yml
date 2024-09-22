@@ -5,7 +5,7 @@ on:
     - cron: 59 23 * * *
 
 jobs:
-  distribution:
+  build:
 
     runs-on: ubuntu-latest
 
