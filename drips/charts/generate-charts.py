@@ -2,6 +2,16 @@ import matplotlib.pyplot as plt
 import os
 import pandas
 
+def format_ethereum_address(row):
+    print('format_ethereum_address')
+    if row['ethereum_address'] == '0x0000000000000000000000000000000000000000000000000000000000000000':
+        row['ethereum_address'] = '0x0000000000000000000000000000000000000000'
+    elif row['ethereum_address'].startswith('0x000000000000000000000000'):
+        row['ethereum_address'] = row['ethereum_address'].replace('0x000000000000000000000000', '0x')
+    else:
+        row['ethereum_address'] = 'dependencies'
+    return row
+
 repos = [
     # content.elimu.eth
     'crowdsource',
@@ -77,6 +87,7 @@ for repo in repos:
     splits_set_event_blocks = splits_csv.columns[1:].values
     print('splits_set_event_blocks:', splits_set_event_blocks)
 
+    splits_csv = splits_csv.apply(format_ethereum_address, axis='columns')
     ethereum_addresses = splits_csv['ethereum_address'].values
     print('ethereum_addresses: \n', ethereum_addresses)
 
