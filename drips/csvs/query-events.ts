@@ -31,6 +31,10 @@ async function query() {
     console.log('splitsReceiverSeenEvents.length:', splitsReceiverSeenEvents.length)
 
     const repos = [
+        // content.elimu.eth
+        'crowdsource',
+        'webapp',
+
         // engineering.elimu.eth
         'content-provider',
         'keyboard',

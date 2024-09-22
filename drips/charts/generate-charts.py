@@ -3,6 +3,10 @@ import os
 import pandas
 
 repos = [
+    # content.elimu.eth
+    'crowdsource',
+    'webapp',
+    
     # engineering.elimu.eth
     'content-provider',
     'keyboard',
