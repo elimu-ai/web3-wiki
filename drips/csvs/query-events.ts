@@ -70,7 +70,16 @@ async function query() {
         'nyas-space-quest-qd',
         'shapi',
         'soga',
-        'tilt-game'
+        'tilt-game',
+
+        // distribution.elimu.eth
+        'analytics',
+        'appstore',
+        'launcher',
+        'ml-authentication',
+        'start-guide',
+        'website',
+        'web3-sponsors',
     ]
     for (const repo of repos) {
         console.log()

@@ -42,7 +42,16 @@ repos = [
     'nyas-space-quest-qd',
     'shapi',
     'soga',
-    'tilt-game'
+    'tilt-game',
+
+    # distribution.elimu.eth
+    'analytics',
+    'appstore',
+    'launcher',
+    'ml-authentication',
+    'start-guide',
+    'website',
+    'web3-sponsors',
 ]
 for repo in repos:
     print()
@@ -59,23 +68,12 @@ for repo in repos:
     print('splits_csv.columns:', splits_csv.columns)
     print('splits_csv.columns[1:]:', splits_csv.columns[1:])
 
-    # splits_set_event_blocks = [18533142, 19533142, 20533142, 21533142, 22533142]
     splits_set_event_blocks = splits_csv.columns[1:].values
     print('splits_set_event_blocks:', splits_set_event_blocks)
 
-    # ethereum_addresses = [
-    #     '0x5D388Ec24Cc2C0C77458338696aa63AFB706A7b1',
-    #     '0xd46Cc93E3eE6a4fb532D9B48E95be7eD8f8f1DA0',
-    #     '0x0000000000000000000000000000000000000000'
-    # ]
     ethereum_addresses = splits_csv['ethereum_address'].values
     print('ethereum_addresses: \n', ethereum_addresses)
 
-    # impact_percentages = [
-    #     [30, 30, 35, 40, 30],
-    #     [45, 45, 35, 35, 50],
-    #     [25, 25, 30, 25, 20]
-    # ]
     impact_percentages = splits_csv[splits_set_event_blocks].values
     print('impact_percentages: \n', impact_percentages)
 
