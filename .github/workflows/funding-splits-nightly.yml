@@ -1,11 +1,11 @@
-name: funding-splits/distribution - Nightly
+name: Funding Splits - Nightly
 
 on:
   schedule:
     - cron: 59 23 * * *
 
 jobs:
-  nightly_build:
+  distribution:
 
     runs-on: ubuntu-latest
 
