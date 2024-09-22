@@ -4,6 +4,7 @@
 
 ## Run the Python code
 
-```python
+```bash
+pip install -r requirements.txt
 python generate-charts.py
 ```
