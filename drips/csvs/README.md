@@ -17,5 +17,5 @@ npx tsc
 ## Run the JavaScript
 
 ```bash
-node query-events.js
+node query-repo-events.js
 ```
