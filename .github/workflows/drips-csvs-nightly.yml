@@ -36,7 +36,7 @@ jobs:
     - name: Git Commit
       run: |
         git add *.csv
-        git commit -m 'chore(drips💧): nightly build' --allow-empty
+        git commit -m 'chore(drips💧): csvs, nightly build' --allow-empty
 
     - name: Git Push
       run: |
