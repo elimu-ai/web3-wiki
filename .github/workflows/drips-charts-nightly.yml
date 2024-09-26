@@ -34,7 +34,7 @@ jobs:
 
     - name: Git Commit
       run: |
-        git add *.csv
+        git add *.png
         git commit -m 'chore(drips💧): charts, nightly build' --allow-empty
 
     - name: Git Push
