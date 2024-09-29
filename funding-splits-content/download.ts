@@ -17,8 +17,8 @@ for (const language of languages) {
     }
     const filePath = `${languageDir}/contributors.csv`
     console.log('filePath:', filePath)
-    const file = fs.createWriteStream(filePath)
     
+    const file = fs.createWriteStream(filePath)
     http.get(downloadUrl, (response) => {
         response.pipe(file)
         file.on('finish', () => {

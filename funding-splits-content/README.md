@@ -14,8 +14,9 @@ npm install
 npx tsc
 ```
 
-## Run the JavaScript
+## Run the JavaScripts
 
 ```bash
-node download-contributors.js
+node download.js
+node dripify.js
 ```
