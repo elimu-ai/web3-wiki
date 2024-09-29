@@ -1,0 +1,18 @@
+{
+  "name": "funding-splits-content",
+  "version": "1.0.0",
+  "description": "Drip List funding splits for Content Creation 🎶🎙️",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ξlimu DAO",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "@types/node": "^22.7.4",
+    "csv-parse": "^5.5.6",
+    "csv-stringify": "^6.5.1",
+    "funding-splits-content": "file:",
+    "typescript": "^5.6.2"
+  }
+}
