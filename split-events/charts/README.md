@@ -1,4 +1,4 @@
-# Drips💧 Charts
+# Drips💧 Split Events - Charts
 
 > Charts based on the CSVs in [`../csvs/`](../csvs/)
 

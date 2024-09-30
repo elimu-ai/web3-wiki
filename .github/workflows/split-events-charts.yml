@@ -1,4 +1,4 @@
-name: Drips💧 Charts
+name: Drips💧 Split Events Charts
 
 on:
   push:
@@ -17,7 +17,7 @@ jobs:
 
     defaults:
         run:
-            working-directory: drips/charts
+            working-directory: split-events/charts
 
     steps:
     - uses: actions/checkout@v4

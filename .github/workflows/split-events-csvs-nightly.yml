@@ -1,4 +1,4 @@
-name: Drips💧 CSVs - Nightly
+name: Drips💧 Split Events CSVs - Nightly
 
 on:
   schedule:
@@ -11,7 +11,7 @@ jobs:
 
     defaults:
         run:
-            working-directory: drips/csvs
+            working-directory: split-events/csvs
 
     steps:
     - uses: actions/checkout@v4
@@ -21,7 +21,7 @@ jobs:
       with:
         node-version: 20.x
         cache: 'npm'
-        cache-dependency-path: drips/csvs/package-lock.json
+        cache-dependency-path: split-events/csvs/package-lock.json
 
     - run: npm ci
     - run: npx tsc
@@ -36,7 +36,7 @@ jobs:
     - name: Git Commit
       run: |
         git add *.csv
-        git commit -m 'chore(drips💧): csvs, nightly build' --allow-empty
+        git commit -m 'chore(drips💧): split events csvs, nightly build' --allow-empty
 
     - name: Git Push
       run: |

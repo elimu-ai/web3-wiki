@@ -1,4 +1,4 @@
-# Drips💧 CSVs
+# Drips💧 Split Events - CSVs
 
 > CSVs with data per split event
 

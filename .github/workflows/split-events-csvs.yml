@@ -1,4 +1,4 @@
-name: Drips💧 CSVs
+name: Drips💧 Split Events CSVs
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
 
     defaults:
         run:
-            working-directory: drips/csvs
+            working-directory: split-events/csvs
 
     steps:
     - uses: actions/checkout@v4
@@ -27,6 +27,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: drips/csvs/package-lock.json
+        cache-dependency-path: split-events/csvs/package-lock.json
     - run: npm ci
     - run: npx tsc

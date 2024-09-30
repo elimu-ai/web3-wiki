@@ -1,4 +1,4 @@
-name: Drips💧 Charts - Nightly
+name: Drips💧 Split Events Charts - Nightly
 
 on:
   schedule:
@@ -11,7 +11,7 @@ jobs:
 
     defaults:
         run:
-            working-directory: drips/charts
+            working-directory: split-events/charts
 
     steps:
     - uses: actions/checkout@v4
@@ -35,7 +35,7 @@ jobs:
     - name: Git Commit
       run: |
         git add *.png
-        git commit -m 'chore(drips💧): charts, nightly build' --allow-empty
+        git commit -m 'chore(drips💧): split events charts, nightly build' --allow-empty
 
     - name: Git Push
       run: |
