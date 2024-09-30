@@ -1,4 +1,4 @@
-# distribution
+# funding-splits-distribution
 
 > Drip List funding splits for Distribution & Data Collection 🛵💨
 
