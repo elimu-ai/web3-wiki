@@ -126,10 +126,10 @@ async function query() {
  * Sample:
  * 
  * {
- *   ethereum_address: '0x015B5dF1673499E32D11Cf786A43D1c42b3d725C'
- *   sponsorship_count: 1
+ *   ethereum_address: '0x015B5dF1673499E32D11Cf786A43D1c42b3d725C',
+ *   impact_percentage: 100,
+ *   sponsorship_count: 1,
  *   distribution_count: 0
- *   impact_percentage: 100
  * }
  */
 async function prepareCsvData(sponsorshipAddedEvents: any[], distributionAddedEvents: any[]) {
@@ -242,9 +242,9 @@ function exportToCsv(csvData: any[], languageCode: string) {
         path: outputPath,
         header: [
             {id: 'ethereum_address', title: 'ethereum_address'},
+            {id: 'impact_percentage', title: 'impact_percentage'},
             {id: 'sponsorship_count', title: 'sponsorship_count'},
-            {id: 'distribution_count', title: 'distribution_count'},
-            {id: 'impact_percentage', title: 'impact_percentage'}
+            {id: 'distribution_count', title: 'distribution_count'}
         ]
     })
 
