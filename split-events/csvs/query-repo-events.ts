@@ -124,7 +124,7 @@ async function query() {
                     ethereum_address: ethereumAddress
                 }
                 for (const blockNumber of splitsSetEventBlocks) {
-                    dataRow[`splits_at_${blockNumber}`] = 0
+                    dataRow[`block_${blockNumber}`] = 0
                 }
 
                 for (const splitsSetEvent of splitsSetEvents) {
@@ -137,7 +137,7 @@ async function query() {
                                 const splitsReceiverSeenEventUserId: string = String(splitsReceiverSeenEvent['topics'][2])
                                 if (splitsReceiverSeenEventUserId == ethereumAddress) {
                                     // console.log(ethereumAddress, splitsReceiverSeenEvent.blockNumber, Number(ethers.formatUnits(splitsReceiverSeenEvent['data'], 4)))
-                                    dataRow[`splits_at_${splitsReceiverSeenEvent.blockNumber}`] = Number(ethers.formatUnits(splitsReceiverSeenEvent['data'], 4))
+                                    dataRow[`block_${splitsReceiverSeenEvent.blockNumber}`] = Number(ethers.formatUnits(splitsReceiverSeenEvent['data'], 4))
                                 }
                             }
                         }
