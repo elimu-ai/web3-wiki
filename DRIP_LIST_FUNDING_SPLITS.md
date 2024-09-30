@@ -42,7 +42,7 @@ content.elimu.eth,oers.content.elimu.eth,10
 | Project | Manager | Funding Split CSV |
 | --- | --- | --- |
 | [crowdsource](https://github.com/elimu-ai/crowdsource) | `content.elimu.eth` |  |
-| [webapp](https://github.com/elimu-ai/webapp) | `content.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/webapp/blob/main/FUNDING_SPLITS.csv) |
+| [webapp](https://github.com/elimu-ai/webapp) | `content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/github_webapp/FUNDING_SPLITS.csv) |
 | Hindi Language 🏏🐯 | `hin.content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-HIN/FUNDING_SPLITS.csv) |
 | Tagalog Language 🏝️🦎 | `tgl.content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-TGL/FUNDING_SPLITS.csv) |
 | English Language 🍔🏈 | `eng.content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-ENG/FUNDING_SPLITS.csv) |
@@ -113,13 +113,13 @@ distribution.elimu.eth,tgl.distribution.elimu.eth,10
 
 | Project | Manager | Funding Split CSV |
 | --- | --- | --- |
-| [analytics](https://github.com/elimu-ai/analytics) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/analytics/blob/main/FUNDING_SPLITS.csv) |
-| [appstore](https://github.com/elimu-ai/appstore) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/appstore/blob/main/FUNDING_SPLITS.csv) |
-| [launcher](https://github.com/elimu-ai/launcher) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/launcher/blob/main/FUNDING_SPLITS.csv) |
-| [ml-authentication](https://github.com/elimu-ai/ml-authentication) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/ml-authentication/blob/main/FUNDING_SPLITS.csv) |
-| [start-guide](https://github.com/elimu-ai/start-guide) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/start-guide/blob/main/FUNDING_SPLITS.csv) |
-| [website](https://github.com/elimu-ai/website) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/website/blob/main/FUNDING_SPLITS.csv) |
-| [web3-sponsors](https://github.com/elimu-ai/web3-sponsors) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/web3-sponsors/blob/main/FUNDING_SPLITS.csv) |
+| [analytics](https://github.com/elimu-ai/analytics) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/github_analytics/FUNDING_SPLITS.csv) |
+| [appstore](https://github.com/elimu-ai/appstore) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/github_appstore/FUNDING_SPLITS.csv) |
+| [launcher](https://github.com/elimu-ai/launcher) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/github_launcher/FUNDING_SPLITS.csv) |
+| [ml-authentication](https://github.com/elimu-ai/ml-authentication) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/github_ml-authentication/FUNDING_SPLITS.csv) |
+| [start-guide](https://github.com/elimu-ai/start-guide) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/github_start-guide/FUNDING_SPLITS.csv) |
+| [web3-sponsors](https://github.com/elimu-ai/web3-sponsors) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/github_web3-sponsors/FUNDING_SPLITS.csv) |
+| [website](https://github.com/elimu-ai/website) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/github_website/FUNDING_SPLITS.csv) |
 | Hindi Language 🏏🐯 | `hin.distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/lang-HIN/FUNDING_SPLITS.csv) |
 | Tagalog Language 🏝️🦎 | `tgl.distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/lang-TGL/FUNDING_SPLITS.csv) |
 

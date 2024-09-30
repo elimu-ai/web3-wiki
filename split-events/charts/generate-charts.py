@@ -60,8 +60,8 @@ repos = [
     'launcher',
     'ml-authentication',
     'start-guide',
-    'website',
     'web3-sponsors',
+    'website',
 ]
 for repo in repos:
     print()
@@ -70,7 +70,7 @@ for repo in repos:
     csv_path = f'../csvs/splits_{repo}.csv'
     print('csv_path:', csv_path)
     if not os.path.isfile(csv_path):
-        print('\033[93m' + 'File not found' + '\033[0m')
+        print('\033[93m' + 'File not found. Skipping.' + '\033[0m')
         continue
 
     splits_csv = pandas.read_csv(csv_path)
@@ -106,3 +106,6 @@ for repo in repos:
     plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
     plt.tight_layout()
     plt.savefig(f'splits_{repo}.png')
+
+print()
+print('Chart generation completed')

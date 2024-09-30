@@ -78,8 +78,8 @@ async function query() {
         'launcher',
         'ml-authentication',
         'start-guide',
-        'website',
         'web3-sponsors',
+        'website',
     ]
     for (const repo of repos) {
         console.log()
