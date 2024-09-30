@@ -235,7 +235,8 @@ function calculateImpactPercentages(csvData: any[]) {
 function exportToCsv(csvData: any[], languageCode: string) {
     console.log('exportToCsv')
 
-    const outputPath: string = `FUNDING_SPLITS_${languageCode}.csv`
+    const outputDir: string = `lang-${languageCode}`
+    const outputPath: string = `${outputDir}/FUNDING_SPLITS.csv`
     console.log('outputPath:', outputPath)
     const csvWriter = createCsvWriter({
         path: outputPath,

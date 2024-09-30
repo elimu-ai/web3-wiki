@@ -2,7 +2,7 @@
 
 > Drip List funding splits for Distribution & Data Collection 🛵💨
 
-See [`../../DRIP_LIST_FUNDING_SPLITS.md#distribution`](../../DRIP_LIST_FUNDING_SPLITS.md#distribution)
+See [`../DRIP_LIST_FUNDING_SPLITS.md#distribution`](../DRIP_LIST_FUNDING_SPLITS.md#distribution)
 
 ## Install Dependencies
 
