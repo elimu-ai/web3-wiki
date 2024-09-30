@@ -1,4 +1,4 @@
-ethereum_address,github_username,impact_percentage
-0xb77c19804F102312C8CF66221Da8886C1bf2C431,protito,57.11
-0xd46Cc93E3eE6a4fb532D9B48E95be7eD8f8f1DA0,jo-elimu,34.23
-0x5D388Ec24Cc2C0C77458338696aa63AFB706A7b1,nya-elimu,8.66
+ethereum_address,impact_percentage,github_username
+0xb77c19804F102312C8CF66221Da8886C1bf2C431,57.11,protito
+0xd46Cc93E3eE6a4fb532D9B48E95be7eD8f8f1DA0,34.23,jo-elimu
+0x5D388Ec24Cc2C0C77458338696aa63AFB706A7b1,8.66,nya-elimu
