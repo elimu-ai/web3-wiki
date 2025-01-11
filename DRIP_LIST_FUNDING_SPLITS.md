@@ -64,37 +64,37 @@ engineering.elimu.eth,writing.engineering.elimu.eth,6
 engineering.elimu.eth,math.engineering.elimu.eth,18
 ```
 
-| Project | Manager | Funding Split CSV |
-| --- | --- | --- |
-| [content-provider](https://github.com/elimu-ai/content-provider) | `engineering.elimu.eth` |  |
-| [keyboard](https://github.com/elimu-ai/keyboard) | `engineering.elimu.eth` |  |
-| [kukariri](https://github.com/elimu-ai/kukariri) | `engineering.elimu.eth` |  |
-| [ml-event-simulator](https://github.com/elimu-ai/ml-event-simulator) | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/ml-event-simulator/blob/main/FUNDING_SPLITS.csv) |
-| [ml-storybook-reading-level](https://github.com/elimu-ai/ml-storybook-reading-level) | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/ml-storybook-reading-level/blob/main/FUNDING_SPLITS.csv) |
-| [ml-storybook-recommender](https://github.com/elimu-ai/ml-storybook-recommender) | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/ml-storybook-recommender/blob/main/FUNDING_SPLITS.csv) |
-| [model](https://github.com/elimu-ai/model) | `engineering.elimu.eth` |  |
-| [VoltAir](https://github.com/elimu-ai/VoltAir) | `reading.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/VoltAir/blob/master/FUNDING_SPLITS.csv) |
-| [familiar-word-reading](https://github.com/elimu-ai/familiar-word-reading) | `reading.engineering.elimu.eth` |  |
-| [herufi](https://github.com/elimu-ai/herufi) | `reading.engineering.elimu.eth` |  |
-| [image-picker](https://github.com/elimu-ai/image-picker) | `reading.engineering.elimu.eth` |  |
-| [silabi](https://github.com/elimu-ai/silabi) | `reading.engineering.elimu.eth` |  |
-| [sound-cards](https://github.com/elimu-ai/sound-cards) | `reading.engineering.elimu.eth` |  |
-| [storybooks](https://github.com/elimu-ai/storybooks) | `reading.engineering.elimu.eth` |  |
-| [visemes](https://github.com/elimu-ai/visemes) | `reading.engineering.elimu.eth` |  |
-| [vitabu](https://github.com/elimu-ai/vitabu) | `reading.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/vitabu/blob/main/FUNDING_SPLITS.csv) |
-| [walezi-android](https://github.com/elimu-ai/walezi-android) | `reading.engineering.elimu.eth` |  |
-| [chat](https://github.com/elimu-ai/chat) | `writing.engineering.elimu.eth` |  |
-| [handwriting-letters](https://github.com/elimu-ai/handwriting-letters) | `writing.engineering.elimu.eth` |  |
-| [handwriting-numbers](https://github.com/elimu-ai/handwriting-numbers) | `writing.engineering.elimu.eth` |  |
-| [CameraColorPicker](https://github.com/elimu-ai/CameraColorPicker) | `math.engineering.elimu.eth` |  |
-| [android_packages_apps_Calculator](https://github.com/elimu-ai/android_packages_apps_Calculator) | `math.engineering.elimu.eth` |  |
-| [missing-number](https://github.com/elimu-ai/missing-number) | `math.engineering.elimu.eth` |  |
-| [nambari](https://github.com/elimu-ai/nambari) | `math.engineering.elimu.eth` |  |
-| [nyas-space-quest](https://github.com/elimu-ai/nyas-space-quest) | `math.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/nyas-space-quest/blob/main/FUNDING_SPLITS.csv) |
-| [nyas-space-quest-qd](https://github.com/elimu-ai/nyas-space-quest-qd) | `math.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/nyas-space-quest-qd/blob/main/FUNDING_SPLITS.csv) |
-| [shapi](https://github.com/elimu-ai/shapi) | `math.engineering.elimu.eth` |  |
-| [soga](https://github.com/elimu-ai/soga) | `math.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/soga/blob/main/FUNDING_SPLITS.csv) |
-| [tilt-game](https://github.com/elimu-ai/tilt-game) | `math.engineering.elimu.eth` |  |
+| Project | Manager | Funding Split CSV | Drips URL |
+| --- | --- | --- | --- |
+| [content-provider](https://github.com/elimu-ai/content-provider) | `engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/content-provider) |
+| [keyboard](https://github.com/elimu-ai/keyboard) | `engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/keyboard) |
+| [kukariri](https://github.com/elimu-ai/kukariri) | `engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/kukariri) |
+| [ml-event-simulator](https://github.com/elimu-ai/ml-event-simulator) | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/ml-event-simulator/blob/main/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/ml-event-simulator) |
+| [ml-storybook-reading-level](https://github.com/elimu-ai/ml-storybook-reading-level) | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/ml-storybook-reading-level/blob/main/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/ml-storybook-reading-level) |
+| [ml-storybook-recommender](https://github.com/elimu-ai/ml-storybook-recommender) | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/ml-storybook-recommender/blob/main/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/ml-storybook-recommender) |
+| [model](https://github.com/elimu-ai/model) | `engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/model) |
+| [VoltAir](https://github.com/elimu-ai/VoltAir) | `reading.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/VoltAir/blob/master/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/VoltAir) |
+| [familiar-word-reading](https://github.com/elimu-ai/familiar-word-reading) | `reading.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/familiar-word-reading) |
+| [herufi](https://github.com/elimu-ai/herufi) | `reading.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/herufi) |
+| [image-picker](https://github.com/elimu-ai/image-picker) | `reading.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/image-picker) |
+| [silabi](https://github.com/elimu-ai/silabi) | `reading.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/silabi) |
+| [sound-cards](https://github.com/elimu-ai/sound-cards) | `reading.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/sound-cards) |
+| [storybooks](https://github.com/elimu-ai/storybooks) | `reading.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/storybooks) |
+| [visemes](https://github.com/elimu-ai/visemes) | `reading.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/visemes) |
+| [vitabu](https://github.com/elimu-ai/vitabu) | `reading.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/vitabu/blob/main/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/vitabu) |
+| [walezi-android](https://github.com/elimu-ai/walezi-android) | `reading.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/walezi-android) |
+| [chat](https://github.com/elimu-ai/chat) | `writing.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/chat) |
+| [handwriting-letters](https://github.com/elimu-ai/handwriting-letters) | `writing.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/handwriting-letters) |
+| [handwriting-numbers](https://github.com/elimu-ai/handwriting-numbers) | `writing.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/handwriting-numbers) |
+| [CameraColorPicker](https://github.com/elimu-ai/CameraColorPicker) | `math.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/CameraColorPicker) |
+| [android_packages_apps_Calculator](https://github.com/elimu-ai/android_packages_apps_Calculator) | `math.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/android_packages_apps_Calculator) |
+| [missing-number](https://github.com/elimu-ai/missing-number) | `math.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/missing-number) |
+| [nambari](https://github.com/elimu-ai/nambari) | `math.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/nambari) |
+| [nyas-space-quest](https://github.com/elimu-ai/nyas-space-quest) | `math.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/nyas-space-quest/blob/main/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/nyas-space-quest) |
+| [nyas-space-quest-qd](https://github.com/elimu-ai/nyas-space-quest-qd) | `math.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/nyas-space-quest-qd/blob/main/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/nyas-space-quest-qd) |
+| [shapi](https://github.com/elimu-ai/shapi) | `math.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/shapi) |
+| [soga](https://github.com/elimu-ai/soga) | `math.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/soga/blob/main/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/soga) |
+| [tilt-game](https://github.com/elimu-ai/tilt-game) | `math.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/tilt-game) |
 
 <a name="distribution"></a>
 
