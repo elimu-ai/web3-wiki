@@ -39,14 +39,14 @@ content.elimu.eth,eng.content.elimu.eth,6.4
 content.elimu.eth,oers.content.elimu.eth,10
 ```
 
-| Project | Manager | Funding Split CSV |
-| --- | --- | --- |
-| [crowdsource](https://github.com/elimu-ai/crowdsource) | `content.elimu.eth` |  |
-| [webapp](https://github.com/elimu-ai/webapp) | `content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/github_webapp/FUNDING_SPLITS.csv) |
-| Hindi Language 🏏🐯 | `hin.content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-HIN/FUNDING_SPLITS.csv) |
-| Tagalog Language 🏝️🦎 | `tgl.content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-TGL/FUNDING_SPLITS.csv) |
-| English Language 🍔🏈 | `eng.content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-ENG/FUNDING_SPLITS.csv) |
-| OERs 📚🎬 | `oers.content.elimu.eth` |  |
+| Project | Manager | Funding Split CSV | Drips URL |
+| --- | --- | --- | --- |
+| [crowdsource](https://github.com/elimu-ai/crowdsource) | `content.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/crowdsource) |
+| [webapp](https://github.com/elimu-ai/webapp) | `content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/github_webapp/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/webapp) |
+| Hindi Language 🏏🐯 | `hin.content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-HIN/FUNDING_SPLITS.csv) | [Drip List](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849646413826815741964160) |
+| Tagalog Language 🏝️🦎 | `tgl.content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-TGL/FUNDING_SPLITS.csv) | [Drip List](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849646413826815741964163) |
+| English Language 🍔🏈 | `eng.content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-ENG/FUNDING_SPLITS.csv) | [Drip List](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849646413826815741964162) |
+| OERs 📚🎬 | `oers.content.elimu.eth` |  | [Drip List](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849646413826815741964165) |
 
 <a name="engineering"></a>
 
