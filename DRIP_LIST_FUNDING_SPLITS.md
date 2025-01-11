@@ -112,16 +112,16 @@ distribution.elimu.eth,tgl.distribution.elimu.eth,10
 
 | Project | Manager | Funding Split CSV | Drips URL |
 | --- | --- | --- | --- |
-| [analytics](https://github.com/elimu-ai/analytics) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/github_analytics/FUNDING_SPLITS.csv) | |
-| [appstore](https://github.com/elimu-ai/appstore) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/github_appstore/FUNDING_SPLITS.csv) | |
-| [launcher](https://github.com/elimu-ai/launcher) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/github_launcher/FUNDING_SPLITS.csv) | |
-| [ml-authentication](https://github.com/elimu-ai/ml-authentication) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/github_ml-authentication/FUNDING_SPLITS.csv) | |
+| [analytics](https://github.com/elimu-ai/analytics) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/github_analytics/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/analytics) |
+| [appstore](https://github.com/elimu-ai/appstore) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/github_appstore/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/appstore) |
+| [launcher](https://github.com/elimu-ai/launcher) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/github_launcher/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/launcher) |
+| [ml-authentication](https://github.com/elimu-ai/ml-authentication) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/github_ml-authentication/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/ml-authentication) |
 | [ml-event-simulator](https://github.com/elimu-ai/ml-event-simulator) | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/web3-wiki/blob/main/funding-splits-distribution/github_ml-event-simulator/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/ml-event-simulator) |
-| [start-guide](https://github.com/elimu-ai/start-guide) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/github_start-guide/FUNDING_SPLITS.csv) | |
-| [web3-sponsors](https://github.com/elimu-ai/web3-sponsors) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/github_web3-sponsors/FUNDING_SPLITS.csv) | |
-| [website](https://github.com/elimu-ai/website) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/github_website/FUNDING_SPLITS.csv) | |
-| Hindi Language 🏏🐯 | `hin.distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/lang-HIN/FUNDING_SPLITS.csv) | |
-| Tagalog Language 🏝️🦎 | `tgl.distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/lang-TGL/FUNDING_SPLITS.csv) | |
+| [start-guide](https://github.com/elimu-ai/start-guide) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/github_start-guide/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/start-guide) |
+| [web3-sponsors](https://github.com/elimu-ai/web3-sponsors) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/github_web3-sponsors/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/web3-sponsors) |
+| [website](https://github.com/elimu-ai/website) | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/github_website/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/website) |
+| Hindi Language 🏏🐯 | `hin.distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/lang-HIN/FUNDING_SPLITS.csv) | [Drip List](https://www.drips.network/app/drip-lists/31191755684409194768993126690116100972451994534322097113232155071147) |
+| Tagalog Language 🏝️🦎 | `tgl.distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/lang-TGL/FUNDING_SPLITS.csv) | [Drip List](https://www.drips.network/app/drip-lists/31191755684409194768993126690116100972451994534322097113232155071144) |
 
 ---
 
