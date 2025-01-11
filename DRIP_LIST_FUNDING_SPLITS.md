@@ -80,7 +80,7 @@ engineering.elimu.eth,math.engineering.elimu.eth,18
 | [sound-cards](https://github.com/elimu-ai/sound-cards) | `reading.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/sound-cards) |
 | [storybooks](https://github.com/elimu-ai/storybooks) | `reading.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/storybooks) |
 | [visemes](https://github.com/elimu-ai/visemes) | `reading.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/visemes) |
-| [vitabu](https://github.com/elimu-ai/vitabu) | `reading.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/vitabu/blob/main/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/vitabu) |
+| [vitabu](https://github.com/elimu-ai/vitabu) | `reading.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/web3-wiki/blob/main/funding-splits-engineering/github_vitabu/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/vitabu) |
 | [walezi-android](https://github.com/elimu-ai/walezi-android) | `reading.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/walezi-android) |
 | [chat](https://github.com/elimu-ai/chat) | `writing.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/chat) |
 | [handwriting-letters](https://github.com/elimu-ai/handwriting-letters) | `writing.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/handwriting-letters) |
