@@ -89,10 +89,10 @@ engineering.elimu.eth,math.engineering.elimu.eth,18
 | [android_packages_apps_Calculator](https://github.com/elimu-ai/android_packages_apps_Calculator) | `math.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/android_packages_apps_Calculator) |
 | [missing-number](https://github.com/elimu-ai/missing-number) | `math.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/missing-number) |
 | [nambari](https://github.com/elimu-ai/nambari) | `math.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/nambari) |
-| [nyas-space-quest](https://github.com/elimu-ai/nyas-space-quest) | `math.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/nyas-space-quest/blob/main/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/nyas-space-quest) |
-| [nyas-space-quest-qd](https://github.com/elimu-ai/nyas-space-quest-qd) | `math.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/nyas-space-quest-qd/blob/main/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/nyas-space-quest-qd) |
+| [nyas-space-quest](https://github.com/elimu-ai/nyas-space-quest) | `math.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/web3-wiki/blob/main/funding-splits-engineering/github_nyas-space-quest/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/nyas-space-quest) |
+| [nyas-space-quest-qd](https://github.com/elimu-ai/nyas-space-quest-qd) | `math.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/web3-wiki/blob/main/funding-splits-engineering/github_nyas-space-quest-qd/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/nyas-space-quest-qd) |
 | [shapi](https://github.com/elimu-ai/shapi) | `math.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/shapi) |
-| [soga](https://github.com/elimu-ai/soga) | `math.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/soga/blob/main/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/soga) |
+| [soga](https://github.com/elimu-ai/soga) | `math.engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/web3-wiki/blob/main/funding-splits-engineering/github_soga/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/soga) |
 | [tilt-game](https://github.com/elimu-ai/tilt-game) | `math.engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/tilt-game) |
 
 <a name="distribution"></a>
