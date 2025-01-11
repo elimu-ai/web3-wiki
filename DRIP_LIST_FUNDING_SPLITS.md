@@ -105,8 +105,8 @@ engineering.elimu.eth,math.engineering.elimu.eth,18
 sankey-beta
 
 %% source,target,value
-distribution.elimu.eth,infrastructural-apps,50
-distribution.elimu.eth,hin.distribution.elimu.eth,40
+distribution.elimu.eth,infrastructural-apps,60
+distribution.elimu.eth,hin.distribution.elimu.eth,30
 distribution.elimu.eth,tgl.distribution.elimu.eth,10
 ```
 
