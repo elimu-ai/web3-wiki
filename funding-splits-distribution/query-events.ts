@@ -3,7 +3,7 @@ import SponsorshipQueue from './abis/SponsorshipQueue.json'
 import DistributionQueue from './abis/DistributionQueue.json'
 import { createObjectCsvWriter as createCsvWriter } from 'csv-writer'
 
-const rpcServerAddress: string = 'https://base-sepolia.blockpi.network/v1/rpc/public'
+const rpcServerAddress: string = 'https://base-sepolia-rpc.publicnode.com'
 console.log('rpcServerAddress:', rpcServerAddress)
 
 const provider: JsonRpcProvider = new ethers.JsonRpcProvider(rpcServerAddress)
