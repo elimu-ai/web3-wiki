@@ -29,7 +29,7 @@ The elimu.ai software started out as an open-source project in 2015. During the 
 
 The max supply of `$ELIMU` tokens is capped at 387,000,000.
 
-## 10% Per Year
+## 10% per Year
 
 Following the token's launch in July 2021, no more than 10% of the total supply cap can be minted per year. This restriction has been coded into the token's [smart contract](https://etherscan.io/token/0xe29797910d413281d2821d5d9a989262c8121cc2#code).
 
@@ -50,6 +50,8 @@ xychart-beta
     %% #673AB7
     line [38700000, 77400000, 116100000, 154800000, 193500000, 232200000, 270900000, 309600000, 348300000, 387000000, 387000000]
 ```
+
+After the total supply cap has been reached (in July 2030 at the earliest), no more tokens can be minted by the DAO.
 
 ### Annual Growth Rate
 
