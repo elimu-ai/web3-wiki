@@ -1,7 +1,7 @@
 import fs from 'node:fs'
 import http from 'http'
 
-const languages = ['ENG', 'HIN', 'TGL']
+const languages = ['ENG', 'HIN', 'TGL', 'THA']
 console.log('languages:', languages)
 for (const language of languages) {
     console.log()
