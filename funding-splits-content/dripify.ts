@@ -2,7 +2,7 @@ import fs from 'node:fs'
 import { parse } from 'csv-parse'
 import { stringify } from 'csv-stringify'
 
-const languages = ['ENG', 'HIN', 'TGL']
+const languages = ['ENG', 'HIN', 'TGL', 'THA']
 console.log('languages:', languages)
 for (const language of languages) {
     console.log()
