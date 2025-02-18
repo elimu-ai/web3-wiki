@@ -66,7 +66,7 @@ engineering.elimu.eth,math.engineering.elimu.eth,18
 
 | Project | Manager | Funding Split CSV | Drips URL |
 | --- | --- | --- | --- |
-| [content-provider](https://github.com/elimu-ai/content-provider) | `engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/content-provider) |
+| [content-provider](https://github.com/elimu-ai/content-provider) | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/web3-wiki/blob/main/funding-splits-engineering/github_content-provider/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/content-provider) |
 | [keyboard](https://github.com/elimu-ai/keyboard) | `engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/keyboard) |
 | [kukariri](https://github.com/elimu-ai/kukariri) | `engineering.elimu.eth` |  | [Project](https://www.drips.network/app/projects/github/elimu-ai/kukariri) |
 | [ml-storybook-reading-level](https://github.com/elimu-ai/ml-storybook-reading-level) | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/web3-wiki/blob/main/funding-splits-engineering/github_ml-storybook-reading-level/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/ml-storybook-reading-level) |
