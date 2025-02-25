@@ -11,6 +11,7 @@ elimu.dao.eth
 ├─── content.elimu.eth
 │    ├─── hin.content.elimu.eth
 │    ├─── tgl.content.elimu.eth
+│    ├─── tha.content.elimu.eth
 │    ├─── eng.content.elimu.eth
 │    └─── oers.content.elimu.eth
 ├─── engineering.elimu.eth
