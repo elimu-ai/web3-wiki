@@ -46,6 +46,7 @@ content.elimu.eth,oers.content.elimu.eth,10.00
 | [webapp](https://github.com/elimu-ai/webapp) | `content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/github_webapp/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/webapp) |
 | Hindi Language 🏏🐯 | `hin.content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-HIN/FUNDING_SPLITS.csv) | [Drip List](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849646413826815741964160) |
 | Tagalog Language 🏝️🦎 | `tgl.content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-TGL/FUNDING_SPLITS.csv) | [Drip List](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849646413826815741964163) |
+| Thai Language 🥭🐘 | `tha.content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-THA/FUNDING_SPLITS.csv) | [Drip List](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849641030872883728374792) |
 | English Language 🍔🏈 | `eng.content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-ENG/FUNDING_SPLITS.csv) | [Drip List](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849646413826815741964162) |
 | OERs 📚🎬 | `oers.content.elimu.eth` |  | [Drip List](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849646413826815741964165) |
 
