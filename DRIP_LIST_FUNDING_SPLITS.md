@@ -24,11 +24,11 @@ sankey-beta
 
 %% source,target,value
 content.elimu.eth,infrastructural-apps,28.00
-content.elimu.eth,hin.content.elimu.eth,20.00
-content.elimu.eth,tgl.content.elimu.eth,18.00
-content.elimu.eth,tha.content.elimu.eth,16.00
-content.elimu.eth,eng.content.elimu.eth,8.00
-content.elimu.eth,oers.content.elimu.eth,10.00
+content.elimu.eth,hindi-content,20.00
+content.elimu.eth,tagalog-content,18.00
+content.elimu.eth,thai-content,16.00
+content.elimu.eth,english-content,8.00
+content.elimu.eth,oers,10.00
 ```
 
 | Project | Manager | Funding Split CSV | Drips URL |
@@ -52,9 +52,9 @@ sankey-beta
 
 %% source,target,value
 engineering.elimu.eth,infrastructural-apps,37.5
-engineering.elimu.eth,reading.engineering.elimu.eth,36
-engineering.elimu.eth,writing.engineering.elimu.eth,8.5
-engineering.elimu.eth,math.engineering.elimu.eth,18
+engineering.elimu.eth,reading-apps,36
+engineering.elimu.eth,writing-apps,8.5
+engineering.elimu.eth,math-apps,18
 ```
 
 | Project | Manager | Funding Split CSV | Drips URL |
@@ -99,8 +99,8 @@ sankey-beta
 
 %% source,target,value
 distribution.elimu.eth,infrastructural-apps,60
-distribution.elimu.eth,hin.distribution.elimu.eth,30
-distribution.elimu.eth,tgl.distribution.elimu.eth,10
+distribution.elimu.eth,hindi-distribution,30
+distribution.elimu.eth,tagalog-distribution,10
 ```
 
 | Project | Manager | Funding Split CSV | Drips URL |
