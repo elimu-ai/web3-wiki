@@ -9,18 +9,8 @@ The top-level Drip List is owned by the [Ξlimu DAO](https://github.com/elimu-ai
 ```
 elimu.dao.eth
 ├─── content.elimu.eth
-│    ├─── hin.content.elimu.eth
-│    ├─── tgl.content.elimu.eth
-│    ├─── tha.content.elimu.eth
-│    ├─── eng.content.elimu.eth
-│    └─── oers.content.elimu.eth
 ├─── engineering.elimu.eth
-│    ├─── reading.engineering.elimu.eth
-│    ├─── writing.engineering.elimu.eth
-│    └─── math.engineering.elimu.eth
 └─── distribution.elimu.eth
-     ├─── hin.distribution.elimu.eth
-     └─── tgl.distribution.elimu.eth
 ```
 
 <a name="content"></a>
