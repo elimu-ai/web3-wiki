@@ -104,7 +104,7 @@ The 1,935,000 `$ELIMU` tokens reserved for contributor rewards are distributed t
 
 The 645,000 `$ELIMU` tokens that are being set aside each month get added to the DAO's treasury: https://app.aragon.org/#/daos/ethereum/elimu.dao.eth/finance
 
-DAO members can use their governance tokens to vote on how to spend from the DAO's treasury to fund future projects, as long as they align with the organization's mission—Building free open-source learning software for out-of-school children ✨🚀
+DAO members can use their governance tokens to vote on how to spend from the DAO's treasury to fund future projects, as long as they align with the organization's mission—Building free open-source learning software for out-of-school children 🚀✨
 
 ### Token Liquidity
 
