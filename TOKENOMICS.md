@@ -87,8 +87,8 @@ Drip List,Engineering,645000
 Drip List,Distribution,645000
 Reserve for the Future,DAO Treasury,645000
 Token Liquidity,LP Rewards,645000
-LP Rewards,Uniswap,258000
 LP Rewards,SushiSwap,322500
+LP Rewards,Uniswap,258000
 LP Rewards,Balancer,64500
 ```
 
@@ -132,7 +132,7 @@ Donors have two options when making a donation to the organization: 1) via Drip 
   <img src="https://github.com/elimu-ai/webapp/blob/main/src/main/webapp/static/img/logo-text-256x78.png" />
 </p>
 <p align="center">
-  elimu.ai - Free open-source learning software for out-of-school children ✨🚀
+  elimu.ai - Free open-source learning software for out-of-school children 🚀✨
 </p>
 <p align="center">
   <a href="https://elimu.ai">Website 🌐</a>
