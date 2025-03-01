@@ -51,9 +51,9 @@ content.elimu.eth,oers.content.elimu.eth,10.00
 sankey-beta
 
 %% source,target,value
-engineering.elimu.eth,infrastructural-apps,40
+engineering.elimu.eth,infrastructural-apps,37.5
 engineering.elimu.eth,reading.engineering.elimu.eth,36
-engineering.elimu.eth,writing.engineering.elimu.eth,6
+engineering.elimu.eth,writing.engineering.elimu.eth,8.5
 engineering.elimu.eth,math.engineering.elimu.eth,18
 ```
 
