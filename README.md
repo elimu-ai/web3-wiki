@@ -24,7 +24,7 @@ The Ξlimu DAO uses a combination of Web3 tools for handling organizational mech
 - Governance token: [`$ELIMU`💎](https://etherscan.io/token/0xe29797910d413281d2821d5d9a989262c8121cc2)
   - See [`TOKENOMICS.md`](./TOKENOMICS.md)
 - Token-weighted backlogs: [Tokenlog⬆️](https://tokenlog.generalmagic.io/elimu-ai/web3-wiki)
-- Voting (off-chain): [Snapshot⚡](https://snapshot.org/#/elimu.eth)
+- Voting (off-chain): [Snapshot⚡](https://snapshot.box/#/s:elimu.eth)
 - Voting (on-chain): [Aragon🦅](https://app.aragon.org/#/daos/ethereum/elimu.dao.eth/governance)
 - Finance & treasury (`elimu.dao.eth`): [Aragon🦅](https://app.aragon.org/#/daos/ethereum/elimu.dao.eth/finance)
 - Open source fundraising: [Drips💧](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698)
