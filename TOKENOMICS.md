@@ -71,7 +71,7 @@ xychart-beta
     line [100, 50, 33.33, 25, 20, 16.67, 14.29, 12.5, 11.11, 0, 0]
 ```
 
-For weekly updates of the token supply, see our [Dune Analytics dashboard](https://dune.com/elimu_ai/dao-token). Also find the most up-to-date numbers of circulating supply, and total supply at https://token-api.elimu.ai.
+For weekly updates of the token supply, see our [Dune Analytics dashboard](https://dune.com/elimu_ai/dao-token). Also find the most up-to-date numbers of circulating supply and total supply at https://token-api.elimu.ai.
 
 ## Monthly Token Allocation
 
