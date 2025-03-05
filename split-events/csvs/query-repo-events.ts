@@ -47,6 +47,7 @@ async function query() {
         // reading.engineering.elimu.eth
         'VoltAir',
         'familiar-word-reading',
+        'filamu',
         'herufi',
         'image-picker',
         'silabi',
