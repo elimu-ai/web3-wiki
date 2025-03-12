@@ -51,10 +51,10 @@ content.elimu.eth,oers,10.00
 sankey-beta
 
 %% source,target,value
-engineering.elimu.eth,infrastructural-apps,37.5
-engineering.elimu.eth,reading-apps,36
-engineering.elimu.eth,writing-apps,8.5
-engineering.elimu.eth,math-apps,18
+engineering.elimu.eth,infrastructural-apps,13.15
+engineering.elimu.eth,reading-apps,50.85
+engineering.elimu.eth,writing-apps,8
+engineering.elimu.eth,math-apps,28
 ```
 
 | Project | Manager | Funding Split CSV | Drips URL |
