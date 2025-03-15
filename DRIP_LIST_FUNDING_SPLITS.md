@@ -23,12 +23,12 @@ elimu.dao.eth
 sankey-beta
 
 %% source,target,value
-content.elimu.eth,infrastructural-apps,28.00
+content.elimu.eth,infrastructural-apps,20.00
 content.elimu.eth,hindi-content,20.00
 content.elimu.eth,tagalog-content,18.00
 content.elimu.eth,thai-content,16.00
-content.elimu.eth,english-content,8.00
-content.elimu.eth,oers,10.00
+content.elimu.eth,english-content,14.00
+content.elimu.eth,oers,12.00
 ```
 
 | Project | Manager | Funding Split CSV | Drips URL |
