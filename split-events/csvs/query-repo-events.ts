@@ -36,6 +36,7 @@ async function query() {
         'webapp',
 
         // engineering.elimu.eth
+        'common-utils',
         'content-provider',
         'keyboard',
         'kukariri',
@@ -44,7 +45,7 @@ async function query() {
         'ml-storybook-recommender',
         'model',
 
-        // reading.engineering.elimu.eth
+        // engineering.elimu.eth - reading
         'VoltAir',
         'familiar-word-reading',
         'filamu',
@@ -57,12 +58,12 @@ async function query() {
         'vitabu',
         'walezi-android',
 
-        // writing.engineering.elimu.eth
+        // engineering.elimu.eth - writing
         'chat',
         'handwriting-letters',
         'handwriting-numbers',
 
-        // math.engineering.elimu.eth
+        // engineering.elimu.eth - math
         'CameraColorPicker',
         'android_packages_apps_Calculator',
         'missing-number',
