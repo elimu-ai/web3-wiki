@@ -50,14 +50,15 @@ content.elimu.eth,oers,12.00
 sankey-beta
 
 %% source,target,value
-engineering.elimu.eth,infrastructural-apps,13.15
-engineering.elimu.eth,reading-apps,50.85
+engineering.elimu.eth,infrastructural-apps,15
+engineering.elimu.eth,reading-apps,49
 engineering.elimu.eth,writing-apps,8
 engineering.elimu.eth,math-apps,28
 ```
 
 | Project | Manager | Funding Split CSV | Drips URL |
 | --- | --- | --- | --- |
+| [common-utils](https://github.com/elimu-ai/common-utils) https://github.com/elimu-ai/web3-wiki/labels/infrastructural%F0%9F%8F%97%EF%B8%8F | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/web3-wiki/blob/main/funding-splits-engineering/github_common-utils/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/common-utils) |
 | [content-provider](https://github.com/elimu-ai/content-provider) https://github.com/elimu-ai/web3-wiki/labels/infrastructural%F0%9F%8F%97%EF%B8%8F | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/web3-wiki/blob/main/funding-splits-engineering/github_content-provider/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/content-provider) |
 | [kukariri](https://github.com/elimu-ai/kukariri) https://github.com/elimu-ai/web3-wiki/labels/infrastructural%F0%9F%8F%97%EF%B8%8F | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/web3-wiki/blob/main/funding-splits-engineering/github_kukariri/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/kukariri) |
 | [ml-storybook-reading-level](https://github.com/elimu-ai/ml-storybook-reading-level) https://github.com/elimu-ai/web3-wiki/labels/infrastructural%F0%9F%8F%97%EF%B8%8F | `engineering.elimu.eth` | [`FUNDING_SPLITS.csv`](https://github.com/elimu-ai/web3-wiki/blob/main/funding-splits-engineering/github_ml-storybook-reading-level/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/ml-storybook-reading-level) |
