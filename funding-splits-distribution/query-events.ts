@@ -207,6 +207,8 @@ async function prepareCsvData(sponsorshipAddedEvents: any[], distributionAddedEv
 
     exportToCsv(csvData, 'HIN')
     exportToCsv(csvData, 'TGL')
+    exportToCsv(csvData, 'THA')
+    exportToCsv(csvData, 'VIE')
 }
 
 function calculateImpactPercentages(csvData: any[]) {
