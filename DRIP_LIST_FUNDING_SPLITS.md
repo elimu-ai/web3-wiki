@@ -24,11 +24,12 @@ sankey-beta
 
 %% source,target,value
 content.elimu.eth,infrastructural-apps,20.00
-content.elimu.eth,hindi-content,20.00
-content.elimu.eth,tagalog-content,18.00
-content.elimu.eth,thai-content,16.00
-content.elimu.eth,english-content,14.00
-content.elimu.eth,oers,12.00
+content.elimu.eth,hindi-content,18.00
+content.elimu.eth,tagalog-content,16.00
+content.elimu.eth,thai-content,14.00
+content.elimu.eth,vietnamese-content,12.00
+content.elimu.eth,english-content,10.00
+content.elimu.eth,oers,10.00
 ```
 
 | Project | Manager | Funding Split CSV | Drips URL |
@@ -38,6 +39,7 @@ content.elimu.eth,oers,12.00
 | Hindi Language 🏏🐯 | `content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-HIN/FUNDING_SPLITS.csv) | [Drip List](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849646413826815741964160) |
 | Tagalog Language 🏝️🦎 | `content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-TGL/FUNDING_SPLITS.csv) | [Drip List](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849646413826815741964163) |
 | Thai Language 🥭🐘 | `content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-THA/FUNDING_SPLITS.csv) | [Drip List](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849641030872883728374792) |
+| Vietnamese Language 🥖🏮 | `content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-VIE/FUNDING_SPLITS.csv) | [Drip List](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849657661057867624699363) |
 | English Language 🍔🏈 | `content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-ENG/FUNDING_SPLITS.csv) | [Drip List](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849646413826815741964162) |
 | OERs 📚🎬 | `content.elimu.eth` |  | [Drip List](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849646413826815741964165) |
 
