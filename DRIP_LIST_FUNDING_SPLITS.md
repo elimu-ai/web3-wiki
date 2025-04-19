@@ -34,6 +34,7 @@ content.elimu.eth,oers,12.00
 | Project | Manager | Funding Split CSV | Drips URL |
 | --- | --- | --- | --- |
 | [webapp](https://github.com/elimu-ai/webapp) https://github.com/elimu-ai/web3-wiki/labels/infrastructural%F0%9F%8F%97%EF%B8%8F | `content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/github_webapp/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/webapp) |
+| [webapp-lfs](https://github.com/elimu-ai/webapp-lfs) https://github.com/elimu-ai/web3-wiki/labels/infrastructural%F0%9F%8F%97%EF%B8%8F | `content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/github_webapp-lfs/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/webapp-lfs) |
 | Hindi Language 🏏🐯 | `content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-HIN/FUNDING_SPLITS.csv) | [Drip List](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849646413826815741964160) |
 | Tagalog Language 🏝️🦎 | `content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-TGL/FUNDING_SPLITS.csv) | [Drip List](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849646413826815741964163) |
 | Thai Language 🥭🐘 | `content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-THA/FUNDING_SPLITS.csv) | [Drip List](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849641030872883728374792) |
