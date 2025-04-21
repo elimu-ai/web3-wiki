@@ -2,7 +2,7 @@ name: funding-splits-distribution - Nightly
 
 on:
   schedule:
-    - cron: 59 23 * * *
+    - cron: 29 23 * * *
 
 jobs:
   build:
