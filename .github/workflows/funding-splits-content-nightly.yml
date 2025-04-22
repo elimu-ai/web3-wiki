@@ -34,6 +34,10 @@ jobs:
         git config user.name 'Nya Ξlimu'
         git config user.email 'info@elimu.ai'
 
+    - name: Git Generate Short Diffstat
+      run: |
+        git --no-pager diff --shortstat
+        
     - name: Git Commit
       run: |
         git add *.csv
