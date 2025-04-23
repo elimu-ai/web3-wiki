@@ -39,7 +39,7 @@ jobs:
 
     - name: Git Commit
       run: |
-        git add **/FUNDING_SPLITS.csv
+        git add :/**/FUNDING_SPLITS.csv
         git commit -m 'chore(github-contributors): impact percentages, nightly build' --allow-empty
 
     - name: Git Push
