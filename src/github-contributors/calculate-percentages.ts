@@ -41,6 +41,9 @@ async function calculate() {
         'web3-sponsors': 'funding-splits-distribution',
         'website': 'funding-splits-distribution',
     }
+
+    const botContributors: Set<string> = new Set(['dependabot[bot]']);
+
     for (const repo in repos) {
         console.log()
         console.log('repo:', repo)
@@ -61,6 +64,10 @@ async function calculate() {
         const contributorData: any[] = []
         for (const contributor of contributors) {
             const gitHubUsername = contributor['login']
+
+            if (botContributors.has(gitHubUsername)) {
+                continue;
+            }
             const contributionCount = contributor['contributions']
             contributorData.push([contributionCount, gitHubUsername])
         }
