@@ -42,7 +42,7 @@ async function calculate() {
         'website': 'funding-splits-distribution',
     }
 
-    const botContributors: Set<string> = new Set(['dependabot[bot]']);
+    const botContributors: Set<string> = new Set(['dependabot[bot]', 'github-actions[bot]']);
 
     for (const repo in repos) {
         console.log()
