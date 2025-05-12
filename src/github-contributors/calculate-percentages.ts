@@ -12,7 +12,7 @@ async function calculate() {
         'webapp-lfs': 'funding-splits-content',
 
         // engineering
-        'android_packages_apps_Calculator': 'funding-splits-engineering',
+        'calculator': 'funding-splits-engineering',
         'chat': 'funding-splits-engineering',
         'common-utils': 'funding-splits-engineering',
         'content-provider': 'funding-splits-engineering',
