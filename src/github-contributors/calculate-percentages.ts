@@ -1,5 +1,6 @@
 import { createObjectCsvWriter as createCsvWriter } from 'csv-writer'
 import contributorAddresses from './contributor-addresses.json'
+import { existsSync, mkdirSync } from 'fs'
 
 calculate()
 
@@ -52,6 +53,9 @@ async function calculate() {
         const repoCategory = repos[repo]
         const repoDir = `../../${repoCategory}/github_${repo}`
         console.log('repoDir:', repoDir)
+        if (!existsSync(repoDir)) {
+            mkdirSync(repoDir)
+        }
         const outputPath = `${repoDir}/FUNDING_SPLITS.csv`
         console.log('outputPath:', outputPath)
 
