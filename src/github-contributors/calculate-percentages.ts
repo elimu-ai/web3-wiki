@@ -1,62 +1,16 @@
 import { createObjectCsvWriter as createCsvWriter } from 'csv-writer'
 import contributorAddresses from './contributor-addresses.json'
 import { existsSync, mkdirSync } from 'fs'
+import gitHubRepos from './github-repos.json'
 
 calculate()
 
 async function calculate() {
     console.log('calculate')
 
-    const repos: any = {
-        // content
-        'webapp': 'funding-splits-content',
-        'webapp-lfs': 'funding-splits-content',
-
-        // engineering
-        'CameraColorPicker': 'funding-splits-engineering',
-        'VoltAir': 'funding-splits-engineering',
-        'calculator': 'funding-splits-engineering',
-        'chat': 'funding-splits-engineering',
-        'common-utils': 'funding-splits-engineering',
-        'content-provider': 'funding-splits-engineering',
-        'filamu': 'funding-splits-engineering',
-        'handwriting-letters': 'funding-splits-engineering',
-        'handwriting-numbers': 'funding-splits-engineering',
-        'herufi': 'funding-splits-engineering',
-        'image-picker': 'funding-splits-engineering',
-        'keyboard': 'funding-splits-engineering',
-        'kukariri': 'funding-splits-engineering',
-        'maneno': 'funding-splits-engineering',
-        'missing-number': 'funding-splits-engineering',
-        'ml-storybook-reading-level': 'funding-splits-engineering',
-        'ml-storybook-recommender': 'funding-splits-engineering',
-        'model': 'funding-splits-engineering',
-        'nambari': 'funding-splits-engineering',
-        'nyas-space-quest': 'funding-splits-engineering',
-        'nyas-space-quest-qd': 'funding-splits-engineering',
-        'shapi': 'funding-splits-engineering',
-        'silabi': 'funding-splits-engineering',
-        'soga': 'funding-splits-engineering',
-        'sound-cards': 'funding-splits-engineering',
-        'storybooks': 'funding-splits-engineering',
-        'tilt-game': 'funding-splits-engineering',
-        'visemes': 'funding-splits-engineering',
-        'vitabu': 'funding-splits-engineering',
-        'walezi-android': 'funding-splits-engineering',
-
-        // distribution
-        'analytics': 'funding-splits-distribution',
-        'appstore': 'funding-splits-distribution',
-        'launcher': 'funding-splits-distribution',
-        'ml-authentication': 'funding-splits-distribution',
-        'ml-event-simulator': 'funding-splits-distribution',
-        'start-guide': 'funding-splits-distribution',
-        'web3-sponsors': 'funding-splits-distribution',
-        'website': 'funding-splits-distribution',
-    }
-
     const botContributors: Set<string> = new Set(['dependabot[bot]', 'github-actions[bot]']);
 
+    const repos: any = gitHubRepos
     for (const repo in repos) {
         console.log()
         console.log('repo:', repo)
