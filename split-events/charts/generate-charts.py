@@ -29,10 +29,10 @@ repos = [
 
     # engineering.elimu.eth - reading
     'VoltAir',
-    'familiar-word-reading',
     'filamu',
     'herufi',
     'image-picker',
+    'maneno',
     'silabi',
     'sound-cards',
     'storybooks',
