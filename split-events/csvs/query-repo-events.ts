@@ -1,6 +1,7 @@
 import { Contract, ethers, getDefaultProvider, Result } from 'ethers'
 import Drips from './abis/Drips.json'
 import fs from 'node:fs'
+import gitHubRepos from '../../src/github-contributors/github-repos.json'
 
 const provider = getDefaultProvider()
 
@@ -30,59 +31,7 @@ async function query() {
     )
     console.log('splitsReceiverSeenEvents.length:', splitsReceiverSeenEvents.length)
 
-    const repos = [
-        // content.elimu.eth
-        'crowdsource',
-        'webapp',
-
-        // engineering.elimu.eth
-        'common-utils',
-        'content-provider',
-        'keyboard',
-        'kukariri',
-        'ml-event-simulator',
-        'ml-storybook-reading-level',
-        'ml-storybook-recommender',
-        'model',
-
-        // engineering.elimu.eth - reading
-        'VoltAir',
-        'filamu',
-        'herufi',
-        'image-picker',
-        'maneno',
-        'silabi',
-        'sound-cards',
-        'storybooks',
-        'visemes',
-        'vitabu',
-        'walezi-android',
-
-        // engineering.elimu.eth - writing
-        'chat',
-        'handwriting-letters',
-        'handwriting-numbers',
-
-        // engineering.elimu.eth - math
-        'CameraColorPicker',
-        'android_packages_apps_Calculator',
-        'missing-number',
-        'nambari',
-        'nyas-space-quest',
-        'nyas-space-quest-qd',
-        'shapi',
-        'soga',
-        'tilt-game',
-
-        // distribution.elimu.eth
-        'analytics',
-        'appstore',
-        'launcher',
-        'ml-authentication',
-        'start-guide',
-        'web3-sponsors',
-        'website',
-    ]
+    const repos: any = gitHubRepos
     for (const repo of repos) {
         console.log()
         console.log('repo:', repo)
