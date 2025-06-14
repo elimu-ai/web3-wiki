@@ -92,7 +92,7 @@ LP Rewards,Uniswap,258000
 LP Rewards,Balancer,64500
 ```
 
-While 60% of the monthly token allocation is directed to contributor rewards, the remaining 40% is directed to the [DAO Treasury](https://app.aragon.org/#/daos/ethereum/elimu.dao.eth) (20%) and to [Liquidity Provider (LP) rewards](https://rewards.elimu.ai) (20%).
+While 60% of the monthly token allocation is directed to contributor rewards, the remaining 40% is directed to the [DAO Treasury](https://app.aragon.org/dao/ethereum-mainnet/elimu.dao.eth) (20%) and to [Liquidity Provider (LP) rewards](https://rewards.elimu.ai) (20%).
 
 ### Contributor Rewards
 
@@ -102,7 +102,7 @@ The 1,935,000 `$ELIMU` tokens reserved for contributor rewards are distributed t
 
 ### Token Reserve for the Future
 
-The 645,000 `$ELIMU` tokens that are being set aside each month get added to the DAO's treasury: https://app.aragon.org/#/daos/ethereum/elimu.dao.eth/finance
+The 645,000 `$ELIMU` tokens that are being set aside each month get added to the DAO's treasury: https://app.aragon.org/dao/ethereum-mainnet/elimu.dao.eth
 
 DAO members can use their governance tokens to vote on how to spend from the DAO's treasury to fund future projects, as long as they align with the organization's mission—Building free open-source learning software for out-of-school children 🚀✨
 
@@ -134,7 +134,7 @@ The DAO can also decide to adjust the monthly liquidity provider rewards.
 
 #### DAO Administrator 🔐
 > Holds at least 1% of the total supply cap: 3,870,000 `$ELIMU` tokens.
-* Permission to publish proposals on [Aragon🦅](https://app.aragon.org/#/daos/ethereum/elimu.dao.eth).
+* Permission to publish proposals on [Aragon🦅](https://app.aragon.org/dao/ethereum-mainnet/elimu.dao.eth).
 * Permission to role management ([Guild.xyz🏰](https://guild.xyz/elimu)).
 * Permission to administrate the [GitHub organization](https://github.com/elimu-ai).
 * Permission to administrate the community chat server (Discord).
