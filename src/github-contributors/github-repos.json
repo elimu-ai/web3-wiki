@@ -37,6 +37,7 @@
     "appstore": "funding-splits-distribution",
     "launcher": "funding-splits-distribution",
     "ml-authentication": "funding-splits-distribution",
+    "ml-datasets": "funding-splits-distribution",
     "ml-event-simulator": "funding-splits-distribution",
     "start-guide": "funding-splits-distribution",
     "web3-sponsors": "funding-splits-distribution",
