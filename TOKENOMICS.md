@@ -87,9 +87,8 @@ Drip List,Engineering,645000
 Drip List,Distribution,645000
 Reserve for the Future,DAO Treasury,645000
 Token Liquidity,LP Rewards,645000
-LP Rewards,SushiSwap,322500
+LP Rewards,SushiSwap,387000
 LP Rewards,Uniswap,258000
-LP Rewards,Balancer,64500
 ```
 
 While 60% of the monthly token allocation is directed to contributor rewards, the remaining 40% is directed to the [DAO Treasury](https://app.aragon.org/dao/ethereum-mainnet/elimu.dao.eth) (20%) and to [Liquidity Provider (LP) rewards](https://rewards.elimu.ai) (20%).
