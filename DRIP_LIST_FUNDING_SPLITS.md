@@ -120,6 +120,8 @@ distribution.elimu.eth,tagalog-distribution,20
 | [website](https://github.com/elimu-ai/website) https://github.com/elimu-ai/web3-wiki/labels/infrastructural%F0%9F%8F%97%EF%B8%8F | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/github_website/FUNDING_SPLITS.csv) | [Project](https://www.drips.network/app/projects/github/elimu-ai/website) |
 | Hindi Language 🏏🐯 | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/lang-HIN/FUNDING_SPLITS.csv) | [Drip List](https://www.drips.network/app/drip-lists/31191755684409194768993126690116100972451994534322097113232155071147) |
 | Tagalog Language 🏝️🦎 | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/lang-TGL/FUNDING_SPLITS.csv) | [Drip List](https://www.drips.network/app/drip-lists/31191755684409194768993126690116100972451994534322097113232155071144) |
+| Thai Language 🥭🐘 | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/lang-THA/FUNDING_SPLITS.csv) |  |
+| Vietnamese Language 🥖🏮 | `distribution.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-distribution/lang-VIE/FUNDING_SPLITS.csv) |  |
 
 ---
 
