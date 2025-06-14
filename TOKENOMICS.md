@@ -135,9 +135,9 @@ The DAO can also decide to adjust the monthly liquidity provider rewards.
 > Holds at least 1% of the total supply cap: 3,870,000 `$ELIMU` tokens.
 * Permission to publish proposals on [Aragon🦅](https://app.aragon.org/dao/ethereum-mainnet/elimu.dao.eth).
 * Permission to role management ([Guild.xyz🏰](https://guild.xyz/elimu)).
-* Permission to administrate the [GitHub organization](https://github.com/elimu-ai).
-* Permission to administrate the community chat server (Discord).
-* Permission to administrate the DAO's servers and domain names.
+* Permission to manage the [GitHub organization](https://github.com/elimu-ai).
+* Permission to manage the community chat server (Discord).
+* Permission to manage the DAO's servers and domain names.
 
 ### Donated Funds
 
