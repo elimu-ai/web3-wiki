@@ -23,13 +23,13 @@ elimu.dao.eth
 sankey-beta
 
 %% source,target,value
-content.elimu.eth,infrastructural-apps,20.00
-content.elimu.eth,hindi-content,18.00
-content.elimu.eth,tagalog-content,16.00
-content.elimu.eth,thai-content,14.00
-content.elimu.eth,vietnamese-content,12.00
-content.elimu.eth,english-content,10.00
-content.elimu.eth,oers,10.00
+content.elimu.eth,infrastructural-apps,20
+content.elimu.eth,hindi-content,18
+content.elimu.eth,tagalog-content,16
+content.elimu.eth,thai-content,14
+content.elimu.eth,vietnamese-content,12
+content.elimu.eth,english-content,10
+content.elimu.eth,oers,10
 ```
 
 | Project | Manager | Funding Split CSV | Drips URL |
@@ -102,9 +102,11 @@ engineering.elimu.eth,math-apps,28
 sankey-beta
 
 %% source,target,value
-distribution.elimu.eth,infrastructural-apps,50
-distribution.elimu.eth,hindi-distribution,30
-distribution.elimu.eth,tagalog-distribution,20
+distribution.elimu.eth,infrastructural-apps,40
+distribution.elimu.eth,hindi-distribution,18
+distribution.elimu.eth,tagalog-distribution,16
+distribution.elimu.eth,thai-distribution,14
+distribution.elimu.eth,vietnamese-distribution,12
 ```
 
 | Project | Manager | Funding Split CSV | Drips URL |
