@@ -41,7 +41,7 @@ content.elimu.eth,oers,10
 | Thai Language 🥭🐘 | `content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-THA/FUNDING_SPLITS.csv) | [Drip List](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849641030872883728374792) |
 | Vietnamese Language 🥖🏮 | `content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-VIE/FUNDING_SPLITS.csv) | [Drip List](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849657661057867624699363) |
 | English Language 🍔🏈 | `content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/lang-ENG/FUNDING_SPLITS.csv) | [Drip List](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849646413826815741964162) |
-| OERs 📚🎬 | `content.elimu.eth` |  | [Drip List](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849646413826815741964165) |
+| OERs 📚🎬 | `content.elimu.eth` | [`FUNDING_SPLITS.csv`](./funding-splits-content/OERs/FUNDING_SPLITS.csv) | [Drip List](https://www.drips.network/app/drip-lists/44233954899343831995062217275215737681377860849646413826815741964165) |
 
 <a name="engineering"></a>
 
