@@ -127,7 +127,7 @@ The DAO can also decide to adjust the monthly liquidity provider rewards.
 > Holds at least 0.5% of the total supply cap: 1,935,000 `$ELIMU` tokens.
 * Permission to approve/reject distributions made through the education [Sponsors 🫶🏽](https://sponsors.elimu.ai) program.
 * Personalized ENS subname (`<name>.elimu.eth`) and e-mail address (`<name>@elimu.ai`).
-* Permission to approve/reject Android applications submitted at `https://<language>.elimu.ai/applications`
+* Permission to approve/reject Android APKs submitted at `https://<language>.elimu.ai/applications`
 * Editor of educational content added at `https://<language>.elimu.ai/content`
 * Permission to publish entries on the DAO's [Mirror.xyz🪞](https://mirror.xyz/elimu.eth) page.
 * Permission to manage the DAO's [Drip List 💧](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698).
