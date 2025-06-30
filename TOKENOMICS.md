@@ -53,7 +53,7 @@ xychart-beta
 
 After the total supply cap has been reached (in July 2030 at the earliest), no more tokens can be minted by the DAO.
 
-### Annual Growth Rate
+### Annual Token Minting Rate
 
 ```mermaid
 ---
@@ -64,7 +64,7 @@ config:
             plotColorPalette: "#673AB7"
 ---
 xychart-beta
-    title "Annual Growth Rate, %"
+    title "Annual Token Minting Rate, %"
     x-axis "Year" [2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032]
     y-axis "%" 0 --> 100
     %% #673AB7
