@@ -25,9 +25,9 @@ sankey-beta
 %% source,target,value
 content.elimu.eth,infrastructural-apps,20
 content.elimu.eth,hindi-content,18
-content.elimu.eth,tagalog-content,16
+content.elimu.eth,tagalog-content,8
 content.elimu.eth,thai-content,14
-content.elimu.eth,vietnamese-content,12
+content.elimu.eth,vietnamese-content,20
 content.elimu.eth,english-content,10
 content.elimu.eth,oers,10
 ```
