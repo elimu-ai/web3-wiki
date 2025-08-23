@@ -25,11 +25,11 @@ sankey-beta
 %% source,target,value
 content.elimu.eth,infrastructural-apps,20
 content.elimu.eth,hindi-content,18
-content.elimu.eth,tagalog-content,8
+content.elimu.eth,tagalog-content,17
 content.elimu.eth,thai-content,14
-content.elimu.eth,vietnamese-content,20
-content.elimu.eth,english-content,10
+content.elimu.eth,vietnamese-content,13
 content.elimu.eth,oers,10
+content.elimu.eth,english-content,8
 ```
 
 | Project | Manager | Funding Split CSV | Drips URL |
