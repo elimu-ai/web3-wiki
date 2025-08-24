@@ -102,11 +102,11 @@ engineering.elimu.eth,math-apps,28
 sankey-beta
 
 %% source,target,value
-distribution.elimu.eth,infrastructural-apps,40
+distribution.elimu.eth,infrastructural-apps,38
 distribution.elimu.eth,hindi-distribution,18
-distribution.elimu.eth,tagalog-distribution,16
+distribution.elimu.eth,tagalog-distribution,17
 distribution.elimu.eth,thai-distribution,14
-distribution.elimu.eth,vietnamese-distribution,12
+distribution.elimu.eth,vietnamese-distribution,13
 ```
 
 | Project | Manager | Funding Split CSV | Drips URL |
