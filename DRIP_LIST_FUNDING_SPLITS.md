@@ -53,8 +53,8 @@ content.elimu.eth,english-content,8
 sankey-beta
 
 %% source,target,value
-engineering.elimu.eth,infrastructural-apps,15
-engineering.elimu.eth,reading-apps,49
+engineering.elimu.eth,infrastructural-apps,16
+engineering.elimu.eth,reading-apps,48
 engineering.elimu.eth,writing-apps,8
 engineering.elimu.eth,math-apps,28
 ```
