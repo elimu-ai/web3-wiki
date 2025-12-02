@@ -1,9 +1,9 @@
-import { Contract, ethers, getDefaultProvider, Result } from 'ethers'
+import { Contract, ethers } from 'ethers'
 import Drips from './abis/Drips.json'
 import fs from 'node:fs'
 import gitHubRepos from '../../src/github-contributors/github-repos.json'
 
-const provider = getDefaultProvider()
+const provider = new ethers.JsonRpcProvider('https://0xrpc.io/eth')
 
 /**
  * https://etherscan.io/address/0xd0dd053392db676d57317cd4fe96fc2ccf42d0b4#code
@@ -32,7 +32,7 @@ async function query() {
     console.log('splitsReceiverSeenEvents.length:', splitsReceiverSeenEvents.length)
 
     const repos: any = gitHubRepos
-    for (const repo of repos) {
+    for (const [repo] of Object.entries(repos)) {
         console.log()
         console.log('repo:', repo)
         const repoAsHex: string = String(ethers.hexlify(ethers.toUtf8Bytes(repo)))
