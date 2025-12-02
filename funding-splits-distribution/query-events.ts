@@ -3,16 +3,19 @@ import SponsorshipQueue from './abis/SponsorshipQueue.json'
 import DistributionQueue from './abis/DistributionQueue.json'
 import { createObjectCsvWriter as createCsvWriter } from 'csv-writer'
 
-const rpcServerAddress: string = 'https://base-sepolia-rpc.publicnode.com'
+const rpcServerAddress: string = 'https://0xrpc.io/sep'
 console.log('rpcServerAddress:', rpcServerAddress)
 
-const provider: JsonRpcProvider = new ethers.JsonRpcProvider(rpcServerAddress)
+const chainId: number = 11155111
+console.log('chainId:', chainId)
+
+const provider: JsonRpcProvider = new ethers.JsonRpcProvider(rpcServerAddress, ethers.Network.from(chainId))
 
 /**
  * Deployment details: https://github.com/elimu-ai/web3-sponsors/tree/main/backend/ignition/deployments
  */
 const sponsorshipQueueContract: Contract = new ethers.Contract(
-    '0x9Af2E73663968fdfb9791b7D6Bd40cd259f0388a',
+    '0x646A5550af30f5340AF218C9aE375A4C7Bb740BF',
     SponsorshipQueue.abi,
     provider
 )
@@ -21,7 +24,7 @@ const sponsorshipQueueContract: Contract = new ethers.Contract(
  * Deployment details: https://github.com/elimu-ai/web3-sponsors/tree/main/backend/ignition/deployments
  */
 const distributionQueueContract: Contract = new ethers.Contract(
-    '0xB84dcB33eAEAaC81723d91A50674b27f3c5380eD',
+    '0xD7744d3Cc62748fcDc8f53e202C804488D9e85A8',
     DistributionQueue.abi,
     provider
 )
@@ -93,10 +96,11 @@ async function query() {
         // Sample:
         // 
         // Result(1) [
-        //   Result(3) [
-        //     1719830522n,
-        //     '0xAD5f3A0433B25fC3933830D2FA008f6780386D97',
-        //     0n
+        //   Result(4) [
+        //     'TGL',
+        //     'e387e38700000001',
+        //     1764502536n,
+        //     '0xA7D1CB88740642DC95774511Cc73f015396Be869'
         //   ]
         // ]
 
@@ -104,16 +108,19 @@ async function query() {
             const argResultArray: Result = argResult[0]
             console.log('argResultArray:', argResultArray)
 
-            const timestamp: number = argResultArray[0]
+            const languageCode: string = argResultArray[0]
+            console.log('languageCode:', languageCode)
+
+            const androidId: string = argResultArray[1]
+            console.log('androidId:', androidId)
+
+            const timestamp: number = argResultArray[2]
             console.log('timestamp:', timestamp)
 
-            const distributorAddress: string = argResultArray[1]
+            const distributorAddress: string = argResultArray[3]
             console.log('distributorAddress:', distributorAddress)
 
-            const distributionStatus: number = argResultArray[2]
-            console.log('distributionStatus:', distributionStatus)
-
-            distributionAddedEventData.push([timestamp, distributorAddress, distributionStatus])
+            distributionAddedEventData.push([languageCode, timestamp, distributorAddress])
         }
     })
 
@@ -173,8 +180,9 @@ async function prepareCsvData(sponsorshipAddedEvents: any[], distributionAddedEv
 
     // Count 'DistributionAdded' events per distributor address
     distributionAddedEvents.forEach(distributionAddedEvent => {
-        const distributorAddress: string = distributionAddedEvent[1]
-        const distributionStatus: number = distributionAddedEvent[2]
+        const languageCode: string = distributionAddedEvent[0]
+        const timestamp: number = distributionAddedEvent[1]
+        const distributorAddress: string = distributionAddedEvent[2]
 
         // Check if data already exists for the distributor address
         let existingData: any = undefined
