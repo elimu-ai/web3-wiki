@@ -3,16 +3,16 @@ import SponsorshipQueue from './abis/SponsorshipQueue.json'
 import DistributionQueue from './abis/DistributionQueue.json'
 import { createObjectCsvWriter as createCsvWriter } from 'csv-writer'
 
-const rpcServerAddress: string = 'https://base-sepolia-rpc.publicnode.com'
+const rpcServerAddress: string = 'https://0xrpc.io/sep'
 console.log('rpcServerAddress:', rpcServerAddress)
 
-const provider: JsonRpcProvider = new ethers.JsonRpcProvider(rpcServerAddress)
+const provider: JsonRpcProvider = new ethers.JsonRpcProvider(rpcServerAddress, ethers.Network.from(11155111))
 
 /**
  * Deployment details: https://github.com/elimu-ai/web3-sponsors/tree/main/backend/ignition/deployments
  */
 const sponsorshipQueueContract: Contract = new ethers.Contract(
-    '0x9Af2E73663968fdfb9791b7D6Bd40cd259f0388a',
+    '0x646A5550af30f5340AF218C9aE375A4C7Bb740BF',
     SponsorshipQueue.abi,
     provider
 )
