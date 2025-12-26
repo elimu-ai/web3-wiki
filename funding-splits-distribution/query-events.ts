@@ -15,7 +15,7 @@ const provider: JsonRpcProvider = new ethers.JsonRpcProvider(rpcServerAddress, e
  * Deployment details: https://github.com/elimu-ai/web3-sponsors/tree/main/backend/ignition/deployments
  */
 const sponsorshipQueueContract: Contract = new ethers.Contract(
-    '0x646A5550af30f5340AF218C9aE375A4C7Bb740BF',
+    '0xfc99678699eEcCB3c542Ad673801C8398450d038',
     SponsorshipQueue.abi,
     provider
 )
@@ -24,7 +24,7 @@ const sponsorshipQueueContract: Contract = new ethers.Contract(
  * Deployment details: https://github.com/elimu-ai/web3-sponsors/tree/main/backend/ignition/deployments
  */
 const distributionQueueContract: Contract = new ethers.Contract(
-    '0xD7744d3Cc62748fcDc8f53e202C804488D9e85A8',
+    '0xcCC411B4388B6C56e8DAF5e22666399c0E44D20a',
     DistributionQueue.abi,
     provider
 )
