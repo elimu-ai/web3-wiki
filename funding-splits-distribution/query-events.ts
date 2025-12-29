@@ -1,6 +1,7 @@
 import { Contract, ethers, JsonRpcProvider, Result } from 'ethers'
 import SponsorshipQueue from './abis/SponsorshipQueue.json'
 import DistributionQueue from './abis/DistributionQueue.json'
+import DistributionVerifier from './abis/DistributionVerifier.json'
 import { createObjectCsvWriter as createCsvWriter } from 'csv-writer'
 
 const rpcServerAddress: string = 'https://0xrpc.io/sep'
@@ -29,6 +30,15 @@ const distributionQueueContract: Contract = new ethers.Contract(
     provider
 )
 
+/**
+ * Deployment details: https://github.com/elimu-ai/web3-sponsors/tree/main/backend/ignition/deployments
+ */
+const distributionVerifierContract: Contract = new ethers.Contract(
+    '0x91d58eD405CBEd825d8499917C1A828A9E55D31c',
+    DistributionVerifier.abi,
+    provider
+)
+
 query()
 
 async function query() {
@@ -40,40 +50,22 @@ async function query() {
     sponsorshipQueueEvents.forEach((eventLog: any) => {
         console.log('')
         // console.log('eventLog:', eventLog)
-        
-        const blockNumber: number = eventLog.blockNumber
-        console.log('blockNumber:', eventLog.blockNumber)
 
         const eventName: string = eventLog.fragment.name
         console.log('eventName:', eventName)
 
         const argResult: Result = eventLog.args
-        // console.log('argResult:', argResult)
-        //
-        // Sample:
-        // 
-        // Result(1) [
-        //     Result(3) [
-        //         2000000000000000n,
-        //         1721578316n,
-        //         '0x015B5dF1673499E32D11Cf786A43D1c42b3d725C'
-        //     ]
-        // ]
+        console.log('argResult:', argResult)
+        // Sample format: Result(2) [ 10n, '0x8c14a3Dd850835A07fbA7620E2601b3E5A6d5ee5' ]
 
         if (eventName == 'SponsorshipAdded') {
-            const argResultArray: Result = argResult[0]
-            // console.log('argResultArray:', argResultArray)
+            const sponsorshipQueueNumber: number = argResult[0]
+            console.log('sponsorshipQueueNumber:', sponsorshipQueueNumber)
 
-            const estimatedCost: number = argResultArray[0]
-            console.log('estimatedCost:', estimatedCost)
-
-            const timestamp: number = argResultArray[1]
-            console.log('timestamp:', timestamp)
-
-            const sponsorAddress: string = argResultArray[2]
+            const sponsorAddress: string = argResult[1]
             console.log('sponsorAddress:', sponsorAddress)
 
-            sponsorshipAddedEventData.push([estimatedCost, timestamp, sponsorAddress])
+            sponsorshipAddedEventData.push([sponsorshipQueueNumber, sponsorAddress])
         }
     })
 
@@ -83,48 +75,48 @@ async function query() {
     distributionQueueEvents.forEach((eventLog: any) => {
         console.log('')
         // console.log('eventLog:', eventLog)
-        
-        const blockNumber: number = eventLog.blockNumber
-        console.log('blockNumber:', eventLog.blockNumber)
 
         const eventName: string = eventLog.fragment.name
         console.log('eventName:', eventName)
 
         const argResult: Result = eventLog.args
-        // console.log('argResult:', argResult)
-        //
-        // Sample:
-        // 
-        // Result(1) [
-        //   Result(4) [
-        //     'TGL',
-        //     'e387e38700000001',
-        //     1764502536n,
-        //     '0xA7D1CB88740642DC95774511Cc73f015396Be869'
-        //   ]
-        // ]
+        console.log('argResult:', argResult)
+        // Sample format: Result(2) [ 7n, '0x8c14a3Dd850835A07fbA7620E2601b3E5A6d5ee5' ]
 
         if (eventName == 'DistributionAdded') {
-            const argResultArray: Result = argResult[0]
-            console.log('argResultArray:', argResultArray)
+            const distributionQueueNumber: number = argResult[0]
+            console.log('distributionQueueNumber:', distributionQueueNumber)
 
-            const languageCode: string = argResultArray[0]
-            console.log('languageCode:', languageCode)
-
-            const androidId: string = argResultArray[1]
-            console.log('androidId:', androidId)
-
-            const timestamp: number = argResultArray[2]
-            console.log('timestamp:', timestamp)
-
-            const distributorAddress: string = argResultArray[3]
+            const distributorAddress: string = argResult[1]
             console.log('distributorAddress:', distributorAddress)
 
-            distributionAddedEventData.push([languageCode, timestamp, distributorAddress])
+            distributionAddedEventData.push([distributionQueueNumber, distributorAddress])
         }
     })
 
-    prepareCsvData(sponsorshipAddedEventData, distributionAddedEventData)
+    const distributionVerifierEvents = await distributionVerifierContract.queryFilter('*')
+    console.log('distributionVerifierEvents.length:', distributionVerifierEvents.length)
+    const operationEventData: any[] = []
+    distributionVerifierEvents.forEach((eventLog: any) => {
+        console.log('')
+        // console.log('eventLog:', eventLog)
+
+        const eventName: string = eventLog.fragment.name
+        console.log('eventName:', eventName)
+
+        const argResult: Result = eventLog.args
+        console.log('argResult:', argResult)
+        // Sample format: Result(2) [ 1n, '0xA7D1CB88740642DC95774511Cc73f015396Be869' ]
+
+        if ((eventName == 'DistributionApproved') || (eventName == 'DistributionRejected')) {
+            const operatorAddress: string = argResult[1]
+            console.log('operatorAddress:', operatorAddress)
+
+            operationEventData.push([operatorAddress])
+        }
+    })
+
+    prepareCsvData(sponsorshipAddedEventData, distributionAddedEventData, operationEventData)
 }
 
 /**
@@ -136,22 +128,22 @@ async function query() {
  *   ethereum_address: '0x015B5dF1673499E32D11Cf786A43D1c42b3d725C',
  *   impact_percentage: 100,
  *   sponsorship_count: 1,
- *   distribution_count: 0
+ *   distribution_count: 0,
+ *   operation_count: 2
  * }
  */
-async function prepareCsvData(sponsorshipAddedEvents: any[], distributionAddedEvents: any[]) {
+async function prepareCsvData(sponsorshipEvents: any[], distributionEvents: any[], operationEvents: any[]) {
     console.log('prepareCsvData')
 
-    console.log('sponsorshipAddedEvents.length:', sponsorshipAddedEvents.length)
-    console.log('distributionAddedEvents.length:', distributionAddedEvents.length)
+    console.log('sponsorshipEvents.length:', sponsorshipEvents.length)
+    console.log('distributionEvents.length:', distributionEvents.length)
+    console.log('operationEvents.length:', operationEvents.length)
 
     const csvData: any[] = []
 
     // Count 'SponsorshipAdded' events per sponsor address
-    sponsorshipAddedEvents.forEach(sponsorshipAddedEvent => {
-        const estimatedCost: number = sponsorshipAddedEvent[0]
-        const timestamp: number = sponsorshipAddedEvent[1]
-        const sponsorAddress: string = sponsorshipAddedEvent[2]
+    sponsorshipEvents.forEach(sponsorshipAddedEvent => {
+        const sponsorAddress: string = sponsorshipAddedEvent[1]
 
         // Check if data already exists for the sponsor address
         let existingData: any = undefined
@@ -168,7 +160,8 @@ async function prepareCsvData(sponsorshipAddedEvents: any[], distributionAddedEv
             const newData = {
                 ethereum_address: sponsorAddress,
                 sponsorship_count: 1,
-                distribution_count: 0
+                distribution_count: 0,
+                operation_count: 0
             }
             csvData.push(newData)
         } else {
@@ -178,11 +171,9 @@ async function prepareCsvData(sponsorshipAddedEvents: any[], distributionAddedEv
         }
     })
 
-    // Count 'DistributionAdded' events per distributor address
-    distributionAddedEvents.forEach(distributionAddedEvent => {
-        const languageCode: string = distributionAddedEvent[0]
-        const timestamp: number = distributionAddedEvent[1]
-        const distributorAddress: string = distributionAddedEvent[2]
+    // Count events per distributor address
+    distributionEvents.forEach(distributionAddedEvent => {
+        const distributorAddress: string = distributionAddedEvent[1]
 
         // Check if data already exists for the distributor address
         let existingData: any = undefined
@@ -199,13 +190,44 @@ async function prepareCsvData(sponsorshipAddedEvents: any[], distributionAddedEv
             const newData = {
                 ethereum_address: distributorAddress,
                 sponsorship_count: 0,
-                distribution_count: 1
+                distribution_count: 1,
+                operation_count: 0
             }
             csvData.push(newData)
         } else {
             console.log('Update data for address:', distributorAddress)
             
             existingData.distribution_count++
+        }
+    })
+
+    // Count operator events per operator address
+    operationEvents.forEach(operationEvent => {
+        const operatorAddress: string = operationEvent[0]
+
+        // Check if data already exists for the operator address
+        let existingData: any = undefined
+        csvData.forEach(data => {
+            // console.log('data:', data)
+            if (operatorAddress == data.ethereum_address) {
+                existingData = data
+            }
+        })
+
+        if (!existingData) {
+            console.log('Add data for address:', operatorAddress)
+
+            const newData = {
+                ethereum_address: operatorAddress,
+                sponsorship_count: 0,
+                distribution_count: 0,
+                operation_count: 1
+            }
+            csvData.push(newData)
+        } else {
+            console.log('Update data for address:', operatorAddress)
+            
+            existingData.operation_count++
         }
     })
 
@@ -224,18 +246,21 @@ function calculateImpactPercentages(csvData: any[]) {
 
     let sponsorshipCountTotal: number = 0
     let distributionCountTotal: number = 0
+    let operationCountTotal: number = 0
     csvData.forEach(csvDataRow => {
         sponsorshipCountTotal += csvDataRow.sponsorship_count
         distributionCountTotal += csvDataRow.distribution_count
+        operationCountTotal += csvDataRow.operation_count
     })
     console.log('sponsorshipCountTotal:', sponsorshipCountTotal)
     console.log('distributionCountTotal:', distributionCountTotal)
+    console.log('operationCountTotal:', operationCountTotal)
 
     // Calculate the impact percentage for each sponsor address
     csvData.forEach(csvDataRow => {
         const impactPercentage: number = 100
-                                         * (csvDataRow.sponsorship_count + csvDataRow.distribution_count) 
-                                         / (sponsorshipCountTotal + distributionCountTotal)
+                                         * (csvDataRow.sponsorship_count + csvDataRow.distribution_count + csvDataRow.operation_count)
+                                         / (sponsorshipCountTotal + distributionCountTotal + operationCountTotal)
         // console.log('impactPercentage:', impactPercentage)
         csvDataRow.impact_percentage = impactPercentage
     })
@@ -254,7 +279,8 @@ function exportToCsv(csvData: any[], languageCode: string) {
             {id: 'ethereum_address', title: 'ethereum_address'},
             {id: 'impact_percentage', title: 'impact_percentage'},
             {id: 'sponsorship_count', title: 'sponsorship_count'},
-            {id: 'distribution_count', title: 'distribution_count'}
+            {id: 'distribution_count', title: 'distribution_count'},
+            {id: 'operation_count', title: 'operation_count'}
         ]
     })
 
