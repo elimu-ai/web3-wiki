@@ -40,40 +40,22 @@ async function query() {
     sponsorshipQueueEvents.forEach((eventLog: any) => {
         console.log('')
         // console.log('eventLog:', eventLog)
-        
-        const blockNumber: number = eventLog.blockNumber
-        console.log('blockNumber:', eventLog.blockNumber)
 
         const eventName: string = eventLog.fragment.name
         console.log('eventName:', eventName)
 
         const argResult: Result = eventLog.args
-        // console.log('argResult:', argResult)
-        //
-        // Sample:
-        // 
-        // Result(1) [
-        //     Result(3) [
-        //         2000000000000000n,
-        //         1721578316n,
-        //         '0x015B5dF1673499E32D11Cf786A43D1c42b3d725C'
-        //     ]
-        // ]
+        console.log('argResult:', argResult)
+        // Sample format: Result(2) [ 10n, '0x8c14a3Dd850835A07fbA7620E2601b3E5A6d5ee5' ]
 
         if (eventName == 'SponsorshipAdded') {
-            const argResultArray: Result = argResult[0]
-            // console.log('argResultArray:', argResultArray)
+            const sponsorshipQueueNumber: number = argResult[0]
+            console.log('sponsorshipQueueNumber:', sponsorshipQueueNumber)
 
-            const estimatedCost: number = argResultArray[0]
-            console.log('estimatedCost:', estimatedCost)
-
-            const timestamp: number = argResultArray[1]
-            console.log('timestamp:', timestamp)
-
-            const sponsorAddress: string = argResultArray[2]
+            const sponsorAddress: string = argResult[1]
             console.log('sponsorAddress:', sponsorAddress)
 
-            sponsorshipAddedEventData.push([estimatedCost, timestamp, sponsorAddress])
+            sponsorshipAddedEventData.push([sponsorshipQueueNumber, sponsorAddress])
         }
     })
 
@@ -83,44 +65,22 @@ async function query() {
     distributionQueueEvents.forEach((eventLog: any) => {
         console.log('')
         // console.log('eventLog:', eventLog)
-        
-        const blockNumber: number = eventLog.blockNumber
-        console.log('blockNumber:', eventLog.blockNumber)
 
         const eventName: string = eventLog.fragment.name
         console.log('eventName:', eventName)
 
         const argResult: Result = eventLog.args
-        // console.log('argResult:', argResult)
-        //
-        // Sample:
-        // 
-        // Result(1) [
-        //   Result(4) [
-        //     'TGL',
-        //     'e387e38700000001',
-        //     1764502536n,
-        //     '0xA7D1CB88740642DC95774511Cc73f015396Be869'
-        //   ]
-        // ]
+        console.log('argResult:', argResult)
+        // Sample format: Result(2) [ 7n, '0x8c14a3Dd850835A07fbA7620E2601b3E5A6d5ee5' ]
 
         if (eventName == 'DistributionAdded') {
-            const argResultArray: Result = argResult[0]
-            console.log('argResultArray:', argResultArray)
+            const distributionQueueNumber: number = argResult[0]
+            console.log('distributionQueueNumber:', distributionQueueNumber)
 
-            const languageCode: string = argResultArray[0]
-            console.log('languageCode:', languageCode)
-
-            const androidId: string = argResultArray[1]
-            console.log('androidId:', androidId)
-
-            const timestamp: number = argResultArray[2]
-            console.log('timestamp:', timestamp)
-
-            const distributorAddress: string = argResultArray[3]
+            const distributorAddress: string = argResult[1]
             console.log('distributorAddress:', distributorAddress)
 
-            distributionAddedEventData.push([languageCode, timestamp, distributorAddress])
+            distributionAddedEventData.push([distributionQueueNumber, distributorAddress])
         }
     })
 
@@ -149,9 +109,8 @@ async function prepareCsvData(sponsorshipAddedEvents: any[], distributionAddedEv
 
     // Count 'SponsorshipAdded' events per sponsor address
     sponsorshipAddedEvents.forEach(sponsorshipAddedEvent => {
-        const estimatedCost: number = sponsorshipAddedEvent[0]
-        const timestamp: number = sponsorshipAddedEvent[1]
-        const sponsorAddress: string = sponsorshipAddedEvent[2]
+        const sponsorshipQueueNumber: number = sponsorshipAddedEvent[0]
+        const sponsorAddress: string = sponsorshipAddedEvent[1]
 
         // Check if data already exists for the sponsor address
         let existingData: any = undefined
@@ -180,9 +139,8 @@ async function prepareCsvData(sponsorshipAddedEvents: any[], distributionAddedEv
 
     // Count 'DistributionAdded' events per distributor address
     distributionAddedEvents.forEach(distributionAddedEvent => {
-        const languageCode: string = distributionAddedEvent[0]
-        const timestamp: number = distributionAddedEvent[1]
-        const distributorAddress: string = distributionAddedEvent[2]
+        const distributionQueueNumber: number = distributionAddedEvent[0]
+        const distributorAddress: string = distributionAddedEvent[1]
 
         // Check if data already exists for the distributor address
         let existingData: any = undefined

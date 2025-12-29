@@ -1,6 +1,6 @@
 {
   "name": "distribution",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Drip List funding splits for Distribution & Data Collection 🛵💨",
   "main": "index.js",
   "scripts": {
