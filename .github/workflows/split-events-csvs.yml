@@ -30,3 +30,4 @@ jobs:
         cache-dependency-path: split-events/csvs/package-lock.json
     - run: npm ci
     - run: npx tsc
+    - run: node query-repo-events.js

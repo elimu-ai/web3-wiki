@@ -1,6 +1,6 @@
 {
   "name": "csvs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "CSVs with data per split event",
   "main": "index.js",
   "scripts": {
