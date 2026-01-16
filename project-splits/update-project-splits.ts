@@ -4,6 +4,12 @@ import Caller from './abis/Caller.json'
 import gitHubRepos from '../src/github-contributors/github-repos.json'
 import fs from 'fs'
 import updateLogData from './update_log.json'
+interface LogEntry {
+    repo: string
+    timestamp: number
+    txHash: string
+}
+const update_log = updateLogData as LogEntry[]
 
 require("dotenv").config()
 
@@ -120,29 +126,28 @@ async function updateProjectSplits() {
         const gasPriceInGwei: number = Number(ethers.formatUnits(gasPriceInWei, 'gwei'))
         console.log('gasPriceInGwei:', gasPriceInGwei)
 
-        // Lookup the timestamp of the last time the splits were updated on-chain
-        interface LogEntry {
-            repo: string
-            timestamp: number
-            txHash: string
-        }
-        const update_log = updateLogData as LogEntry[]
+        // Cancel the on-chain update if gas price is too high
         const existingIndex = update_log.findIndex(entry => entry.repo === repo)
         if (existingIndex !== -1) {
+            // Lookup the timestamp of the last time the splits were updated on-chain
             const timestampOfLastUpdate = update_log[existingIndex].timestamp
             console.log('timestampOfLastUpdate:', timestampOfLastUpdate)
             const timeOfLastUpdate = new Date(timestampOfLastUpdate * 1000)
             console.log('timeOfLastUpdate:', timeOfLastUpdate.toISOString())
             const daysSinceLastUpdate = (new Date().getTime() - timeOfLastUpdate.getTime()) / (1000 * 60 * 60 * 24)
             console.log('daysSinceLastUpdate:', daysSinceLastUpdate)
-
-            // Cancel the on-chain update if gas price is too high
             if (
                 (daysSinceLastUpdate > 28) && (gasPriceInGwei >= 0.04) ||
                 (daysSinceLastUpdate > 21) && (gasPriceInGwei >= 0.03) ||
                 (daysSinceLastUpdate > 14) && (gasPriceInGwei >= 0.02) ||
                 (daysSinceLastUpdate > 7)  && (gasPriceInGwei >= 0.01)
             ) {
+                console.warn('Gas price too high, skipping update for repo:', repo)
+                continue
+            }
+        } else {
+            // First-time update, be more aggressive about gas price limits
+            if (gasPriceInGwei >= 0.04) {
                 console.warn('Gas price too high, skipping update for repo:', repo)
                 continue
             }
