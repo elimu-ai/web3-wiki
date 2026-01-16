@@ -1,0 +1,163 @@
+import { Contract, ethers } from 'ethers'
+import RepoDriver from './abis/RepoDriver.json'
+import Caller from './abis/Caller.json'
+import gitHubRepos from '../src/github-contributors/github-repos.json'
+import fs from 'fs'
+
+require("dotenv").config()
+
+const provider = new ethers.JsonRpcProvider('https://0xrpc.io/eth')
+
+const repoDriverContract: Contract = new ethers.Contract(
+    '0x770023d55D09A9C110694827F1a6B32D5c2b373E',
+    RepoDriver.abi,
+    provider
+)
+
+const privateKey = process.env.PRIVATE_KEY
+if (!privateKey) {
+    throw new Error('PRIVATE_KEY not set in environment variables')
+}
+console.log('privateKey length:', privateKey.length)
+const wallet = new ethers.Wallet(privateKey)
+console.log('wallet address:', wallet.address)
+const signer = wallet.connect(provider)
+console.log('signer address:', signer.address)
+const callerContract: Contract = new ethers.Contract(
+    '0x60F25ac5F289Dc7F640f948521d486C964A248e5',
+    Caller.abi,
+    signer
+)
+
+updateProjectSplits()
+
+async function updateProjectSplits() {
+    console.log('updateProjectSplits')
+
+    const repos: any = gitHubRepos
+    for (const repo in repos) {
+        if (repo != "webapp-lfs") {
+            continue
+        }
+        console.log()
+        console.log('repo:', repo)
+
+        // Get the Drips account ID of the GitHub repo
+        const repoName = "elimu-ai/" + repo
+        console.log('repoName:', repoName)
+        const repoNameAsHex: string = String(ethers.hexlify(ethers.toUtf8Bytes(repoName)))
+        console.log('repoNameAsHex:', repoNameAsHex)
+        const repoAccountId: number = await repoDriverContract.calcAccountId(0, repoNameAsHex)
+        console.log('repoAccountId:', repoAccountId)
+
+        // Get CSV file with funding splits  
+        const fundingsSplitsCsv: string = `../${repos[repo]}/github_${repo}/FUNDING_SPLITS.csv`
+        console.log('fundingsSplitsCsv:', fundingsSplitsCsv)
+
+        // Convert splits from CSV to JSON
+        const splitsJsonArray = convertCsvToJson(fundingsSplitsCsv)
+        console.log('splitsJson:', splitsJsonArray)
+
+        // Prepare metadata JSON
+        // TODO
+
+        // Pin metadata JSON to IPFS
+        // TODO
+
+        // Prepare metadata call data
+        const metadata = [
+            repoAccountId,
+            [
+                {
+                    key: ethers.id("ipfs"),
+                    value: ethers.AbiCoder.defaultAbiCoder().encode(
+                        ["string"],
+                        ["QmQFkZtcqsSodpkJLz4fNGdV5mNChZRLhjjjmZiBe98TJT"]
+                    )
+                }
+            ]
+        ]
+        console.log('metadata:', metadata)
+
+        // Prepare splits call data
+        const splits = [
+            repoAccountId,
+            splitsJsonArray
+        ]
+        console.log('splits:', splits)
+
+        // Before encoding, store a backup of the plaintext data
+        fs.writeFileSync(
+            `splits_${repo}.json`,
+            JSON.stringify(splits, (key, value) => 
+                (typeof value == 'bigint') ? value.toString() : value
+            , 2)
+        )
+
+        // Encode call data
+        const metadataEncoded = repoDriverContract.interface.encodeFunctionData('emitAccountMetadata', metadata)
+        const splitsEncoded = repoDriverContract.interface.encodeFunctionData('setSplits', splits)
+
+        // Prepare batched calls
+        const batchedCalls = [
+            [repoDriverContract.target, metadataEncoded, 0],
+            [repoDriverContract.target, splitsEncoded, 0 ]
+        ]
+        console.log('batchedCalls:', batchedCalls)
+
+        // Get the current gas price
+        const feeData = await provider.getFeeData()
+        console.log('feeData:', feeData)
+        const gasPriceInWei: number = Number(feeData.gasPrice)
+        const gasPriceInGwei: number = Number(ethers.formatUnits(gasPriceInWei, 'gwei'))
+        console.log('gasPriceInGwei:', gasPriceInGwei)
+
+        // Cancel the on-chain update if gas price is too high
+        if (gasPriceInGwei >= 0.04) {
+            console.warn('Gas price too high, skipping update for repo:', repo)
+            continue
+        }
+
+        // Lookup the timestamp of the last time the splits were updated on-chain
+        // TODO
+
+        // Set splits on-chain
+        const tx = await callerContract.callBatched(batchedCalls, { gasPrice: gasPriceInWei })
+        console.log('Transaction submitted. Hash:', tx.hash)
+        const receipt = await tx.wait()
+        console.log('Transaction confirmed. Receipt:', receipt)
+    }
+}
+
+interface SplitReceiver {
+    accountId: string;
+    weight: number;
+}
+function convertCsvToJson(csvFilePath: string): SplitReceiver[] {
+    console.log('convertCsvToJson');
+
+    // Read and parse CSV
+    const csvContent = fs.readFileSync(csvFilePath, 'utf-8');
+    const lines = csvContent.trim().split('\n').slice(1); // Skip header
+    
+    const splits = lines.map(line => {
+        const [address, percentage] = line.split(',');
+        
+        // Convert address to account ID (just the numeric value of the address)
+        const accountId = BigInt(address.trim()).toString();
+        
+        // Convert percentage to weight (percentage * 10000)
+        const weight = Math.round(parseFloat(percentage.trim()) * 10000);
+        
+        return { accountId, weight };
+    });
+    
+    // Validate total
+    const total = splits.reduce((sum, s) => sum + s.weight, 0);
+    console.log(`Total weight: ${total}`);
+    if (total != 1_000_000) {
+        throw new Error(`Total weight is ${total} (expected 1,000,000)`);
+    }
+    
+    return splits;
+}
