@@ -136,11 +136,14 @@ async function updateProjectSplits() {
             console.log('timeOfLastUpdate:', timeOfLastUpdate.toISOString())
             const daysSinceLastUpdate = (new Date().getTime() - timeOfLastUpdate.getTime()) / (1000 * 60 * 60 * 24)
             console.log('daysSinceLastUpdate:', daysSinceLastUpdate)
-            if (
-                (daysSinceLastUpdate > 28) && (gasPriceInGwei >= 0.04) ||
-                (daysSinceLastUpdate > 21) && (gasPriceInGwei >= 0.03) ||
+            if (daysSinceLastUpdate <= 7) {
+                console.warn('Splits already updated with the past 7 days, skipping update for repo:', repo)
+                continue
+            } else if (
+                (daysSinceLastUpdate >  7) && (gasPriceInGwei >= 0.01) ||
                 (daysSinceLastUpdate > 14) && (gasPriceInGwei >= 0.02) ||
-                (daysSinceLastUpdate > 7)  && (gasPriceInGwei >= 0.01)
+                (daysSinceLastUpdate > 21) && (gasPriceInGwei >= 0.03) ||
+                (daysSinceLastUpdate > 28) && (gasPriceInGwei >= 0.04)
             ) {
                 console.warn('Gas price too high, skipping update for repo:', repo)
                 continue
