@@ -14,21 +14,6 @@ const repoDriverContract: Contract = new ethers.Contract(
     provider
 )
 
-const privateKey = process.env.PRIVATE_KEY
-if (!privateKey) {
-    throw new Error('PRIVATE_KEY not set in environment variables')
-}
-console.log('privateKey length:', privateKey.length)
-const wallet = new ethers.Wallet(privateKey)
-console.log('wallet address:', wallet.address)
-const signer = wallet.connect(provider)
-console.log('signer address:', signer.address)
-const callerContract: Contract = new ethers.Contract(
-    '0x60F25ac5F289Dc7F640f948521d486C964A248e5',
-    Caller.abi,
-    signer
-)
-
 updateProjectSplits()
 
 async function updateProjectSplits() {
@@ -37,6 +22,7 @@ async function updateProjectSplits() {
     const repos: any = gitHubRepos
     for (const repo in repos) {
         if (repo != "webapp-lfs") {
+            // TODO: remove
             continue
         }
         console.log()
@@ -105,10 +91,28 @@ async function updateProjectSplits() {
         ]
         console.log('batchedCalls:', batchedCalls)
 
+        // Prepare signer account
+        // TODO: handle separate private keys for different repos (content/engineering/distribution)
+        const privateKey = process.env.PRIVATE_KEY
+        if (!privateKey) {
+            throw new Error('PRIVATE_KEY not set in environment variables')
+        }
+        console.log('privateKey length:', privateKey.length)
+        const wallet = new ethers.Wallet(privateKey)
+        const signer = wallet.connect(provider)
+        console.log('signer address:', signer.address)
+        console.log('signer balance (ETH):', ethers.formatEther(await provider.getBalance(signer.address)))
+        const callerContract: Contract = new ethers.Contract(
+            '0x60F25ac5F289Dc7F640f948521d486C964A248e5',
+            Caller.abi,
+            signer
+        )
+
         // Get the current gas price
         const feeData = await provider.getFeeData()
         console.log('feeData:', feeData)
         const gasPriceInWei: number = Number(feeData.gasPrice)
+        console.log('gasPriceInWei:', gasPriceInWei)
         const gasPriceInGwei: number = Number(ethers.formatUnits(gasPriceInWei, 'gwei'))
         console.log('gasPriceInGwei:', gasPriceInGwei)
 
