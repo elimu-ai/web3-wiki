@@ -3,6 +3,7 @@ import RepoDriver from './abis/RepoDriver.json'
 import Caller from './abis/Caller.json'
 import gitHubRepos from '../src/github-contributors/github-repos.json'
 import fs from 'fs'
+import updateLogData from './update_log.json'
 
 require("dotenv").config()
 
@@ -48,6 +49,9 @@ async function updateProjectSplits() {
         // TODO
 
         // Pin metadata JSON to IPFS
+        // TODO
+
+        // Cancel the on-chain update if the IPFS hash has not changed
         // TODO
 
         // Prepare metadata call data
@@ -130,6 +134,30 @@ async function updateProjectSplits() {
         console.log('Transaction submitted. Hash:', tx.hash)
         const receipt = await tx.wait()
         console.log('Transaction confirmed. Receipt:', receipt)
+
+        // Store the timestamp of the confirmed transaction in a log file
+        const block = await provider.getBlock(receipt.blockNumber)
+        const timestamp = block!.timestamp
+        console.log('Transaction timestamp:', timestamp)
+        interface LogEntry {
+            repo: string
+            timestamp: number
+            txHash: string
+        }
+        const update_log = updateLogData as LogEntry[]
+        const existingIndex = update_log.findIndex(entry => entry.repo === repo)
+        if (existingIndex !== -1) {
+            update_log[existingIndex] = { repo, timestamp, txHash: tx.hash }
+        } else {
+            update_log.push({ repo, timestamp, txHash: tx.hash })
+        }
+        console.log('update_log:', update_log)
+
+        // Write changes to
+        fs.writeFileSync(
+            'update_log.json',
+            JSON.stringify(update_log, null, 2)
+        )
     }
 }
 
