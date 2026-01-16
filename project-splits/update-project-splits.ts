@@ -147,7 +147,6 @@ async function updateProjectSplits() {
                 continue
             }
         }
-        return
 
         // Set splits on-chain
         const tx = await callerContract.callBatched(batchedCalls, { gasPrice: gasPriceInWei })
