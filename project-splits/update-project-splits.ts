@@ -120,14 +120,34 @@ async function updateProjectSplits() {
         const gasPriceInGwei: number = Number(ethers.formatUnits(gasPriceInWei, 'gwei'))
         console.log('gasPriceInGwei:', gasPriceInGwei)
 
-        // Cancel the on-chain update if gas price is too high
-        if (gasPriceInGwei >= 0.04) {
-            console.warn('Gas price too high, skipping update for repo:', repo)
-            continue
-        }
-
         // Lookup the timestamp of the last time the splits were updated on-chain
-        // TODO
+        interface LogEntry {
+            repo: string
+            timestamp: number
+            txHash: string
+        }
+        const update_log = updateLogData as LogEntry[]
+        const existingIndex = update_log.findIndex(entry => entry.repo === repo)
+        if (existingIndex !== -1) {
+            const timestampOfLastUpdate = update_log[existingIndex].timestamp
+            console.log('timestampOfLastUpdate:', timestampOfLastUpdate)
+            const timeOfLastUpdate = new Date(timestampOfLastUpdate * 1000)
+            console.log('timeOfLastUpdate:', timeOfLastUpdate.toISOString())
+            const daysSinceLastUpdate = (new Date().getTime() - timeOfLastUpdate.getTime()) / (1000 * 60 * 60 * 24)
+            console.log('daysSinceLastUpdate:', daysSinceLastUpdate)
+
+            // Cancel the on-chain update if gas price is too high
+            if (
+                (daysSinceLastUpdate > 28) && (gasPriceInGwei >= 0.04) ||
+                (daysSinceLastUpdate > 21) && (gasPriceInGwei >= 0.03) ||
+                (daysSinceLastUpdate > 14) && (gasPriceInGwei >= 0.02) ||
+                (daysSinceLastUpdate > 7)  && (gasPriceInGwei >= 0.01)
+            ) {
+                console.warn('Gas price too high, skipping update for repo:', repo)
+                continue
+            }
+        }
+        return
 
         // Set splits on-chain
         const tx = await callerContract.callBatched(batchedCalls, { gasPrice: gasPriceInWei })
@@ -139,21 +159,12 @@ async function updateProjectSplits() {
         const block = await provider.getBlock(receipt.blockNumber)
         const timestamp = block!.timestamp
         console.log('Transaction timestamp:', timestamp)
-        interface LogEntry {
-            repo: string
-            timestamp: number
-            txHash: string
-        }
-        const update_log = updateLogData as LogEntry[]
-        const existingIndex = update_log.findIndex(entry => entry.repo === repo)
         if (existingIndex !== -1) {
             update_log[existingIndex] = { repo, timestamp, txHash: tx.hash }
         } else {
             update_log.push({ repo, timestamp, txHash: tx.hash })
         }
         console.log('update_log:', update_log)
-
-        // Write changes to
         fs.writeFileSync(
             'update_log.json',
             JSON.stringify(update_log, null, 2)
