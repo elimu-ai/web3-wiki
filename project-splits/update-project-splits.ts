@@ -137,7 +137,7 @@ async function updateProjectSplits() {
             const daysSinceLastUpdate = (new Date().getTime() - timeOfLastUpdate.getTime()) / (1000 * 60 * 60 * 24)
             console.log('daysSinceLastUpdate:', daysSinceLastUpdate)
             if (daysSinceLastUpdate <= 7) {
-                console.warn('Splits already updated with the past 7 days, skipping update for repo:', repo)
+                console.warn('Splits already updated within the past 7 days, skipping update for repo:', repo)
                 continue
             } else if (
                 (daysSinceLastUpdate >  7) && (gasPriceInGwei >= 0.01) ||
