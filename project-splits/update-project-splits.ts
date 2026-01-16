@@ -6,6 +6,7 @@ import fs from 'fs'
 import updateLogData from './update_log.json'
 interface LogEntry {
     repo: string
+    ipfsHash: string
     timestamp: number
     txHash: string
 }
@@ -56,6 +57,8 @@ async function updateProjectSplits() {
 
         // Pin metadata JSON to IPFS
         // TODO
+        const ipfsHash = "QmQFkZtcqsSodpkJLz4fNGdV5mNChZRLhjjjmZiBe98TJT"
+        console.log('ipfsHash:', ipfsHash)
 
         // Cancel the on-chain update if the IPFS hash has not changed
         // TODO
@@ -68,7 +71,7 @@ async function updateProjectSplits() {
                     key: ethers.id("ipfs"),
                     value: ethers.AbiCoder.defaultAbiCoder().encode(
                         ["string"],
-                        ["QmQFkZtcqsSodpkJLz4fNGdV5mNChZRLhjjjmZiBe98TJT"]
+                        [ipfsHash]
                     )
                 }
             ]
@@ -167,9 +170,9 @@ async function updateProjectSplits() {
         const timestamp = block!.timestamp
         console.log('Transaction timestamp:', timestamp)
         if (existingIndex !== -1) {
-            update_log[existingIndex] = { repo, timestamp, txHash: tx.hash }
+            update_log[existingIndex] = { repo, ipfsHash, timestamp, txHash: tx.hash }
         } else {
-            update_log.push({ repo, timestamp, txHash: tx.hash })
+            update_log.push({ repo, ipfsHash, timestamp, txHash: tx.hash })
         }
         console.log('update_log:', update_log)
         fs.writeFileSync(
