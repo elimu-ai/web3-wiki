@@ -149,7 +149,7 @@ async function updateProjectSplits() {
                 continue
             }
         } else {
-            // First-time update, be more aggressive about gas price limits
+            // Initial update, be more aggressive about gas price limits
             if (gasPriceInGwei >= 0.04) {
                 console.warn('Gas price too high, skipping update for repo:', repo)
                 continue
