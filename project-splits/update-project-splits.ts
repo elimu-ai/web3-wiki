@@ -55,13 +55,12 @@ async function updateProjectSplits() {
         // Prepare metadata JSON
         const metadataJson = generateMetadataJson(repo, repoAccountId.toString(), splitsJsonArray)
         console.log('metadataJson:', metadataJson)
+        console.log('metadataJson (stringified):', JSON.stringify(metadataJson, null, 2))
 
         // Before encoding, store a backup of the plaintext metadata
         fs.writeFileSync(
             `metadata_${repo}.json`,
-            JSON.stringify(metadataJson, (key, value) => 
-                (typeof value == 'bigint') ? value.toString() : value
-            , 2)
+            JSON.stringify(metadataJson, null, 2)
         )
 
         // Pin metadata JSON to IPFS
