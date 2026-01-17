@@ -2,6 +2,7 @@ import { Contract, ethers } from 'ethers'
 import RepoDriver from './abis/RepoDriver.json'
 import Caller from './abis/Caller.json'
 import gitHubRepos from '../src/github-contributors/github-repos.json'
+import { PinataSDK } from 'pinata'
 import fs from 'fs'
 import updateLogData from './update_log.json'
 interface LogEntry {
@@ -13,6 +14,11 @@ interface LogEntry {
 const update_log = updateLogData as LogEntry[]
 
 require("dotenv").config()
+
+const pinata = new PinataSDK({
+    pinataJwt: process.env.PINATA_JWT!,
+    pinataGateway: "black-historic-wren-832.mypinata.cloud"
+})
 
 const provider = new ethers.JsonRpcProvider('https://0xrpc.io/eth')
 
@@ -64,8 +70,9 @@ async function updateProjectSplits() {
         )
 
         // Pin metadata JSON to IPFS
-        // TODO
-        const ipfsHash = "QmQFkZtcqsSodpkJLz4fNGdV5mNChZRLhjjjmZiBe98TJT"
+        const pinataUpload = await pinata.upload.public.json(metadataJson).name(`metadata_${repo}.json`)
+        console.log('pinataUpload:', pinataUpload)
+        const ipfsHash = pinataUpload.cid
         console.log('ipfsHash:', ipfsHash)
 
         // Cancel the on-chain update if the IPFS hash has not changed
