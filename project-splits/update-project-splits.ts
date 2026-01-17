@@ -84,10 +84,7 @@ async function updateProjectSplits() {
             [
                 {
                     key: ethers.id("ipfs"),
-                    value: ethers.AbiCoder.defaultAbiCoder().encode(
-                        ["string"],
-                        [ipfsHash]
-                    )
+                    value: ethers.hexlify(ethers.toUtf8Bytes(ipfsHash))
                 }
             ]
         ]
