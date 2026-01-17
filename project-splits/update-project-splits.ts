@@ -50,10 +50,19 @@ async function updateProjectSplits() {
 
         // Convert splits from CSV to JSON
         const splitsJsonArray = convertCsvToJson(fundingsSplitsCsv)
-        console.log('splitsJson:', splitsJsonArray)
+        console.log('splitsJsonArray:', splitsJsonArray)
 
         // Prepare metadata JSON
-        // TODO
+        const metadataJson = generateMetadataJson(repo, repoAccountId.toString(), splitsJsonArray)
+        console.log('metadataJson:', metadataJson)
+
+        // Before encoding, store a backup of the plaintext metadata
+        fs.writeFileSync(
+            `metadata_${repo}.json`,
+            JSON.stringify(metadataJson, (key, value) => 
+                (typeof value == 'bigint') ? value.toString() : value
+            , 2)
+        )
 
         // Pin metadata JSON to IPFS
         // TODO
@@ -84,14 +93,6 @@ async function updateProjectSplits() {
             splitsJsonArray
         ]
         console.log('splits:', splits)
-
-        // Before encoding, store a backup of the plaintext data
-        fs.writeFileSync(
-            `splits_${repo}.json`,
-            JSON.stringify(splits, (key, value) => 
-                (typeof value == 'bigint') ? value.toString() : value
-            , 2)
-        )
 
         // Encode call data
         const metadataEncoded = repoDriverContract.interface.encodeFunctionData('emitAccountMetadata', metadata)
@@ -195,14 +196,14 @@ function convertCsvToJson(csvFilePath: string): SplitReceiver[] {
     
     const splits = lines.map(line => {
         const [address, percentage] = line.split(',');
+
+        // Convert percentage to weight (percentage * 10000)
+        const weight = Math.round(parseFloat(percentage.trim()) * 10000);
         
         // Convert address to account ID (just the numeric value of the address)
         const accountId = BigInt(address.trim()).toString();
         
-        // Convert percentage to weight (percentage * 10000)
-        const weight = Math.round(parseFloat(percentage.trim()) * 10000);
-        
-        return { accountId, weight };
+        return { weight, accountId };
     });
     
     // Validate total
@@ -213,4 +214,40 @@ function convertCsvToJson(csvFilePath: string): SplitReceiver[] {
     }
     
     return splits;
+}
+
+function generateMetadataJson(repo: string, accountId: string, splits: SplitReceiver[]) {
+    console.log('generateMetadataJson')
+
+    // Add "sublist" and "type" fields to each split receiver
+    const splitsWithDetails = splits.map(receiver => ({
+        sublist: "maintainers",
+        type: "address",
+        ...receiver
+    }))
+    console.log('splitsWithDetails:', splitsWithDetails)
+
+    return {
+        driver: "repo",
+        describes: {
+            driver: "repo",
+            accountId: accountId
+        },
+        source: {
+            forge: "github",
+            repoName: repo,
+            ownerName: "elimu-ai",
+            url: `https://github.com/elimu-ai/${repo}`
+        },
+        color: "#5319E7",
+        splits: {
+            dependencies: [],
+            maintainers: splitsWithDetails
+        },
+        avatar: {
+            type: "emoji",
+            emoji: "🎶"
+        },
+        isVisible: true
+    }
 }
