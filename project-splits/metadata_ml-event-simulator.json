@@ -2,13 +2,13 @@
   "driver": "repo",
   "describes": {
     "driver": "repo",
-    "accountId": "80921563202612637598894412388757473428137825479862094155603679117312"
+    "accountId": "80921563202612637598894411519946069165535136453892702186035293220722"
   },
   "source": {
     "forge": "github",
-    "repoName": "website",
+    "repoName": "ml-event-simulator",
     "ownerName": "elimu-ai",
-    "url": "https://github.com/elimu-ai/website"
+    "url": "https://github.com/elimu-ai/ml-event-simulator"
   },
   "color": "#1D76DB",
   "splits": {
@@ -17,19 +17,19 @@
       {
         "sublist": "maintainers",
         "type": "address",
-        "weight": 670808,
+        "weight": 745519,
         "accountId": "88600549353254076863730619763637335896701389226"
       },
       {
         "sublist": "maintainers",
         "type": "address",
-        "weight": 12422,
-        "accountId": "405559605538702626176913320758287393469958391630"
+        "weight": 86022,
+        "accountId": "1134217069578283579877055629849066203374063911078"
       },
       {
         "sublist": "maintainers",
         "type": "address",
-        "weight": 316770,
+        "weight": 168459,
         "accountId": "1411190336780588702434243838048773582926758582835"
       }
     ]

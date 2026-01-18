@@ -2,13 +2,13 @@
   "driver": "repo",
   "describes": {
     "driver": "repo",
-    "accountId": "80921563202612637598894411516289362787629653882352721538152073789440"
+    "accountId": "80921563202612637598894411521040023595205797965724245650816144244736"
   },
   "source": {
     "forge": "github",
-    "repoName": "maneno",
+    "repoName": "model",
     "ownerName": "elimu-ai",
-    "url": "https://github.com/elimu-ai/maneno"
+    "url": "https://github.com/elimu-ai/model"
   },
   "color": "#27C537",
   "splits": {
@@ -17,25 +17,31 @@
       {
         "sublist": "maintainers",
         "type": "address",
-        "weight": 96774,
+        "weight": 29718,
         "accountId": "0"
       },
       {
         "sublist": "maintainers",
         "type": "address",
-        "weight": 116129,
+        "weight": 683506,
         "accountId": "88600549353254076863730619763637335896701389226"
       },
       {
         "sublist": "maintainers",
         "type": "address",
-        "weight": 148387,
-        "accountId": "899472904405402829687978390856910167658508383589"
+        "weight": 4458,
+        "accountId": "324021097832747101231375482193241694563575395327"
       },
       {
         "sublist": "maintainers",
         "type": "address",
-        "weight": 638710,
+        "weight": 1486,
+        "accountId": "1137483100476491797369424722927912896232515108514"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 280832,
         "accountId": "1411190336780588702434243838048773582926758582835"
       }
     ]
