@@ -55,7 +55,7 @@ async function updateProjectSplits() {
         // Prepare metadata JSON
         const metadataJson = generateMetadataJson(repo, repoAccountId.toString(), splitsJsonArray, repoCategory)
         console.log('metadataJson:', metadataJson)
-        console.log('metadataJson (stringified):', JSON.stringify(metadataJson, null, 2))
+        // console.log('metadataJson (stringified):', JSON.stringify(metadataJson, null, 2))
 
         // Before encoding, store a backup of the plaintext metadata
         fs.writeFileSync(
@@ -178,8 +178,6 @@ async function updateProjectSplits() {
             }
         }
 
-        return
-
         // Set splits on-chain
         const tx = await callerContract.callBatched(batchedCalls)
         console.log('Transaction submitted. Hash:', tx.hash)
@@ -229,7 +227,7 @@ function convertCsvToJson(csvFilePath: string): SplitReceiver[] {
         return { weight, accountId, address: address.trim().toLowerCase() };
     })
     .sort((a, b) => a.address.localeCompare(b.address)) // Sort by Ethereum address (case-insensitive)
-    console.log('Parsed splits:', splits);
+    // console.log('Parsed splits:', splits);
 
     // Merge duplicate addresses by summing their weights
     const mergedSplits: SplitReceiver[] = [];
@@ -241,7 +239,7 @@ function convertCsvToJson(csvFilePath: string): SplitReceiver[] {
     for (const [accountId, weight] of accountIdMap.entries()) {
         mergedSplits.push({ accountId, weight });
     }
-    console.log('Merged splits:', mergedSplits);
+    // console.log('Merged splits:', mergedSplits);
     
     // Validate total
     const total = mergedSplits.reduce((sum, s) => sum + s.weight, 0);
