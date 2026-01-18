@@ -52,7 +52,7 @@ jobs:
       run: |
         git add *.json
         echo "repo_name: ${{ steps.get_repo_name.outputs.repo_name }}"
-        git commit -m 'chore(drips💧): update splits for project repo ${{ steps.get_repo_name.outputs.repo_name }}'
+        git commit -m 'chore(drips💧): update ${{ steps.get_repo_name.outputs.repo_name }}'
 
     - name: Git Push
       run: |
