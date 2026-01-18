@@ -12,7 +12,7 @@ interface LogEntry {
 }
 const update_log = updateLogData as LogEntry[]
 
-require("dotenv").config()
+require("dotenv").config({ debug: false })
 
 const provider = new ethers.JsonRpcProvider('https://0xrpc.io/eth')
 
@@ -142,22 +142,22 @@ async function updateProjectSplits() {
 
         // Get the current gas price
         const feeData = await provider.getFeeData()
-        console.log('feeData:', feeData)
+        // console.log('feeData:', feeData)
         const gasPriceInWei: number = Number(feeData.gasPrice)
-        console.log('gasPriceInWei:', gasPriceInWei)
+        // console.log('gasPriceInWei:', gasPriceInWei)
         const gasPriceInGwei: number = Number(ethers.formatUnits(gasPriceInWei, 'gwei'))
-        console.log('gasPriceInGwei:', gasPriceInGwei)
+        // console.log('gasPriceInGwei:', gasPriceInGwei)
 
         // Cancel the on-chain update if gas price is too high
         const existingIndex = update_log.findIndex(entry => entry.repo === repo)
         if (existingIndex !== -1) {
             // Lookup the timestamp of the last time the splits were updated on-chain
             const timestampOfLastUpdate = update_log[existingIndex].timestamp
-            console.log('timestampOfLastUpdate:', timestampOfLastUpdate)
+            // console.log('timestampOfLastUpdate:', timestampOfLastUpdate)
             const timeOfLastUpdate = new Date(timestampOfLastUpdate * 1000)
-            console.log('timeOfLastUpdate:', timeOfLastUpdate.toISOString())
+            // console.log('timeOfLastUpdate:', timeOfLastUpdate.toISOString())
             const daysSinceLastUpdate = (new Date().getTime() - timeOfLastUpdate.getTime()) / (1000 * 60 * 60 * 24)
-            console.log('daysSinceLastUpdate:', daysSinceLastUpdate)
+            // console.log('daysSinceLastUpdate:', daysSinceLastUpdate)
             if (daysSinceLastUpdate <= 7) {
                 console.warn('Splits already updated within the past 7 days, skipping update for repo:', repo)
                 continue
@@ -180,24 +180,27 @@ async function updateProjectSplits() {
 
         // Set splits on-chain
         const tx = await callerContract.callBatched(batchedCalls)
-        console.log('Transaction submitted. Hash:', tx.hash)
+        // console.log('Transaction submitted. Hash:', tx.hash)
         const receipt = await tx.wait()
-        console.log('Transaction confirmed. Receipt:', receipt)
+        // console.log('Transaction confirmed. Receipt:', receipt)
 
         // Store the timestamp of the confirmed transaction in a log file
         const block = await provider.getBlock(receipt.blockNumber)
         const timestamp = block!.timestamp
-        console.log('Transaction timestamp:', timestamp)
+        // console.log('Transaction timestamp:', timestamp)
         if (existingIndex !== -1) {
             update_log[existingIndex] = { repo, ipfsHash, timestamp, txHash: tx.hash }
         } else {
             update_log.push({ repo, ipfsHash, timestamp, txHash: tx.hash })
         }
-        console.log('update_log:', update_log)
+        // console.log('update_log:', update_log)
         fs.writeFileSync(
             'update_log.json',
             JSON.stringify(update_log, null, 2)
         )
+
+        // Print the repo name for the workflow's Git commit message
+        console.log(repo)
 
         // Only process one repo at a time (to enable one Git commit per repo update)
         return
@@ -209,7 +212,7 @@ interface SplitReceiver {
     weight: number;
 }
 function convertCsvToJson(csvFilePath: string): SplitReceiver[] {
-    console.log('convertCsvToJson');
+    // console.log('convertCsvToJson');
 
     // Read and parse CSV
     const csvContent = fs.readFileSync(csvFilePath, 'utf-8');
@@ -243,7 +246,7 @@ function convertCsvToJson(csvFilePath: string): SplitReceiver[] {
 
     // Calculate total and adjust for rounding errors
     const total = mergedSplits.reduce((sum, s) => sum + s.weight, 0);
-    console.log(`Total weight before adjustment: ${total}`);
+    // console.log(`Total weight before adjustment: ${total}`);
     if (total != 1_000_000) {
         // Find the entry with the largest weight and adjust it
         const difference = 1_000_000 - total;
@@ -251,12 +254,12 @@ function convertCsvToJson(csvFilePath: string): SplitReceiver[] {
             current.weight > max.weight ? current : max
         );
         
-        console.log(`Adjusting largest weight by ${difference} (from ${largestEntry.weight} to ${largestEntry.weight + difference})`);
+        // console.log(`Adjusting largest weight by ${difference} (from ${largestEntry.weight} to ${largestEntry.weight + difference})`);
         largestEntry.weight += difference;
         
         // Verify the adjustment
         const newTotal = mergedSplits.reduce((sum, s) => sum + s.weight, 0);
-        console.log(`Total weight after adjustment: ${newTotal}`);
+        // console.log(`Total weight after adjustment: ${newTotal}`);
         
         if (newTotal !== 1_000_000) {
             throw new Error(`Failed to adjust weights correctly. Total is ${newTotal} (expected 1,000,000)`);
@@ -267,7 +270,7 @@ function convertCsvToJson(csvFilePath: string): SplitReceiver[] {
 }
 
 function generateMetadataJson(repo: string, accountId: string, splits: SplitReceiver[], repoCategory: string) {
-    console.log('generateMetadataJson')
+    // console.log('generateMetadataJson')
 
     // Add "sublist" and "type" fields to each split receiver
     const splitsWithDetails = splits.map(receiver => ({
@@ -275,7 +278,7 @@ function generateMetadataJson(repo: string, accountId: string, splits: SplitRece
         type: "address",
         ...receiver
     }))
-    console.log('splitsWithDetails:', splitsWithDetails)
+    // console.log('splitsWithDetails:', splitsWithDetails)
 
     // Set different colors for different repo categories
     let color = "#5319E7" // Default color (CONTENT)
