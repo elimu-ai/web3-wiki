@@ -205,7 +205,7 @@ async function updateProjectSplits() {
         )
 
         // Print the repo name for the workflow's Git commit message
-        console.log(`elimu-ai/${repo}`)
+        console.log(`@elimu-ai/${repo}`)
 
         // Only process one repo at a time (to enable one Git commit per repo update)
         return
