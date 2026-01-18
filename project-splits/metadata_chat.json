@@ -1,0 +1,48 @@
+{
+  "driver": "repo",
+  "describes": {
+    "driver": "repo",
+    "accountId": "80921563202612637598894410647531275719122048335656939123428103815168"
+  },
+  "source": {
+    "forge": "github",
+    "repoName": "chat",
+    "ownerName": "elimu-ai",
+    "url": "https://github.com/elimu-ai/chat"
+  },
+  "color": "#27C537",
+  "splits": {
+    "dependencies": [],
+    "maintainers": [
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 111842,
+        "accountId": "88600549353254076863730619763637335896701389226"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 105263,
+        "accountId": "119383150184314482074783582550928493149312143780"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 217105,
+        "accountId": "899472904405402829687978390856910167658508383589"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 565790,
+        "accountId": "1411190336780588702434243838048773582926758582835"
+      }
+    ]
+  },
+  "avatar": {
+    "type": "emoji",
+    "emoji": "👩🏽‍💻"
+  },
+  "isVisible": true
+}
