@@ -12,15 +12,7 @@ interface LogEntry {
 }
 const update_log = updateLogData as LogEntry[]
 
-// Suppress dotenv stderr output (since we are printing the repo name for the workflow's Git commit message)
-const originalStderrWrite = process.stderr.write.bind(process.stderr);
-process.stderr.write = (chunk: any, encoding?: any, callback?: any) => {
-    if (typeof chunk === 'string' && chunk.includes('dotenv')) {
-        return true;
-    }
-    return originalStderrWrite(chunk, encoding, callback);
-};
-require("dotenv").config({ debug: false })
+require("dotenv").config({ quiet: true })
 
 const provider = new ethers.JsonRpcProvider('https://0xrpc.io/eth')
 
