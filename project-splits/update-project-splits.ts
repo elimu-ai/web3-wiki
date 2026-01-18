@@ -25,7 +25,7 @@ const repoDriverContract: Contract = new ethers.Contract(
 updateProjectSplits()
 
 async function updateProjectSplits() {
-    console.log('updateProjectSplits')
+    // console.log('updateProjectSplits')
 
     const repos: any = gitHubRepos
     for (const repo in repos) {
@@ -95,7 +95,7 @@ async function updateProjectSplits() {
         const existingRepoEntry = update_log.find(entry => entry.repo === repo)
         // console.log('existingRepoEntry:', existingRepoEntry)
         if (existingRepoEntry?.ipfsHash === ipfsHash) {
-            console.warn('IPFS hash unchanged, skipping update for repo:', repo)
+            // console.warn('IPFS hash unchanged, skipping update for repo:', repo)
             continue
         }
 
@@ -127,18 +127,18 @@ async function updateProjectSplits() {
             [repoDriverContract.target, splitsEncoded, 0 ],
             [repoDriverContract.target, metadataEncoded, 0]
         ]
-        console.log('batchedCalls:', batchedCalls)
+        // console.log('batchedCalls:', batchedCalls)
 
         // Prepare signer account
         const privateKey = process.env[`PRIVATE_KEY_${repoCategory}`]
         if (!privateKey) {
             throw new Error('PRIVATE_KEY not set in environment variables')
         }
-        console.log('privateKey length:', privateKey.length)
+        // console.log('privateKey length:', privateKey.length)
         const wallet = new ethers.Wallet(privateKey)
         const signer = wallet.connect(provider)
-        console.log('signer address:', signer.address)
-        console.log('signer balance (ETH):', ethers.formatEther(await provider.getBalance(signer.address)))
+        // console.log('signer address:', signer.address)
+        // console.log('signer balance (ETH):', ethers.formatEther(await provider.getBalance(signer.address)))
         const callerContract: Contract = new ethers.Contract(
             '0x60F25ac5F289Dc7F640f948521d486C964A248e5',
             Caller.abi,
@@ -164,7 +164,7 @@ async function updateProjectSplits() {
             const daysSinceLastUpdate = (new Date().getTime() - timeOfLastUpdate.getTime()) / (1000 * 60 * 60 * 24)
             // console.log('daysSinceLastUpdate:', daysSinceLastUpdate)
             if (daysSinceLastUpdate <= 7) {
-                console.warn('Splits already updated within the past 7 days, skipping update for repo:', repo)
+                // console.warn('Splits already updated within the past 7 days, skipping update for repo:', repo)
                 continue
             } else if (
                 (daysSinceLastUpdate > 28) && (gasPriceInGwei >= 0.04) ||
@@ -172,13 +172,13 @@ async function updateProjectSplits() {
                 (daysSinceLastUpdate > 14) && (gasPriceInGwei >= 0.02) ||
                 (daysSinceLastUpdate >  7) && (gasPriceInGwei >= 0.01)
             ) {
-                console.warn('Gas price too high, skipping update for repo:', repo)
+                // console.warn('Gas price too high, skipping update for repo:', repo)
                 continue
             }
         } else {
             // Initial update, be more aggressive about gas price limits
             if (gasPriceInGwei >= 0.04) {
-                console.warn('Gas price too high, skipping update for repo:', repo)
+                // console.warn('Gas price too high, skipping update for repo:', repo)
                 continue
             }
         }
