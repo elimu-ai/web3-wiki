@@ -1,0 +1,36 @@
+{
+  "driver": "repo",
+  "describes": {
+    "driver": "repo",
+    "accountId": "81006807071195408334365781660556579541947813063863520549356591806495"
+  },
+  "source": {
+    "forge": "github",
+    "repoName": "handwriting-letters",
+    "ownerName": "elimu-ai",
+    "url": "https://github.com/elimu-ai/handwriting-letters"
+  },
+  "color": "#27C537",
+  "splits": {
+    "dependencies": [],
+    "maintainers": [
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 800000,
+        "accountId": "88600549353254076863730619763637335896701389226"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 200000,
+        "accountId": "414884770874562894329148963610076218185414818146"
+      }
+    ]
+  },
+  "avatar": {
+    "type": "emoji",
+    "emoji": "👩🏽‍💻"
+  },
+  "isVisible": true
+}
