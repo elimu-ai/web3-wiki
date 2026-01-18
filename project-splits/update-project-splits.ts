@@ -29,32 +29,32 @@ async function updateProjectSplits() {
 
     const repos: any = gitHubRepos
     for (const repo in repos) {
-        console.log()
-        console.log('repo:', repo)
+        // console.log()
+        // console.log('repo:', repo)
 
         // Extract repo category from path (e.g. "funding-splits-content" -> "CONTENT")
         const repoCategory = repos[repo].substring(15).toUpperCase()
-        console.log('repoCategory:', repoCategory)
+        // console.log('repoCategory:', repoCategory)
 
         // Get the Drips account ID of the GitHub repo
         const repoName = "elimu-ai/" + repo
-        console.log('repoName:', repoName)
+        // console.log('repoName:', repoName)
         const repoNameAsHex: string = String(ethers.hexlify(ethers.toUtf8Bytes(repoName)))
-        console.log('repoNameAsHex:', repoNameAsHex)
+        // console.log('repoNameAsHex:', repoNameAsHex)
         const repoAccountId: number = await repoDriverContract.calcAccountId(0, repoNameAsHex)
-        console.log('repoAccountId:', repoAccountId)
+        // console.log('repoAccountId:', repoAccountId)
 
         // Get CSV file with funding splits  
         const fundingsSplitsCsv: string = `../${repos[repo]}/github_${repo}/FUNDING_SPLITS.csv`
-        console.log('fundingsSplitsCsv:', fundingsSplitsCsv)
+        // console.log('fundingsSplitsCsv:', fundingsSplitsCsv)
 
         // Convert splits from CSV to JSON
         const splitsJsonArray = convertCsvToJson(fundingsSplitsCsv)
-        console.log('splitsJsonArray:', splitsJsonArray)
+        // console.log('splitsJsonArray:', splitsJsonArray)
 
         // Prepare metadata JSON
         const metadataJson = generateMetadataJson(repo, repoAccountId.toString(), splitsJsonArray, repoCategory)
-        console.log('metadataJson:', metadataJson)
+        // console.log('metadataJson:', metadataJson)
         // console.log('metadataJson (stringified):', JSON.stringify(metadataJson, null, 2))
 
         // Before encoding, store a backup of the plaintext metadata
@@ -131,11 +131,11 @@ async function updateProjectSplits() {
 
         // Prepare signer account
         const privateKey = process.env[`PRIVATE_KEY_${repoCategory}`]
-        if (!jwt) {
+        if (!privateKey) {
             throw new Error('PRIVATE_KEY not set in environment variables')
         }
-        console.log('privateKey length:', jwt.length)
-        const wallet = new ethers.Wallet(jwt)
+        console.log('privateKey length:', privateKey.length)
+        const wallet = new ethers.Wallet(privateKey)
         const signer = wallet.connect(provider)
         console.log('signer address:', signer.address)
         console.log('signer balance (ETH):', ethers.formatEther(await provider.getBalance(signer.address)))
