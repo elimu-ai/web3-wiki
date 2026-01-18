@@ -22,5 +22,11 @@
     "ipfsHash": "QmRt1Kinui19ZhjqmxUiHeSNCrQvFTqQiF6EbERZK23nxD",
     "timestamp": 1768746227,
     "txHash": "0xf5797366222df47f78669a2d9206dafd7425ae7189790bb96384f486c26661e9"
+  },
+  {
+    "repo": "CameraColorPicker",
+    "ipfsHash": "QmXdzKvVGXeJ8p6bmGUhcf1YkWmXx63Zdma74iewd8ghFC",
+    "timestamp": 1768747595,
+    "txHash": "0x97529da577770fdef33334079fae6aa1edd9b53eeab198e339841f32339c2ba5"
   }
 ]
