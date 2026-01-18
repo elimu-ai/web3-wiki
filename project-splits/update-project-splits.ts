@@ -29,12 +29,16 @@ async function updateProjectSplits() {
 
     const repos: any = gitHubRepos
     for (const repo in repos) {
-        if (repo != "webapp-lfs") {
+        if (repo != "website") {
             // TODO: remove
             continue
         }
         console.log()
         console.log('repo:', repo)
+
+        // Extract repo category from path (e.g. "funding-splits-content" -> "CONTENT")
+        const repoCategory = repos[repo].substring(15).toUpperCase()
+        console.log('repoCategory:', repoCategory)
 
         // Get the Drips account ID of the GitHub repo
         const repoName = "elimu-ai/" + repo
@@ -53,7 +57,7 @@ async function updateProjectSplits() {
         console.log('splitsJsonArray:', splitsJsonArray)
 
         // Prepare metadata JSON
-        const metadataJson = generateMetadataJson(repo, repoAccountId.toString(), splitsJsonArray)
+        const metadataJson = generateMetadataJson(repo, repoAccountId.toString(), splitsJsonArray, repoCategory)
         console.log('metadataJson:', metadataJson)
         console.log('metadataJson (stringified):', JSON.stringify(metadataJson, null, 2))
 
@@ -87,7 +91,12 @@ async function updateProjectSplits() {
         console.log('ipfsHash:', ipfsHash)
 
         // Cancel the on-chain update if the IPFS hash has not changed
-        // TODO
+        const existingRepoEntry = update_log.find(entry => entry.repo === repo)
+        console.log('existingRepoEntry:', existingRepoEntry)
+        if (existingRepoEntry?.ipfsHash === ipfsHash) {
+            console.warn('IPFS hash unchanged, skipping update for repo:', repo)
+            continue
+        }
 
         // Prepare metadata call data
         const metadata = [
@@ -120,8 +129,7 @@ async function updateProjectSplits() {
         console.log('batchedCalls:', batchedCalls)
 
         // Prepare signer account
-        // TODO: handle separate private keys for different repos (content/engineering/distribution)
-        const privateKey = process.env.PRIVATE_KEY
+        const privateKey = process.env[`PRIVATE_KEY_${repoCategory}`]
         if (!privateKey) {
             throw new Error('PRIVATE_KEY not set in environment variables')
         }
@@ -231,7 +239,7 @@ function convertCsvToJson(csvFilePath: string): SplitReceiver[] {
     return splits;
 }
 
-function generateMetadataJson(repo: string, accountId: string, splits: SplitReceiver[]) {
+function generateMetadataJson(repo: string, accountId: string, splits: SplitReceiver[], repoCategory: string) {
     console.log('generateMetadataJson')
 
     // Add "sublist" and "type" fields to each split receiver
@@ -241,6 +249,17 @@ function generateMetadataJson(repo: string, accountId: string, splits: SplitRece
         ...receiver
     }))
     console.log('splitsWithDetails:', splitsWithDetails)
+
+    // Set different colors for different repo categories
+    let color = "#5319E7" // Default color (CONTENT)
+    let emoji = "🎶" // Default emoji (CONTENT)
+    if (repoCategory === "ENGINEERING") {
+        color = "#0E8A16"
+        emoji = "👩🏽‍💻"
+    } else if (repoCategory === "DISTRIBUTION") {
+        color = "#1D76DB"
+        emoji = "🛵"
+    }
 
     return {
         driver: "repo",
@@ -254,14 +273,14 @@ function generateMetadataJson(repo: string, accountId: string, splits: SplitRece
             ownerName: "elimu-ai",
             url: `https://github.com/elimu-ai/${repo}`
         },
-        color: "#5319E7",
+        color: color,
         splits: {
             dependencies: [],
             maintainers: splitsWithDetails
         },
         avatar: {
             type: "emoji",
-            emoji: "🎶"
+            emoji: emoji
         },
         isVisible: true
     }
