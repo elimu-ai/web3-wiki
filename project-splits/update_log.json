@@ -52,5 +52,11 @@
     "ipfsHash": "QmPD9k22oKMVpgSJzB16JfuzkAvZqczMDef5wHx8LLSS8X",
     "timestamp": 1768759871,
     "txHash": "0xc82579058446456c36f5cbf7d6284de6bd684afb614f2bc3d97adec9248f1bf2"
+  },
+  {
+    "repo": "content-provider",
+    "ipfsHash": "QmVTMfLGfMqEoJzu6UxMTBriNkTy4wjXnoUtPjvYffkTNP",
+    "timestamp": 1768760159,
+    "txHash": "0x467b9553a1132ef244103163b5b786ca4fb28d07b936be8d58f084ca59380556"
   }
 ]
