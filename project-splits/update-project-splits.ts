@@ -182,6 +182,8 @@ async function updateProjectSplits() {
             }
         }
 
+        return
+
         // Set splits on-chain
         const tx = await callerContract.callBatched(batchedCalls, { gasPrice: gasPriceInWei })
         console.log('Transaction submitted. Hash:', tx.hash)
@@ -228,15 +230,10 @@ function convertCsvToJson(csvFilePath: string): SplitReceiver[] {
         // Convert address to account ID (just the numeric value of the address)
         const accountId = BigInt(address.trim()).toString();
         
-        return { weight, accountId };
+        return { weight, accountId, address: address.trim().toLowerCase() };
     })
-
-    // Sort by accountId
-    splits.sort((a, b) => {
-        if (a.accountId < b.accountId) return -1;
-        if (a.accountId > b.accountId) return 1;
-        return 0;
-    });
+    .sort((a, b) => a.address.localeCompare(b.address)) // Sort by Ethereum address (case-insensitive)
+    .map(({ weight, accountId }) => ({ weight, accountId })); // Remove the temporary address field
     
     // Validate total
     const total = splits.reduce((sum, s) => sum + s.weight, 0);
