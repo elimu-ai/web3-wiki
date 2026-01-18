@@ -178,6 +178,8 @@ async function updateProjectSplits() {
             }
         }
 
+        return
+
         // Set splits on-chain
         const tx = await callerContract.callBatched(batchedCalls)
         console.log('Transaction submitted. Hash:', tx.hash)
@@ -227,7 +229,7 @@ function convertCsvToJson(csvFilePath: string): SplitReceiver[] {
         return { weight, accountId, address: address.trim().toLowerCase() };
     })
     .sort((a, b) => a.address.localeCompare(b.address)) // Sort by Ethereum address (case-insensitive)
-    // .map(({ weight, accountId }) => ({ weight, accountId })); // Remove the temporary address field
+    console.log('Parsed splits:', splits);
 
     // Merge duplicate addresses by summing their weights
     const mergedSplits: SplitReceiver[] = [];
@@ -239,11 +241,7 @@ function convertCsvToJson(csvFilePath: string): SplitReceiver[] {
     for (const [accountId, weight] of accountIdMap.entries()) {
         mergedSplits.push({ accountId, weight });
     }
-    mergedSplits.sort((a, b) => {
-        const aId = BigInt(a.accountId);
-        const bId = BigInt(b.accountId);
-        return aId < bId ? -1 : aId > bId ? 1 : 0;
-    });
+    console.log('Merged splits:', mergedSplits);
     
     // Validate total
     const total = mergedSplits.reduce((sum, s) => sum + s.weight, 0);
