@@ -103,7 +103,7 @@ async function updateProjectSplits() {
             repoAccountId,
             [
                 {
-                    key: ethers.id("ipfs"),
+                    key: ethers.encodeBytes32String("ipfs"),
                     value: ethers.hexlify(ethers.toUtf8Bytes(ipfsHash))
                 }
             ]
@@ -123,8 +123,8 @@ async function updateProjectSplits() {
 
         // Prepare batched calls
         const batchedCalls = [
-            [repoDriverContract.target, metadataEncoded, 0],
-            [repoDriverContract.target, splitsEncoded, 0 ]
+            [repoDriverContract.target, splitsEncoded, 0 ],
+            [repoDriverContract.target, metadataEncoded, 0]
         ]
         console.log('batchedCalls:', batchedCalls)
 
@@ -183,7 +183,7 @@ async function updateProjectSplits() {
         }
 
         // Set splits on-chain
-        const tx = await callerContract.callBatched(batchedCalls, { gasPrice: gasPriceInWei })
+        const tx = await callerContract.callBatched(batchedCalls)
         console.log('Transaction submitted. Hash:', tx.hash)
         const receipt = await tx.wait()
         console.log('Transaction confirmed. Receipt:', receipt)
