@@ -27,7 +27,12 @@ jobs:
     - run: npm ci
     - run: npx tsc
 
-    - run: node update-project-splits.js
+    - name: Update Project Splits
+      id: get_repo_name
+      run: |
+        REPO_NAME="$(node update-project-splits.js)"
+        echo "REPO_NAME $REPO_NAME"
+        echo "repo_name=$REPO_NAME" >> $GITHUB_OUTPUT
 
     - name: Git Config
       run: |
@@ -41,7 +46,8 @@ jobs:
     - name: Git Commit
       run: |
         git add *.json
-        git commit -m 'chore(drips💧): update github project splits'
+        echo "repo_name: ${{ steps.get_repo_name.outputs.repo_name }}"
+        git commit -m 'chore(drips💧): update splits for project repo ${{  }}'
 
     - name: Git Push
       run: |

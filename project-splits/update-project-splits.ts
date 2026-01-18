@@ -64,12 +64,17 @@ async function updateProjectSplits() {
         )
 
         // Pin metadata JSON to IPFS
+        const jwt = process.env.PINATA_JWT
+        if (!jwt) {
+            throw new Error('PINATA_JWT not set in environment variables')
+        }
+        console.log('jwt length:', jwt.length)
         const url = "https://api.pinata.cloud/pinning/pinJSONToIPFS";
         const pinRequest = await fetch(url, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": `Bearer ${process.env.PINATA_JWT}`
+                "Authorization": `Bearer ${jwt}`
             },
             body: JSON.stringify({
                 pinataContent: metadataJson,
@@ -84,11 +89,11 @@ async function updateProjectSplits() {
         const pinResponse = await pinRequest.json()
         console.log('pinResponse:', pinResponse)
         const ipfsHash = pinResponse.IpfsHash
-        console.log('ipfsHash:', ipfsHash)
+        // console.log('ipfsHash:', ipfsHash)
 
         // Cancel the on-chain update if the IPFS hash has not changed
         const existingRepoEntry = update_log.find(entry => entry.repo === repo)
-        console.log('existingRepoEntry:', existingRepoEntry)
+        // console.log('existingRepoEntry:', existingRepoEntry)
         if (existingRepoEntry?.ipfsHash === ipfsHash) {
             console.warn('IPFS hash unchanged, skipping update for repo:', repo)
             continue
@@ -104,14 +109,14 @@ async function updateProjectSplits() {
                 }
             ]
         ]
-        console.log('metadata:', metadata)
+        // console.log('metadata:', metadata)
 
         // Prepare splits call data
         const splits = [
             repoAccountId,
             splitsJsonArray
         ]
-        console.log('splits:', splits)
+        // console.log('splits:', splits)
 
         // Encode call data
         const metadataEncoded = repoDriverContract.interface.encodeFunctionData('emitAccountMetadata', metadata)
@@ -126,11 +131,11 @@ async function updateProjectSplits() {
 
         // Prepare signer account
         const privateKey = process.env[`PRIVATE_KEY_${repoCategory}`]
-        if (!privateKey) {
+        if (!jwt) {
             throw new Error('PRIVATE_KEY not set in environment variables')
         }
-        console.log('privateKey length:', privateKey.length)
-        const wallet = new ethers.Wallet(privateKey)
+        console.log('privateKey length:', jwt.length)
+        const wallet = new ethers.Wallet(jwt)
         const signer = wallet.connect(provider)
         console.log('signer address:', signer.address)
         console.log('signer balance (ETH):', ethers.formatEther(await provider.getBalance(signer.address)))
@@ -200,7 +205,7 @@ async function updateProjectSplits() {
         )
 
         // Print the repo name for the workflow's Git commit message
-        console.log(repo)
+        console.log(`@elimu-ai/${repo}`)
 
         // Only process one repo at a time (to enable one Git commit per repo update)
         return
