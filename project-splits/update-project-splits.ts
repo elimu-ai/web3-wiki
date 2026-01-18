@@ -12,6 +12,14 @@ interface LogEntry {
 }
 const update_log = updateLogData as LogEntry[]
 
+// Suppress dotenv stderr output (since we are printing the repo name for the workflow's Git commit message)
+const originalStderrWrite = process.stderr.write.bind(process.stderr);
+process.stderr.write = (chunk: any, encoding?: any, callback?: any) => {
+    if (typeof chunk === 'string' && chunk.includes('dotenv')) {
+        return true;
+    }
+    return originalStderrWrite(chunk, encoding, callback);
+};
 require("dotenv").config({ debug: false })
 
 const provider = new ethers.JsonRpcProvider('https://0xrpc.io/eth')
@@ -205,7 +213,7 @@ async function updateProjectSplits() {
         )
 
         // Print the repo name for the workflow's Git commit message
-        console.log(`@elimu-ai/${repo}`)
+        console.log(`elimu-ai/${repo}`)
 
         // Only process one repo at a time (to enable one Git commit per repo update)
         return
