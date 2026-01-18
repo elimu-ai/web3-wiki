@@ -202,6 +202,9 @@ async function updateProjectSplits() {
             'update_log.json',
             JSON.stringify(update_log, null, 2)
         )
+
+        // Only process one repo at a time (to enable one Git commit per repo update)
+        return
     }
 }
 
@@ -226,6 +229,13 @@ function convertCsvToJson(csvFilePath: string): SplitReceiver[] {
         const accountId = BigInt(address.trim()).toString();
         
         return { weight, accountId };
+    })
+
+    // Sort by accountId
+    splits.sort((a, b) => {
+        if (a.accountId < b.accountId) return -1;
+        if (a.accountId > b.accountId) return 1;
+        return 0;
     });
     
     // Validate total
