@@ -2,35 +2,35 @@
   "driver": "repo",
   "describes": {
     "driver": "repo",
-    "accountId": "80921563202612637598894412388757380108437126315710696101209027117056"
+    "accountId": "80921563202612637598894407857572024505744824146178432879339954860544"
   },
   "source": {
     "forge": "github",
-    "repoName": "webapp-lfs",
+    "repoName": "CameraColorPicker",
     "ownerName": "elimu-ai",
-    "url": "https://github.com/elimu-ai/webapp-lfs"
+    "url": "https://github.com/elimu-ai/CameraColorPicker"
   },
-  "color": "#5319E7",
+  "color": "#0E8A16",
   "splits": {
     "dependencies": [],
     "maintainers": [
       {
         "sublist": "maintainers",
         "type": "address",
-        "weight": 968397,
-        "accountId": "88600549353254076863730619763637335896701389226"
+        "weight": 967742,
+        "accountId": "0"
       },
       {
         "sublist": "maintainers",
         "type": "address",
-        "weight": 31603,
-        "accountId": "1411190336780588702434243838048773582926758582835"
+        "weight": 32258,
+        "accountId": "88600549353254076863730619763637335896701389226"
       }
     ]
   },
   "avatar": {
     "type": "emoji",
-    "emoji": "🎶"
+    "emoji": "👩🏽‍💻"
   },
   "isVisible": true
 }

@@ -237,7 +237,7 @@ function convertCsvToJson(csvFilePath: string): SplitReceiver[] {
         accountIdMap.set(split.accountId, existingWeight + split.weight);
     }
     for (const [accountId, weight] of accountIdMap.entries()) {
-        mergedSplits.push({ accountId, weight });
+        mergedSplits.push({ weight, accountId });
     }
     // console.log('Merged splits:', mergedSplits);
     
@@ -267,7 +267,7 @@ function generateMetadataJson(repo: string, accountId: string, splits: SplitRece
     let color = "#5319E7" // Default color (CONTENT)
     let emoji = "🎶" // Default emoji (CONTENT)
     if (repoCategory === "ENGINEERING") {
-        color = "#0E8A16"
+        color = "#27C537"
         emoji = "👩🏽‍💻"
     } else if (repoCategory === "DISTRIBUTION") {
         color = "#1D76DB"
