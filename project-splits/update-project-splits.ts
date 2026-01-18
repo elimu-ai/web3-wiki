@@ -182,8 +182,6 @@ async function updateProjectSplits() {
             }
         }
 
-        return
-
         // Set splits on-chain
         const tx = await callerContract.callBatched(batchedCalls, { gasPrice: gasPriceInWei })
         console.log('Transaction submitted. Hash:', tx.hash)
