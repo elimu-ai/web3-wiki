@@ -29,10 +29,6 @@ async function updateProjectSplits() {
 
     const repos: any = gitHubRepos
     for (const repo in repos) {
-        if (repo != "maneno") {
-            // TODO: remove
-            continue
-        }
         console.log()
         console.log('repo:', repo)
 
