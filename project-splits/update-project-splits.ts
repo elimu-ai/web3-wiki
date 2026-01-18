@@ -2,7 +2,6 @@ import { Contract, ethers } from 'ethers'
 import RepoDriver from './abis/RepoDriver.json'
 import Caller from './abis/Caller.json'
 import gitHubRepos from '../src/github-contributors/github-repos.json'
-import { PinataSDK } from 'pinata'
 import fs from 'fs'
 import updateLogData from './update_log.json'
 interface LogEntry {
@@ -14,11 +13,6 @@ interface LogEntry {
 const update_log = updateLogData as LogEntry[]
 
 require("dotenv").config()
-
-const pinata = new PinataSDK({
-    pinataJwt: process.env.PINATA_JWT!,
-    pinataGateway: "black-historic-wren-832.mypinata.cloud"
-})
 
 const provider = new ethers.JsonRpcProvider('https://0xrpc.io/eth')
 
@@ -70,10 +64,29 @@ async function updateProjectSplits() {
         )
 
         // Pin metadata JSON to IPFS
-        const pinataUpload = await pinata.upload.public.json(metadataJson).name(`metadata_${repo}.json`)
-        console.log('pinataUpload:', pinataUpload)
-        const ipfsHash = pinataUpload.cid
+        const url = "https://api.pinata.cloud/pinning/pinJSONToIPFS";
+        const pinRequest = await fetch(url, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${process.env.PINATA_JWT}`
+            },
+            body: JSON.stringify({
+                pinataContent: metadataJson,
+                pinataMetadata: {
+                    name: `metadata_${repo}.json`
+                },
+                pinataOptions: {
+                    cidVersion: 0
+                }
+            })
+        })
+        const pinResponse = await pinRequest.json()
+        console.log('pinResponse:', pinResponse)
+        const ipfsHash = pinResponse.IpfsHash
         console.log('ipfsHash:', ipfsHash)
+
+        return
 
         // Cancel the on-chain update if the IPFS hash has not changed
         // TODO
