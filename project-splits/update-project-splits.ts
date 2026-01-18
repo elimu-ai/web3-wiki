@@ -227,17 +227,33 @@ function convertCsvToJson(csvFilePath: string): SplitReceiver[] {
         return { weight, accountId, address: address.trim().toLowerCase() };
     })
     .sort((a, b) => a.address.localeCompare(b.address)) // Sort by Ethereum address (case-insensitive)
-    .map(({ weight, accountId }) => ({ weight, accountId })); // Remove the temporary address field
+    // .map(({ weight, accountId }) => ({ weight, accountId })); // Remove the temporary address field
+
+    // Merge duplicate addresses by summing their weights
+    const mergedSplits: SplitReceiver[] = [];
+    const accountIdMap = new Map<string, number>();
+    for (const split of splits) {
+        const existingWeight = accountIdMap.get(split.accountId) || 0;
+        accountIdMap.set(split.accountId, existingWeight + split.weight);
+    }
+    for (const [accountId, weight] of accountIdMap.entries()) {
+        mergedSplits.push({ accountId, weight });
+    }
+    mergedSplits.sort((a, b) => {
+        const aId = BigInt(a.accountId);
+        const bId = BigInt(b.accountId);
+        return aId < bId ? -1 : aId > bId ? 1 : 0;
+    });
     
     // Validate total
-    const total = splits.reduce((sum, s) => sum + s.weight, 0);
+    const total = mergedSplits.reduce((sum, s) => sum + s.weight, 0);
     console.log(`Total weight: ${total}`);
     if (total != 1_000_000) {
         const errorMessage = `Total weight is ${total} (expected 1,000,000)`;
         throw new Error(errorMessage);
     }
     
-    return splits;
+    return mergedSplits;
 }
 
 function generateMetadataJson(repo: string, accountId: string, splits: SplitReceiver[], repoCategory: string) {
