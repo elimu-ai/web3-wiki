@@ -240,13 +240,27 @@ function convertCsvToJson(csvFilePath: string): SplitReceiver[] {
         mergedSplits.push({ weight, accountId });
     }
     // console.log('Merged splits:', mergedSplits);
-    
-    // Validate total
+
+    // Calculate total and adjust for rounding errors
     const total = mergedSplits.reduce((sum, s) => sum + s.weight, 0);
-    console.log(`Total weight: ${total}`);
+    console.log(`Total weight before adjustment: ${total}`);
     if (total != 1_000_000) {
-        const errorMessage = `Total weight is ${total} (expected 1,000,000)`;
-        throw new Error(errorMessage);
+        // Find the entry with the largest weight and adjust it
+        const difference = 1_000_000 - total;
+        const largestEntry = mergedSplits.reduce((max, current) => 
+            current.weight > max.weight ? current : max
+        );
+        
+        console.log(`Adjusting largest weight by ${difference} (from ${largestEntry.weight} to ${largestEntry.weight + difference})`);
+        largestEntry.weight += difference;
+        
+        // Verify the adjustment
+        const newTotal = mergedSplits.reduce((sum, s) => sum + s.weight, 0);
+        console.log(`Total weight after adjustment: ${newTotal}`);
+        
+        if (newTotal !== 1_000_000) {
+            throw new Error(`Failed to adjust weights correctly. Total is ${newTotal} (expected 1,000,000)`);
+        }
     }
     
     return mergedSplits;

@@ -34,5 +34,11 @@
     "ipfsHash": "QmbpFL5vzGdKWG5xi9MtyyxS4rpAC7KBAAvFCiPQt4bCz3",
     "timestamp": 1768751975,
     "txHash": "0x41c7821e2775427fd5d02674c1882c8161167b1966f0b16be6cd2275a4d12275"
+  },
+  {
+    "repo": "calculator",
+    "ipfsHash": "Qmf7PoQpKvGNAoPsUHYrdW9DtgC9bAAEpFZHoLBMSfd2SW",
+    "timestamp": 1768752743,
+    "txHash": "0x74836f3d4166cbfd14029032eac0782fcad1fd26eb5632959576d5caf42fc73d"
   }
 ]
