@@ -68,7 +68,7 @@ async function updateProjectSplits() {
         if (!jwt) {
             throw new Error('PINATA_JWT not set in environment variables')
         }
-        console.log('jwt length:', jwt.length)
+        // console.log('jwt length:', jwt.length)
         const url = "https://api.pinata.cloud/pinning/pinJSONToIPFS";
         const pinRequest = await fetch(url, {
             method: "POST",
@@ -87,7 +87,7 @@ async function updateProjectSplits() {
             })
         })
         const pinResponse = await pinRequest.json()
-        console.log('pinResponse:', pinResponse)
+        // console.log('pinResponse:', pinResponse)
         const ipfsHash = pinResponse.IpfsHash
         // console.log('ipfsHash:', ipfsHash)
 

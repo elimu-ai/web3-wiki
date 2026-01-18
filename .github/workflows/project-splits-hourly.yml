@@ -31,6 +31,9 @@ jobs:
       id: get_repo_name
       env:
         PINATA_JWT: ${{ secrets.PINATA_JWT }}
+        PRIVATE_KEY_CONTENT: ${{ secrets.PRIVATE_KEY_CONTENT }}
+        PRIVATE_KEY_ENGINEERING: ${{ secrets.PRIVATE_KEY_ENGINEERING }}
+        PRIVATE_KEY_DISTRIBUTION: ${{ secrets.PRIVATE_KEY_DISTRIBUTION }}
       run: |
         REPO_NAME="$(node update-project-splits.js)"
         echo "REPO_NAME $REPO_NAME"
