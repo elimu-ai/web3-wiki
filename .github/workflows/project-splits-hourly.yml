@@ -1,0 +1,48 @@
+name: Drips💧 Project Splits - Hourly
+
+on:
+  schedule:
+    - cron: 0 * * * *
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    defaults:
+        run:
+            working-directory: project-splits
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Use Node.js 20.x
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20.x
+        cache: 'npm'
+        cache-dependency-path: project-splits/package-lock.json
+
+    - run: npm ci
+    - run: npx tsc
+
+    - run: node update-project-splits.js
+
+    - name: Git Config
+      run: |
+        git config user.name 'Nya Ξlimu'
+        git config user.email 'info@elimu.ai'
+
+    - name: Git Generate Short Diffstat
+      run: |
+        git --no-pager diff --shortstat
+    
+    - name: Git Commit
+      run: |
+        git add *.json
+        git commit -m 'chore(drips💧): update github project splits'
+
+    - name: Git Push
+      run: |
+        git push
