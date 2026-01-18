@@ -1,0 +1,54 @@
+{
+  "driver": "repo",
+  "describes": {
+    "driver": "repo",
+    "accountId": "80921563202612637598894410645163834771211244060364915984146437767168"
+  },
+  "source": {
+    "forge": "github",
+    "repoName": "calculator",
+    "ownerName": "elimu-ai",
+    "url": "https://github.com/elimu-ai/calculator"
+  },
+  "color": "#27C537",
+  "splits": {
+    "dependencies": [],
+    "maintainers": [
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 695088,
+        "accountId": "0"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 9268,
+        "accountId": "88600549353254076863730619763637335896701389226"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 33364,
+        "accountId": "177404673789104562228327678948868019635424691279"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 219648,
+        "accountId": "899472904405402829687978390856910167658508383589"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 42632,
+        "accountId": "1411190336780588702434243838048773582926758582835"
+      }
+    ]
+  },
+  "avatar": {
+    "type": "emoji",
+    "emoji": "👩🏽‍💻"
+  },
+  "isVisible": true
+}

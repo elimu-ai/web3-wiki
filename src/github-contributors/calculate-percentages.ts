@@ -84,7 +84,7 @@ function prepareCsvData(contributorData: any[]) {
         
         csvData.push({
             ethereum_address: ethereumAddress,
-            impact_percentage: impactPercentage.toFixed(2),
+            impact_percentage: impactPercentage,
             github_username: gitHubUsername
         })
     })

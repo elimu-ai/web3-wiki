@@ -1,0 +1,120 @@
+{
+  "driver": "repo",
+  "describes": {
+    "driver": "repo",
+    "accountId": "80921563202612637598894412388757380108423068442477460371985133469696"
+  },
+  "source": {
+    "forge": "github",
+    "repoName": "webapp",
+    "ownerName": "elimu-ai",
+    "url": "https://github.com/elimu-ai/webapp"
+  },
+  "color": "#5319E7",
+  "splits": {
+    "dependencies": [],
+    "maintainers": [
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 32345,
+        "accountId": "0"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 586452,
+        "accountId": "88600549353254076863730619763637335896701389226"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 5899,
+        "accountId": "198927974123578683140948167385141642563691943160"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 1017,
+        "accountId": "324021097832747101231375482193241694563575395327"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 7933,
+        "accountId": "327683328169330538749090661971017458875676055207"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 8950,
+        "accountId": "405559605538702626176913320758287393469958391630"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 5085,
+        "accountId": "463806620123427369398735654604923174227336071935"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 4068,
+        "accountId": "476157743839609463035080454488281048227107569886"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 1424,
+        "accountId": "565929533372524027641665603407367409966481696261"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 6509,
+        "accountId": "688123254781993516668299305517852282395765475858"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 7933,
+        "accountId": "739990241227734169718122080967656793311604914083"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 3051,
+        "accountId": "829537447871447850096971061690211066846960399393"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 1221,
+        "accountId": "1048958394852629063882794166595466482754987180928"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 814,
+        "accountId": "1137483100476491797369424722927912896232515108514"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 5289,
+        "accountId": "1147683184143324396661526797891648764213631910526"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 322010,
+        "accountId": "1411190336780588702434243838048773582926758582835"
+      }
+    ]
+  },
+  "avatar": {
+    "type": "emoji",
+    "emoji": "🎶"
+  },
+  "isVisible": true
+}

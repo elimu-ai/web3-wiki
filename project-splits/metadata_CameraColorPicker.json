@@ -1,0 +1,36 @@
+{
+  "driver": "repo",
+  "describes": {
+    "driver": "repo",
+    "accountId": "80921563202612637598894407857572024505744824146178432879339954860544"
+  },
+  "source": {
+    "forge": "github",
+    "repoName": "CameraColorPicker",
+    "ownerName": "elimu-ai",
+    "url": "https://github.com/elimu-ai/CameraColorPicker"
+  },
+  "color": "#27C537",
+  "splits": {
+    "dependencies": [],
+    "maintainers": [
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 967742,
+        "accountId": "0"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 32258,
+        "accountId": "88600549353254076863730619763637335896701389226"
+      }
+    ]
+  },
+  "avatar": {
+    "type": "emoji",
+    "emoji": "👩🏽‍💻"
+  },
+  "isVisible": true
+}
