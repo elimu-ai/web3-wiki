@@ -86,8 +86,6 @@ async function updateProjectSplits() {
         const ipfsHash = pinResponse.IpfsHash
         console.log('ipfsHash:', ipfsHash)
 
-        return
-
         // Cancel the on-chain update if the IPFS hash has not changed
         // TODO
 
@@ -226,7 +224,8 @@ function convertCsvToJson(csvFilePath: string): SplitReceiver[] {
     const total = splits.reduce((sum, s) => sum + s.weight, 0);
     console.log(`Total weight: ${total}`);
     if (total != 1_000_000) {
-        throw new Error(`Total weight is ${total} (expected 1,000,000)`);
+        const errorMessage = `Total weight is ${total} (expected 1,000,000)`;
+        throw new Error(errorMessage);
     }
     
     return splits;
