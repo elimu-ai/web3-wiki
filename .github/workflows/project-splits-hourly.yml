@@ -29,6 +29,8 @@ jobs:
 
     - name: Update Project Splits
       id: get_repo_name
+      env:
+        PINATA_JWT: ${{ secrets.PINATA_JWT }}
       run: |
         REPO_NAME="$(node update-project-splits.js)"
         echo "REPO_NAME $REPO_NAME"
