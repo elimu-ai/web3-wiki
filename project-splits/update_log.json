@@ -94,5 +94,11 @@
     "ipfsHash": "QmYSLM5NRZZVZU1uC5R3Q5sUNHd9VLz18o1Cy3MRTmx4Xz",
     "timestamp": 1768803923,
     "txHash": "0xb4cfe8410407648f55acc6f1f12bfa2ff3584461caa080b56e7638c06ec12c8a"
+  },
+  {
+    "repo": "kukariri",
+    "ipfsHash": "QmTE6ahyNqZ4zn2C5R3rt9va4WnLLzrZZRx6Umc3DQh2DM",
+    "timestamp": 1768807331,
+    "txHash": "0xa0cb5e2fede260189d95e43fe8c44f298fe2b90b7da987efe2ba29d8f3e8544a"
   }
 ]
