@@ -82,5 +82,11 @@
     "ipfsHash": "QmTw4TgysUTnUqvHtU4rkzrvXapV3J7oUcfXsAB1LqQax4",
     "timestamp": 1768797827,
     "txHash": "0xe802aa176a1b8b33e8237dbdf88adac4a0057ee8dd9b38e3aa3184f11ad907de"
+  },
+  {
+    "repo": "image-picker",
+    "ipfsHash": "QmZpNiZUg9zGUgepRi5SqVfs4HDR67YZptMFZVe7DN7zYj",
+    "timestamp": 1768800275,
+    "txHash": "0xef34c8239c804361efd6b8c4b0bc07bbd7a84d7949f4dd4e21dd3e6c0c1321ff"
   }
 ]
