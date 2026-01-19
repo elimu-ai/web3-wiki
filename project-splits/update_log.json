@@ -76,5 +76,11 @@
     "ipfsHash": "Qmbzkqu1yuTiB4dWGD91MmHznVyUDKsc2XPw78ZLwhvsTk",
     "timestamp": 1768793447,
     "txHash": "0xc28a734b57d7df244789e2ded86aa940006b12ee6179f0b5754424623dc89f84"
+  },
+  {
+    "repo": "herufi",
+    "ipfsHash": "QmTw4TgysUTnUqvHtU4rkzrvXapV3J7oUcfXsAB1LqQax4",
+    "timestamp": 1768797827,
+    "txHash": "0xe802aa176a1b8b33e8237dbdf88adac4a0057ee8dd9b38e3aa3184f11ad907de"
   }
 ]
