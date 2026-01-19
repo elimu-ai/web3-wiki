@@ -112,5 +112,11 @@
     "ipfsHash": "QmPNcjEEDTDMcUGjBcFgcG6icHQk9HH8jZRdryLPL4uX1J",
     "timestamp": 1768829939,
     "txHash": "0x0ccf3a20506c01be8049c698a636e93af81101369b7a0c7687d147dc6a52b1c7"
+  },
+  {
+    "repo": "ml-storybook-reading-level",
+    "ipfsHash": "QmZC9eoosk5evF5bJXtWiVcQugoMoJzkvjZXgcuiStYoQ7",
+    "timestamp": 1768835903,
+    "txHash": "0xffe41b28d1f566dc3058d09d3785d16d3da8ce84740ac12850f2a0d54699ae73"
   }
 ]
