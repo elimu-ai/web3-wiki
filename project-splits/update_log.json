@@ -100,5 +100,11 @@
     "ipfsHash": "QmTE6ahyNqZ4zn2C5R3rt9va4WnLLzrZZRx6Umc3DQh2DM",
     "timestamp": 1768807331,
     "txHash": "0xa0cb5e2fede260189d95e43fe8c44f298fe2b90b7da987efe2ba29d8f3e8544a"
+  },
+  {
+    "repo": "web3-sponsors",
+    "ipfsHash": "QmcujAtFGwD3AhEpwmKk8Py9jHVsMo8ULp7rBFtp2cUUSe",
+    "timestamp": 1768814735,
+    "txHash": "0x4275f091661de087ed15f6c515dca0a78e2ccf6ceac6bb63eab1a714e29d3784"
   }
 ]
