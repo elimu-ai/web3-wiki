@@ -40,7 +40,6 @@ jobs:
         echo "repo_name=$REPO_NAME" >> $GITHUB_OUTPUT
 
     - name: Git Config
-      if: steps.get_repo_name.outputs.repo_name != ''
       run: |
         git config user.name 'Nya Ξlimu'
         git config user.email 'info@elimu.ai'
@@ -49,12 +48,14 @@ jobs:
       run: |
         git --no-pager diff --shortstat
     
-    - name: Git Commit For ${{ steps.get_repo_name.outputs.repo_name }}
+    - name: Git Commit
+      if: steps.get_repo_name.outputs.repo_name != ''
       run: |
         git add *.json
         echo "repo_name: ${{ steps.get_repo_name.outputs.repo_name }}"
         git commit -m 'chore(drips💧): update ${{ steps.get_repo_name.outputs.repo_name }} project splits'
 
     - name: Git Push
+      if: steps.get_repo_name.outputs.repo_name != ''
       run: |
         git push
