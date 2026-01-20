@@ -149,7 +149,13 @@ async function updateProjectSplits() {
 
         // Cancel the on-chain update if gas price is too high
         const existingIndex = update_log.findIndex(entry => entry.repo === repo)
-        if (existingIndex !== -1) {
+        if (existingIndex == -1) {
+            // Initial update
+            if (gasPriceInGwei >= 0.04) {
+                // console.warn('Gas price too high, skipping update for repo:', repo)
+                continue
+            }
+        } else {
             // Lookup the timestamp of the last time the splits were updated on-chain
             const timestampOfLastUpdate = update_log[existingIndex].timestamp
             // console.log('timestampOfLastUpdate:', timestampOfLastUpdate)
@@ -166,12 +172,6 @@ async function updateProjectSplits() {
                 (daysSinceLastUpdate > 14) && (gasPriceInGwei >= 0.02) ||
                 (daysSinceLastUpdate >  7) && (gasPriceInGwei >= 0.01)
             ) {
-                // console.warn('Gas price too high, skipping update for repo:', repo)
-                continue
-            }
-        } else {
-            // Initial update, be more aggressive about gas price limits
-            if (gasPriceInGwei >= 0.04) {
                 // console.warn('Gas price too high, skipping update for repo:', repo)
                 continue
             }
