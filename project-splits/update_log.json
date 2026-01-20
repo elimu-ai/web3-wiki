@@ -124,5 +124,11 @@
     "ipfsHash": "QmfLfok7a8mKF9BjJRNXpL9Z1G6b8bQLFz21SCGTyE9d37",
     "timestamp": 1768870703,
     "txHash": "0x6860dbdeffac6a9e574015caef7ae41a0cf3095490c8a5382c84a9cd3f335e5e"
+  },
+  {
+    "repo": "model",
+    "ipfsHash": "QmPXqWXy8yNBkLGrorQXGhSvfyKVf7tNt3G2Eh2DckPxeu",
+    "timestamp": 1768878011,
+    "txHash": "0x37346f24c46697da70a263c433af45caa2a8abf90aa38e2757f7dc2f4bdfd45a"
   }
 ]
