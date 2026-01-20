@@ -130,5 +130,11 @@
     "ipfsHash": "QmPXqWXy8yNBkLGrorQXGhSvfyKVf7tNt3G2Eh2DckPxeu",
     "timestamp": 1768878011,
     "txHash": "0x37346f24c46697da70a263c433af45caa2a8abf90aa38e2757f7dc2f4bdfd45a"
+  },
+  {
+    "repo": "nambari",
+    "ipfsHash": "QmPX8G6MZEFCyBssuWoGih3wjk2hx3cbh8sbgAxGsKHyZV",
+    "timestamp": 1768882067,
+    "txHash": "0x11154766880502c1cc648b3bb3f5b6c6f5b8643ab1073a00ea722a6bb577d9bd"
   }
 ]
