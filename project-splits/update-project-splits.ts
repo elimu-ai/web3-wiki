@@ -57,12 +57,6 @@ async function updateProjectSplits() {
         // console.log('metadataJson:', metadataJson)
         // console.log('metadataJson (stringified):', JSON.stringify(metadataJson, null, 2))
 
-        // Before encoding, store a backup of the plaintext metadata
-        fs.writeFileSync(
-            `metadata_${repo}.json`,
-            JSON.stringify(metadataJson, null, 2)
-        )
-
         // Pin metadata JSON to IPFS
         const jwt = process.env.PINATA_JWT
         if (!jwt) {
@@ -202,6 +196,12 @@ async function updateProjectSplits() {
         fs.writeFileSync(
             'update_log.json',
             JSON.stringify(update_log, null, 2)
+        )
+
+        // Store a backup of the plaintext metadata
+        fs.writeFileSync(
+            `metadata_${repo}.json`,
+            JSON.stringify(metadataJson, null, 2)
         )
 
         // Print the repo name for the workflow's Git commit message
