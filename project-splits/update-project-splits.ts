@@ -93,6 +93,13 @@ async function updateProjectSplits() {
             continue
         }
 
+        // Prepare splits call data
+        const splits = [
+            repoAccountId,
+            splitsJsonArray
+        ]
+        // console.log('splits:', splits)
+
         // Prepare metadata call data
         const metadata = [
             repoAccountId,
@@ -105,16 +112,9 @@ async function updateProjectSplits() {
         ]
         // console.log('metadata:', metadata)
 
-        // Prepare splits call data
-        const splits = [
-            repoAccountId,
-            splitsJsonArray
-        ]
-        // console.log('splits:', splits)
-
         // Encode call data
-        const metadataEncoded = repoDriverContract.interface.encodeFunctionData('emitAccountMetadata', metadata)
         const splitsEncoded = repoDriverContract.interface.encodeFunctionData('setSplits', splits)
+        const metadataEncoded = repoDriverContract.interface.encodeFunctionData('emitAccountMetadata', metadata)
 
         // Prepare batched calls
         const batchedCalls = [
