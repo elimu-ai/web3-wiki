@@ -142,5 +142,11 @@
     "ipfsHash": "QmaHTuPNDrV73voPWsRcu73SgxyftEwUAY5TAc2p1yp1hF",
     "timestamp": 1768886555,
     "txHash": "0xb3187b7486d0a77618a8c52465a166de5cf22fd2f004f29ed6596ae8cc83e2e5"
+  },
+  {
+    "repo": "nyas-space-quest-qd",
+    "ipfsHash": "QmNsJU3UFtJJJvTs7igP3fu4UcHBSNiapBKwgh2cwKjwBN",
+    "timestamp": 1769037407,
+    "txHash": "0x47683672d01f9f0f0965e3d615803a49e76490ba48d3daa375cd65866950fea4"
   }
 ]
