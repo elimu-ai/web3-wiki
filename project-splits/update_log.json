@@ -148,5 +148,11 @@
     "ipfsHash": "QmNsJU3UFtJJJvTs7igP3fu4UcHBSNiapBKwgh2cwKjwBN",
     "timestamp": 1769037407,
     "txHash": "0x47683672d01f9f0f0965e3d615803a49e76490ba48d3daa375cd65866950fea4"
+  },
+  {
+    "repo": "shapi",
+    "ipfsHash": "QmQ5Mq18evAFnp29qVzXwLPdpDc3PTqiNkvoJsX3s2zNuQ",
+    "timestamp": 1769043611,
+    "txHash": "0xc3fc9594c31bd7f10d9c1433325ba460ae501785b68ac1a05b0f6c42b136d33e"
   }
 ]

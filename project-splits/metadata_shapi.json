@@ -1,0 +1,42 @@
+{
+  "driver": "repo",
+  "describes": {
+    "driver": "repo",
+    "accountId": "80921563202612637598894412041327831987751568925754211556426766090240"
+  },
+  "source": {
+    "forge": "github",
+    "repoName": "shapi",
+    "ownerName": "elimu-ai",
+    "url": "https://github.com/elimu-ai/shapi"
+  },
+  "color": "#27C537",
+  "splits": {
+    "dependencies": [],
+    "maintainers": [
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 882979,
+        "accountId": "0"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 74468,
+        "accountId": "88600549353254076863730619763637335896701389226"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 42553,
+        "accountId": "1411190336780588702434243838048773582926758582835"
+      }
+    ]
+  },
+  "avatar": {
+    "type": "emoji",
+    "emoji": "👩🏽‍💻"
+  },
+  "isVisible": true
+}
