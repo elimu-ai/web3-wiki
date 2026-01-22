@@ -166,5 +166,11 @@
     "ipfsHash": "QmeC7DypqEc1Tu13gKggTtyH3BphoxosZqM2UqU5cNepwC",
     "timestamp": 1769059271,
     "txHash": "0xf39b409d51755bd7e13f55e11bd5fd8986dcf6e6c77abf8ebe2b654d29e428cd"
+  },
+  {
+    "repo": "sound-cards",
+    "ipfsHash": "QmYHbboTdVqmZDaX6EbEnP79Dn2e8zkSGRj7jSiKnWi1mb",
+    "timestamp": 1769123579,
+    "txHash": "0x381e82054a460db87d039a521687a5006b2510749789cfcc08b490f39164db10"
   }
 ]
