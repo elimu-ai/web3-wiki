@@ -154,5 +154,11 @@
     "ipfsHash": "QmQ5Mq18evAFnp29qVzXwLPdpDc3PTqiNkvoJsX3s2zNuQ",
     "timestamp": 1769043611,
     "txHash": "0xc3fc9594c31bd7f10d9c1433325ba460ae501785b68ac1a05b0f6c42b136d33e"
+  },
+  {
+    "repo": "soga",
+    "ipfsHash": "QmXAb2Vtb2trujcNLh8JZjVasX3uPzE993WPCPef9S8jXy",
+    "timestamp": 1769051159,
+    "txHash": "0x7d32dc67340ee19715cb9a82ea97b73cfd751d4281041fb4dc4b7c453a6dbe4f"
   }
 ]
