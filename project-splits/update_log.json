@@ -160,5 +160,11 @@
     "ipfsHash": "QmXAb2Vtb2trujcNLh8JZjVasX3uPzE993WPCPef9S8jXy",
     "timestamp": 1769051159,
     "txHash": "0x7d32dc67340ee19715cb9a82ea97b73cfd751d4281041fb4dc4b7c453a6dbe4f"
+  },
+  {
+    "repo": "silabi",
+    "ipfsHash": "QmeC7DypqEc1Tu13gKggTtyH3BphoxosZqM2UqU5cNepwC",
+    "timestamp": 1769059271,
+    "txHash": "0xf39b409d51755bd7e13f55e11bd5fd8986dcf6e6c77abf8ebe2b654d29e428cd"
   }
 ]
