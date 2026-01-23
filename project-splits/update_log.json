@@ -172,5 +172,11 @@
     "ipfsHash": "QmYHbboTdVqmZDaX6EbEnP79Dn2e8zkSGRj7jSiKnWi1mb",
     "timestamp": 1769123579,
     "txHash": "0x381e82054a460db87d039a521687a5006b2510749789cfcc08b490f39164db10"
+  },
+  {
+    "repo": "storybooks",
+    "ipfsHash": "QmR2DrwFCngCdg46yGWXA9kuzx6G58ptF9TBw5mmvYcY9i",
+    "timestamp": 1769130023,
+    "txHash": "0xb48d44939ba97631443c3dd468bc4fe3172dadfd45d968d79db9f6d62f760803"
   }
 ]
