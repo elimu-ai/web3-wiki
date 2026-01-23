@@ -196,5 +196,11 @@
     "ipfsHash": "QmWJRDubeD8EgjNMkGL8zrbn7DATSxwXi9aDxtmvyhbGDc",
     "timestamp": 1769149271,
     "txHash": "0x567b4621f5f6b654d3abbeb14d3b328eff1e7d0d8b42b904fd1524881a476861"
+  },
+  {
+    "repo": "walezi-android",
+    "ipfsHash": "QmREsUswb7pL14U26Tof1d7GHJ26DBdZDKVWzJHRRGctnT",
+    "timestamp": 1769152787,
+    "txHash": "0x8258a86789352f906bd0665b89ac2f02c92a7c6b0d0d42ded78f09210cd67ed8"
   }
 ]
