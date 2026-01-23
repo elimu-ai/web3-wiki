@@ -190,5 +190,11 @@
     "ipfsHash": "QmYFf6kcwBXZqpy83fBfNwb1LZftsJqUCVy3qT6tRE3MXA",
     "timestamp": 1769145671,
     "txHash": "0xacffa8838fa4b795352e75e1f61d8e9aee6d56b014adf09f2bd13ff436bc65d4"
+  },
+  {
+    "repo": "vitabu",
+    "ipfsHash": "QmWJRDubeD8EgjNMkGL8zrbn7DATSxwXi9aDxtmvyhbGDc",
+    "timestamp": 1769149271,
+    "txHash": "0x567b4621f5f6b654d3abbeb14d3b328eff1e7d0d8b42b904fd1524881a476861"
   }
 ]
