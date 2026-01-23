@@ -1,0 +1,36 @@
+{
+  "driver": "repo",
+  "describes": {
+    "driver": "repo",
+    "accountId": "80921563202612637598894412128795041354819899065448966237420060147712"
+  },
+  "source": {
+    "forge": "github",
+    "repoName": "tilt-game",
+    "ownerName": "elimu-ai",
+    "url": "https://github.com/elimu-ai/tilt-game"
+  },
+  "color": "#27C537",
+  "splits": {
+    "dependencies": [],
+    "maintainers": [
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 600000,
+        "accountId": "0"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 400000,
+        "accountId": "88600549353254076863730619763637335896701389226"
+      }
+    ]
+  },
+  "avatar": {
+    "type": "emoji",
+    "emoji": "👩🏽‍💻"
+  },
+  "isVisible": true
+}
