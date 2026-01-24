@@ -232,5 +232,11 @@
     "ipfsHash": "QmZSD6gvKDyhwwib4W1LtCVmZqobrckomwJWns1RsbsqWZ",
     "timestamp": 1769242559,
     "txHash": "0x52681c39f066575862117851a16e5b84e30e3e81a9739fc77294a39f75a8d006"
+  },
+  {
+    "repo": "ml-event-simulator",
+    "ipfsHash": "QmSQNLQnb7aVfwD9rv7sfxZHQA1QmHF1nP2uSX6MpEeeRP",
+    "timestamp": 1769245955,
+    "txHash": "0xb1e7d0e17ec34dd4d0aae0e606dc7de43b7085e7ac86986d7b95014f6e5a5890"
   }
 ]
