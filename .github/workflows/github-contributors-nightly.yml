@@ -3,6 +3,7 @@ name: github-contributors - Nightly
 on:
   schedule:
     - cron: 39 23 * * *
+  workflow_dispatch:
 
 jobs:
   build:
@@ -37,11 +38,20 @@ jobs:
       run: |
         git --no-pager diff --shortstat
 
-    - name: Git Commit
+    - name: Count File Changes
+      id: count_changes
       run: |
         git add :/**/FUNDING_SPLITS.csv
+        CHANGED_FILES_COUNT=$(git diff --staged --name-only | wc -l)
+        echo "changed_files_count=$CHANGED_FILES_COUNT" >> $GITHUB_OUTPUT
+        echo "Changed files count: $CHANGED_FILES_COUNT"
+
+    - name: Git Commit
+      if: steps.count_changes.outputs.changed_files_count > 0
+      run: |
         git commit -m 'chore(github-contributors): impact percentages, nightly build'
 
     - name: Git Push
+      if: steps.count_changes.outputs.changed_files_count > 0
       run: |
         git push
