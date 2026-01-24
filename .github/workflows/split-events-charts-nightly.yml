@@ -39,7 +39,7 @@ jobs:
     - name: Git Commit
       run: |
         git add *.png
-        git commit -m 'chore(drips💧): split events charts, nightly build' --allow-empty
+        git commit -m 'chore(drips💧): split events charts, nightly build'
 
     - name: Git Push
       run: |
