@@ -41,7 +41,7 @@ jobs:
     - name: Git Commit
       run: |
         git add *.csv
-        git commit -m 'chore(funding-splits-content): nightly build' --allow-empty
+        git commit -m 'chore(funding-splits-content): nightly build'
 
     - name: Git Push
       run: |
