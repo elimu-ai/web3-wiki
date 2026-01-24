@@ -17,7 +17,7 @@ require("dotenv").config({ quiet: true })
 const provider = new ethers.JsonRpcProvider('https://0xrpc.io/eth')
 
 const repoDriverContract: Contract = new ethers.Contract(
-    '0x770023d55D09A9C110694827F1a6B32D5c2b373E',
+    '0x770023d55D09A9C110694827F1a6B32D5c2b373E', // https://github.com/drips-network/contracts/blob/main/deployments/ethereum.json
     RepoDriver.abi,
     provider
 )
@@ -134,7 +134,7 @@ async function updateProjectSplits() {
         // console.log('signer address:', signer.address)
         // console.log('signer balance (ETH):', ethers.formatEther(await provider.getBalance(signer.address)))
         const callerContract: Contract = new ethers.Contract(
-            '0x60F25ac5F289Dc7F640f948521d486C964A248e5',
+            '0x60F25ac5F289Dc7F640f948521d486C964A248e5', // https://github.com/drips-network/contracts/blob/main/deployments/ethereum.json
             Caller.abi,
             signer
         )
