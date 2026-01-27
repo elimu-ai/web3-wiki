@@ -6,12 +6,61 @@
         "name": "Hindi Language 🏏🐯",
         "description": "Hindi (हिंदी) content creation - https://hin.elimu.ai"
     },
+    "content-TGL": {
+        "category": "CONTENT",
+        "languageCode": "TGL",
+        "tokenId": "44233954899343831995062217275215737681377860849646413826815741964163",
+        "name": "Tagalog Language 🏝️🦎",
+        "description": "Tagalog content creation - https://tgl.elimu.ai"
+    },
+    "content-THA": {
+        "category": "CONTENT",
+        "languageCode": "THA",
+        "tokenId": "44233954899343831995062217275215737681377860849641030872883728374792",
+        "name": "Thai Language 🥭🐘",
+        "description": "Thai (ไทย) content creation - https://tha.elimu.ai"
+    },
+    "content-VIE": {
+        "category": "CONTENT",
+        "languageCode": "VIE",
+        "tokenId": "44233954899343831995062217275215737681377860849657661057867624699363",
+        "name": "Vietnamese Language 🥖🏮",
+        "description": "Vietnamese (Tiếng Việt) content creation - https://vie.elimu.ai"
+    },
+    "content-ENG": {
+        "category": "CONTENT",
+        "languageCode": "ENG",
+        "tokenId": "44233954899343831995062217275215737681377860849646413826815741964161",
+        "name": "English Language 🍔🏈",
+        "description": "English content creation - https://eng.elimu.ai"
+    },
     
+    "distribution-HIN": {
+        "category": "DISTRIBUTION",
+        "languageCode": "HIN",
+        "tokenId": "31191755684409194768993126690116100972451994534322097113232155071147",
+        "name": "Hindi Language 🏏🐯",
+        "description": "Hindi (हिंदी) distribution & data collection - https://sponsors.elimu.ai"
+    },
     "distribution-TGL": {
         "category": "DISTRIBUTION",
         "languageCode": "TGL",
         "tokenId": "31191755684409194768993126690116100972451994534322097113232155071144",
         "name": "Tagalog Language 🏝️🦎",
         "description": "Tagalog distribution & data collection - https://sponsors.elimu.ai"
+    },
+    "distribution-THA": {
+        "category": "DISTRIBUTION",
+        "languageCode": "THA",
+        "tokenId": "31191755684409194768993126690116100972451994534322601113711013766050",
+        "name": "Thai Language 🥭🐘",
+        "description": "Thai distribution & data collection - https://sponsors.elimu.ai"
+    },
+    "distribution-VIE": {
+        "category": "DISTRIBUTION",
+        "languageCode": "VIE",
+        "tokenId": "31191755684409194768993126690116100972451994534314167503781045018950",
+        "name": "Vietnamese Language 🥖🏮",
+        "description": "Vietnamese distribution & data collection - https://sponsors.elimu.ai"
     }
 }
