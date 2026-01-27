@@ -1,6 +1,6 @@
-# project-splits
+# nft-splits
 
-> On-chain updates of project splits
+> On-chain updates of Drip List (NFT) splits
 
 ## Install Dependencies
 
@@ -17,5 +17,5 @@ npx tsc
 ## Run the JavaScript
 
 ```bash
-node update-project-splits.js
+node update-nft-splits.js
 ```

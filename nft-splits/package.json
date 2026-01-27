@@ -1,0 +1,20 @@
+{
+  "name": "nft-splits",
+  "version": "0.0.1",
+  "description": "On-chain updates of Drip List (NFT) splits",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ξlimu DAO",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "@types/node": "^22.7.4",
+    "ethers": "^6.16.0",
+    "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "dotenv": "^17.2.3"
+  },
+  "type": "module"
+}
