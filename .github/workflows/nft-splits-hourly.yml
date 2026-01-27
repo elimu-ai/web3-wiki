@@ -52,7 +52,7 @@ jobs:
       run: |
         git add *.json
         echo "drip_list_key: ${{ steps.get_drip_list_key.outputs.drip_list_key }}"
-        git commit -m 'chore(drips💧): update ${{ steps.get_drip_list_key.outputs.drip_list_key }} drip list splits'
+        git commit -m 'chore(drips💧): update ${{ steps.get_drip_list_key.outputs.drip_list_key }} drip list splits' -m '#66'
     - name: Git Push
       if: steps.get_drip_list_key.outputs.drip_list_key != ''
       run: |
