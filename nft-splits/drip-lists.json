@@ -1,0 +1,17 @@
+{
+    "content-HIN": {
+        "category": "CONTENT",
+        "languageCode": "HIN",
+        "tokenId": "44233954899343831995062217275215737681377860849646413826815741964160",
+        "name": "Hindi Language 🏏🐯",
+        "description": "Hindi (हिंदी) content creation - https://hin.elimu.ai"
+    },
+    
+    "distribution-TGL": {
+        "category": "DISTRIBUTION",
+        "languageCode": "TGL",
+        "tokenId": "31191755684409194768993126690116100972451994534322097113232155071144",
+        "name": "Tagalog Language 🏝️🦎",
+        "description": "Tagalog distribution & data collection - https://sponsors.elimu.ai"
+    }
+}
