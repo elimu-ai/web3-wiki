@@ -1,0 +1,59 @@
+name: Drips💧 Drip List (NFT) Splits - Hourly
+
+on:
+  schedule:
+    - cron: 30 * * * *
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    defaults:
+        run:
+            working-directory: nft-splits
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Use Node.js 20.x
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20.x
+        cache: 'npm'
+        cache-dependency-path: nft-splits/package-lock.json
+
+    - run: npm ci
+    - run: npx tsc
+
+    - name: Update NFT Splits
+      id: get_drip_list_key
+      env:
+        PINATA_JWT: ${{ secrets.PINATA_JWT }}
+        PRIVATE_KEY_CONTENT: ${{ secrets.PRIVATE_KEY_CONTENT }}
+        PRIVATE_KEY_DISTRIBUTION: ${{ secrets.PRIVATE_KEY_DISTRIBUTION }}
+      run: |
+        DRIP_LIST_KEY="$(node update-nft-splits.js)"
+        echo "DRIP_LIST_KEY $DRIP_LIST_KEY"
+        echo "drip_list_key=$DRIP_LIST_KEY" >> $GITHUB_OUTPUT
+
+    - name: Git Config
+      run: |
+        git config user.name 'Nya Ξlimu'
+        git config user.email 'info@elimu.ai'
+
+    - name: Git Generate Short Diffstat
+      run: |
+        git --no-pager diff --shortstat
+    
+    - name: Git Commit
+      if: steps.get_drip_list_key.outputs.drip_list_key != ''
+      run: |
+        git add *.json
+        echo "drip_list_key: ${{ steps.get_drip_list_key.outputs.drip_list_key }}"
+        git commit -m 'chore(drips💧): update ${{ steps.get_drip_list_key.outputs.drip_list_key }} drip list splits'
+    - name: Git Push
+      if: steps.get_drip_list_key.outputs.drip_list_key != ''
+      run: |
+        git push
