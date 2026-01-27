@@ -14,7 +14,7 @@ npm install
 npx tsc
 ```
 
-## Run the JavaScripts
+## Run the JavaScript
 
 ```bash
 node update-project-splits.js
