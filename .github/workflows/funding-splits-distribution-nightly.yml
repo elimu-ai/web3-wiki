@@ -49,7 +49,7 @@ jobs:
     - name: Git Commit
       if: steps.count_changes.outputs.changed_files_count > 0
       run: |
-        git commit -m 'chore(funding-splits-distribution): nightly build'
+        git commit -m 'chore(funding-splits-distribution): nightly build' -m '#66'
 
     - name: Git Push
       if: steps.count_changes.outputs.changed_files_count > 0
