@@ -10,5 +10,11 @@
     "ipfsHash": "QmWqLg26AraNbAJPmrnpQmB3PzaKD96fiRh2eRCaQndttx",
     "timestamp": 1769666879,
     "txHash": "0x917d5979d0e2df765be2e1b04a21bc680a6a74d46c907fbc1c44b357797edb29"
+  },
+  {
+    "dripListKey": "content-TGL",
+    "ipfsHash": "QmaKyJccmTFH7MSebDZWjvtFVwTjQ4gjfUYd6vZzdaUzYn",
+    "timestamp": 1769671595,
+    "txHash": "0x5759adefb0ae15155582343eb282ef4a1f1e1c9295ab6190cf567dfb874684f0"
   }
 ]

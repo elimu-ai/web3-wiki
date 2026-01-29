@@ -1,0 +1,78 @@
+{
+  "driver": "nft",
+  "type": "dripList",
+  "describes": {
+    "accountId": "44233954899343831995062217275215737681377860849646413826815741964163",
+    "driver": "nft"
+  },
+  "name": "Tagalog Language 🏝️🦎",
+  "description": "Tagalog content creation - https://tgl.elimu.ai",
+  "isVisible": true,
+  "recipients": [
+    {
+      "type": "address",
+      "weight": 186833,
+      "accountId": "0"
+    },
+    {
+      "type": "address",
+      "weight": 375001,
+      "accountId": "311865472516052379336050833402690771153884038016"
+    },
+    {
+      "type": "address",
+      "weight": 88968,
+      "accountId": "329590352313133936569290524472592824511299641642"
+    },
+    {
+      "type": "address",
+      "weight": 10231,
+      "accountId": "679401404482207858514830297769072682778597060952"
+    },
+    {
+      "type": "address",
+      "weight": 1335,
+      "accountId": "741278026781724480380852993853196206579921013753"
+    },
+    {
+      "type": "address",
+      "weight": 47153,
+      "accountId": "799718997501148061801081782192250467544768274149"
+    },
+    {
+      "type": "address",
+      "weight": 8897,
+      "accountId": "837374509895510850253411742480903129558673567387"
+    },
+    {
+      "type": "address",
+      "weight": 88523,
+      "accountId": "899472904405402829687978390856910167658508383589"
+    },
+    {
+      "type": "address",
+      "weight": 7562,
+      "accountId": "962789095472804020632918775888640507126178437659"
+    },
+    {
+      "type": "address",
+      "weight": 1779,
+      "accountId": "1002913728383774946630938394051458610307891461852"
+    },
+    {
+      "type": "address",
+      "weight": 108541,
+      "accountId": "1155353114207881000936640985195090426896648858972"
+    },
+    {
+      "type": "address",
+      "weight": 9786,
+      "accountId": "1174777818809559753099084386489974311410739885198"
+    },
+    {
+      "type": "address",
+      "weight": 65391,
+      "accountId": "1199998562004036641654656097688591969300143444466"
+    }
+  ]
+}
