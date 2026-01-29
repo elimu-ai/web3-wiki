@@ -1,0 +1,58 @@
+{
+  "driver": "nft",
+  "type": "dripList",
+  "describes": {
+    "accountId": "44233954899343831995062217275215737681377860849646413826815741964161",
+    "driver": "nft"
+  },
+  "name": "English Language 🍔🏈",
+  "description": "English content creation - https://eng.elimu.ai",
+  "isVisible": true,
+  "recipients": [
+    {
+      "type": "address",
+      "weight": 213137,
+      "accountId": "0"
+    },
+    {
+      "type": "address",
+      "weight": 2011,
+      "accountId": "523475058837354431142306638298629911617656605373"
+    },
+    {
+      "type": "address",
+      "weight": 79088,
+      "accountId": "601269999562518538608453086192167578363924054596"
+    },
+    {
+      "type": "address",
+      "weight": 400134,
+      "accountId": "780324138910187016967736397447977865247900919477"
+    },
+    {
+      "type": "address",
+      "weight": 30161,
+      "accountId": "799718997501148061801081782192250467544768274149"
+    },
+    {
+      "type": "address",
+      "weight": 670,
+      "accountId": "815567579981777219245784741874477642793125739001"
+    },
+    {
+      "type": "address",
+      "weight": 2681,
+      "accountId": "899472904405402829687978390856910167658508383589"
+    },
+    {
+      "type": "address",
+      "weight": 2681,
+      "accountId": "911058946960670044360114610974867323753255724617"
+    },
+    {
+      "type": "address",
+      "weight": 269437,
+      "accountId": "1363555228049718367400743058679524180347693298440"
+    }
+  ]
+}
