@@ -122,6 +122,7 @@ The DAO can also decide to adjust the monthly liquidity provider rewards.
 #### DAO Proposer 🗳️
 > Holds at least 0.1% of the total supply cap: 387,000 `$ELIMU` tokens.
 * Permission to publish proposals on [Snapshot⚡](https://snapshot.box/#/s:elimu.eth).
+* Permission to suggest new tasks on [Dework🔥](https://app.dework.xyz/elimuai).
 
 #### DAO Operator 🛞
 > Holds at least 0.5% of the total supply cap: 1,935,000 `$ELIMU` tokens.
@@ -130,6 +131,7 @@ The DAO can also decide to adjust the monthly liquidity provider rewards.
 * Permission to approve/reject Android APKs submitted at `https://<language>.elimu.ai/applications`
 * Editor ([`Role.EDITOR`](https://github.com/elimu-ai/webapp/blob/main/src/main/java/ai/elimu/entity/enums/Role.java)) of educational content created at `https://<language>.elimu.ai/content`
 * Permission to publish entries on the DAO's [Mirror.xyz🪞](https://mirror.xyz/elimu.eth) page.
+* Permission to manage paid tasks (bounties) on [Dework🔥](https://app.dework.xyz/elimuai).
 * Permission to manage the DAO's [Drip List 💧](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698).
 * Member of the DAO's [Safe{Wallet🔏}](https://app.safe.global/home?safe=eth:0xD452c1321E03c6e34aD8c6F60b694b1E780c4B75).
 
