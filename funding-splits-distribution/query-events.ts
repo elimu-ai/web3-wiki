@@ -4,7 +4,7 @@ import DistributionQueue from './abis/DistributionQueue.json'
 import DistributionVerifier from './abis/DistributionVerifier.json'
 import { createObjectCsvWriter as createCsvWriter } from 'csv-writer'
 
-const rpcServerAddress: string = 'https://0xrpc.io/sep'
+const rpcServerAddress: string = 'https://ethereum-sepolia-rpc.publicnode.com' // Max 50k blocks per request
 console.log('rpcServerAddress:', rpcServerAddress)
 
 const chainId: number = 11155111
@@ -20,6 +20,7 @@ const sponsorshipQueueContract: Contract = new ethers.Contract(
     SponsorshipQueue.abi,
     provider
 )
+const SPONSORSHIP_QUEUE_DEPLOY_BLOCK = 9_907_880 // https://sepolia.etherscan.io/tx/0x12d1df9571a53d6b85911c1beae93f409c77a14d0f8e948a0021eb3f9da5e3d7
 
 /**
  * Deployment details: https://github.com/elimu-ai/web3-sponsors/tree/main/backend/ignition/deployments
@@ -29,6 +30,7 @@ const distributionQueueContract: Contract = new ethers.Contract(
     DistributionQueue.abi,
     provider
 )
+const DISTRIBUTION_QUEUE_DEPLOY_BLOCK = 9_907_888 // https://sepolia.etherscan.io/tx/0x13219d5cb19b555e8f7ca875b4d03759c7eb087b162c92c4321dbc9115910668
 
 /**
  * Deployment details: https://github.com/elimu-ai/web3-sponsors/tree/main/backend/ignition/deployments
@@ -38,13 +40,39 @@ const distributionVerifierContract: Contract = new ethers.Contract(
     DistributionVerifier.abi,
     provider
 )
+const DISTRIBUTION_VERIFIER_DEPLOY_BLOCK = 9_907_896 // https://sepolia.etherscan.io/tx/0xb087a52b94f22eb49b7b288e7a8371241e0e5d7dcb11638b2f2ec7b829f6ab57
 
 query()
+
+/**
+ * Query events in chunks to respect the 50k block limit
+ */
+async function queryEventsInChunks(contract: Contract, startBlock: number): Promise<any[]> {
+    console.log('queryEventsInChunks for contract ', contract.target)
+    const currentBlock = await provider.getBlockNumber()
+    const chunkSize = 50_000
+    let allEvents: any[] = []
+
+    for (let fromBlock = startBlock; fromBlock <= currentBlock; fromBlock += chunkSize) {
+        const toBlock = (fromBlock + chunkSize) >= currentBlock 
+            ? currentBlock 
+            : fromBlock + chunkSize
+
+        console.log(`Fetching events from block ${fromBlock} to ${toBlock}`)
+
+        const events = await contract.queryFilter('*', fromBlock, toBlock)
+        allEvents = [...allEvents, ...events]
+        
+        console.log(`Found ${events.length} events in this chunk. Total: ${allEvents.length}`)
+    }
+
+    return allEvents
+}
 
 async function query() {
     console.log('query')
     
-    const sponsorshipQueueEvents = await sponsorshipQueueContract.queryFilter('*')
+    const sponsorshipQueueEvents = await queryEventsInChunks(sponsorshipQueueContract, SPONSORSHIP_QUEUE_DEPLOY_BLOCK)
     console.log('sponsorshipQueueEvents.length:', sponsorshipQueueEvents.length)
     const sponsorshipAddedEventData: any[] = []
     sponsorshipQueueEvents.forEach((eventLog: any) => {
@@ -69,7 +97,7 @@ async function query() {
         }
     })
 
-    const distributionQueueEvents = await distributionQueueContract.queryFilter('*')
+    const distributionQueueEvents = await queryEventsInChunks(distributionQueueContract, DISTRIBUTION_QUEUE_DEPLOY_BLOCK)
     console.log('distributionQueueEvents.length:', distributionQueueEvents.length)
     const distributionAddedEventData: any[] = []
     distributionQueueEvents.forEach((eventLog: any) => {
@@ -94,7 +122,7 @@ async function query() {
         }
     })
 
-    const distributionVerifierEvents = await distributionVerifierContract.queryFilter('*')
+    const distributionVerifierEvents = await queryEventsInChunks(distributionVerifierContract, DISTRIBUTION_VERIFIER_DEPLOY_BLOCK)
     console.log('distributionVerifierEvents.length:', distributionVerifierEvents.length)
     const operationEventData: any[] = []
     distributionVerifierEvents.forEach((eventLog: any) => {
@@ -138,6 +166,14 @@ async function prepareCsvData(sponsorshipEvents: any[], distributionEvents: any[
     console.log('sponsorshipEvents.length:', sponsorshipEvents.length)
     console.log('distributionEvents.length:', distributionEvents.length)
     console.log('operationEvents.length:', operationEvents.length)
+
+    if (sponsorshipEvents.length == 0) {
+        throw Error("Sponsorship events missing")
+    } else if (distributionEvents.length == 0) {
+        throw Error("Distribution events missing")
+    } else if (operationEvents.length == 0) {
+        throw Error("Operation events missing")
+    }
 
     const csvData: any[] = []
 
