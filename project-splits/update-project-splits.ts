@@ -14,7 +14,7 @@ const update_log = updateLogData as LogEntry[]
 
 require("dotenv").config({ quiet: true })
 
-const provider = new ethers.JsonRpcProvider('https://0xrpc.io/eth')
+const provider = new ethers.JsonRpcProvider('https://ethereum-rpc.publicnode.com')
 
 const repoDriverContract: Contract = new ethers.Contract(
     '0x770023d55D09A9C110694827F1a6B32D5c2b373E', // https://github.com/drips-network/contracts/blob/main/deployments/ethereum.json
