@@ -3,7 +3,7 @@ import Drips from './abis/Drips.json'
 import fs from 'node:fs'
 import gitHubRepos from '../../src/github-contributors/github-repos.json'
 
-const provider = new ethers.JsonRpcProvider('https://0xrpc.io/eth')
+const provider = new ethers.JsonRpcProvider('https://ethereum-rpc.publicnode.com')
 
 /**
  * https://etherscan.io/address/0xd0dd053392db676d57317cd4fe96fc2ccf42d0b4#code
