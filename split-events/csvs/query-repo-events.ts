@@ -3,7 +3,7 @@ import Drips from './abis/Drips.json'
 import fs from 'node:fs'
 import gitHubRepos from '../../src/github-contributors/github-repos.json'
 
-const provider = new ethers.JsonRpcProvider('https://0xrpc.io/eth')
+const provider = new ethers.JsonRpcProvider('https://ethereum-rpc.publicnode.com') // Max 50k blocks per request
 
 /**
  * https://etherscan.io/address/0xd0dd053392db676d57317cd4fe96fc2ccf42d0b4#code
@@ -13,22 +13,41 @@ const dripsContract: Contract = new ethers.Contract(
     Drips.abi,
     provider
 )
+const START_BLOCK = 18_533_142 // https://etherscan.io/tx/0xa5d7aec9edd4874221d0e984912d967d8cd96b297a0fc23b1d8265a03230f90e
 
 query()
+
+/**
+ * Query events in chunks to respect the 50k block limit
+ */
+async function queryEventsInChunks(contract: Contract, eventName: string): Promise<any[]> {
+    const currentBlock = await provider.getBlockNumber()
+    const chunkSize = 50_000
+    let allEvents: any[] = []
+
+    for (let fromBlock = START_BLOCK; fromBlock <= currentBlock; fromBlock += chunkSize) {
+        const toBlock = (fromBlock + chunkSize) >= currentBlock 
+            ? currentBlock 
+            : fromBlock + chunkSize
+
+        console.log(`Fetching ${eventName} events from block ${fromBlock} to ${toBlock}`)
+
+        const events = await contract.queryFilter(eventName, fromBlock, toBlock)
+        allEvents = [...allEvents, ...events]
+        
+        console.log(`Found ${events.length} events in this chunk. Total: ${allEvents.length}`)
+    }
+
+    return allEvents
+}
 
 async function query() {
     console.log('query')
 
-    const splitsSetEvents = await dripsContract.queryFilter(
-        'SplitsSet',
-        18533142 // https://etherscan.io/tx/0xa5d7aec9edd4874221d0e984912d967d8cd96b297a0fc23b1d8265a03230f90e
-    )
+    const splitsSetEvents = await queryEventsInChunks(dripsContract, 'SplitsSet')
     console.log('splitsSetEvents.length:', splitsSetEvents.length)
 
-    const splitsReceiverSeenEvents = await dripsContract.queryFilter(
-        'SplitsReceiverSeen',
-        18533142 // https://etherscan.io/tx/0xa5d7aec9edd4874221d0e984912d967d8cd96b297a0fc23b1d8265a03230f90e
-    )
+    const splitsReceiverSeenEvents = await queryEventsInChunks(dripsContract, 'SplitsReceiverSeen')
     console.log('splitsReceiverSeenEvents.length:', splitsReceiverSeenEvents.length)
 
     const repos: any = gitHubRepos
