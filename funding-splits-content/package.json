@@ -13,6 +13,6 @@
     "csv-parse": "^5.5.6",
     "csv-stringify": "^6.6.0",
     "funding-splits-content": "file:",
-    "typescript": "^5.6.2"
+    "typescript": "^5.9.3"
   }
 }
