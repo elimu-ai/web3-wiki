@@ -15,12 +15,12 @@ jobs:
             working-directory: nft-splits
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
 
-    - name: Use Node.js 20.x
+    - name: Use Node.js 22.x
       uses: actions/setup-node@v4
       with:
-        node-version: 20.x
+        node-version: 22.x
         cache: 'npm'
         cache-dependency-path: nft-splits/package-lock.json
 
