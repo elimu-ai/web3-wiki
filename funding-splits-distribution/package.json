@@ -9,8 +9,8 @@
   "author": "Ξlimu DAO",
   "license": "MIT",
   "devDependencies": {
-    "ethers": "^6.13.2",
-    "typescript": "^5.5.4"
+    "ethers": "^6.16.0",
+    "typescript": "^5.9.3"
   },
   "dependencies": {
     "csv-writer": "^1.6.0",
