@@ -34,5 +34,11 @@
     "ipfsHash": "QmdzYH53Y5Nbyvumh7XYMoKhQPsfUhQmuWpYyyFnBuZuZT",
     "timestamp": 1770619451,
     "txHash": "0x44729f425601d5d717deb21175e90bc2deffab5e663c95cc3d053280c5976633"
+  },
+  {
+    "dripListKey": "distribution-TGL",
+    "ipfsHash": "QmfKTwP28bXDgR9oCWAiKthGJDZT6ktfqTLAxRKvNwWoGt",
+    "timestamp": 1770624479,
+    "txHash": "0x6600a1888e0ac8c5319d0efbd6835ea693c3ce5b0662bcdcfbf352dfd3014b37"
   }
 ]
