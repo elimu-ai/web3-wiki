@@ -28,5 +28,11 @@
     "ipfsHash": "QmYdwUBJ1JpVpjLvRsKznAPJhqFp2FjhdqqKA4PGSBnmQZ",
     "timestamp": 1770614327,
     "txHash": "0xfff2f4901d799197c69bc1bca05c5cd01acbaea3166d17c391f1cb55de4f35d0"
+  },
+  {
+    "dripListKey": "distribution-HIN",
+    "ipfsHash": "QmdzYH53Y5Nbyvumh7XYMoKhQPsfUhQmuWpYyyFnBuZuZT",
+    "timestamp": 1770619451,
+    "txHash": "0x44729f425601d5d717deb21175e90bc2deffab5e663c95cc3d053280c5976633"
   }
 ]
