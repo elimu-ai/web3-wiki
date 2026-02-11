@@ -1,0 +1,48 @@
+{
+  "driver": "nft",
+  "type": "dripList",
+  "describes": {
+    "accountId": "44233954899343831995062217275215737681377860849657661057867624699363",
+    "driver": "nft"
+  },
+  "name": "Vietnamese Language 🥖🏮",
+  "description": "Vietnamese (Tiếng Việt) content creation - https://vie.elimu.ai",
+  "isVisible": true,
+  "recipients": [
+    {
+      "type": "address",
+      "weight": 47897,
+      "accountId": "290695788532577319938777143966718691469862702171"
+    },
+    {
+      "type": "address",
+      "weight": 46729,
+      "accountId": "799718997501148061801081782192250467544768274149"
+    },
+    {
+      "type": "address",
+      "weight": 205607,
+      "accountId": "896131766135837103337974597175686784125231577774"
+    },
+    {
+      "type": "address",
+      "weight": 287383,
+      "accountId": "899472904405402829687978390856910167658508383589"
+    },
+    {
+      "type": "address",
+      "weight": 346964,
+      "accountId": "1099068341794420132489292840985344829342110660681"
+    },
+    {
+      "type": "address",
+      "weight": 52570,
+      "accountId": "1136395197042508607412978990777947487604308064691"
+    },
+    {
+      "type": "address",
+      "weight": 12850,
+      "accountId": "1324034053608700291503725257941714895867640546099"
+    }
+  ]
+}

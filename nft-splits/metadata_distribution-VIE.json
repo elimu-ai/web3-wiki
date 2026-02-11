@@ -1,0 +1,43 @@
+{
+  "driver": "nft",
+  "type": "dripList",
+  "describes": {
+    "accountId": "31191755684409194768993126690116100972451994534314167503781045018950",
+    "driver": "nft"
+  },
+  "name": "Vietnamese Language 🥖🏮",
+  "description": "Vietnamese distribution & data collection - https://sponsors.elimu.ai",
+  "isVisible": true,
+  "recipients": [
+    {
+      "type": "address",
+      "weight": 34483,
+      "accountId": "88600549353254076863730619763637335896701389226"
+    },
+    {
+      "type": "address",
+      "weight": 34483,
+      "accountId": "372513717750919618663274685103185792750537779506"
+    },
+    {
+      "type": "address",
+      "weight": 34483,
+      "accountId": "427550047387493927406691748353003393746139606305"
+    },
+    {
+      "type": "address",
+      "weight": 482757,
+      "accountId": "799718997501148061801081782192250467544768274149"
+    },
+    {
+      "type": "address",
+      "weight": 344828,
+      "accountId": "958080044700743106768904787560335842728435509353"
+    },
+    {
+      "type": "address",
+      "weight": 68966,
+      "accountId": "1367379522242717341762522079577505113022512818066"
+    }
+  ]
+}

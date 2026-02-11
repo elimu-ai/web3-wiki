@@ -1,0 +1,53 @@
+{
+  "driver": "nft",
+  "type": "dripList",
+  "describes": {
+    "accountId": "44233954899343831995062217275215737681377860849641030872883728374792",
+    "driver": "nft"
+  },
+  "name": "Thai Language 🥭🐘",
+  "description": "Thai (ไทย) content creation - https://tha.elimu.ai",
+  "isVisible": true,
+  "recipients": [
+    {
+      "type": "address",
+      "weight": 4241,
+      "accountId": "63086071941105816598930908090058039342482650675"
+    },
+    {
+      "type": "address",
+      "weight": 143342,
+      "accountId": "302099472013730811397994109512588859375675603422"
+    },
+    {
+      "type": "address",
+      "weight": 16115,
+      "accountId": "559570523253071406782058996750051906553300771439"
+    },
+    {
+      "type": "address",
+      "weight": 215013,
+      "accountId": "799718997501148061801081782192250467544768274149"
+    },
+    {
+      "type": "address",
+      "weight": 50042,
+      "accountId": "899472904405402829687978390856910167658508383589"
+    },
+    {
+      "type": "address",
+      "weight": 339695,
+      "accountId": "949767624903350796271504285654809633479687992297"
+    },
+    {
+      "type": "address",
+      "weight": 215437,
+      "accountId": "1136395197042508607412978990777947487604308064691"
+    },
+    {
+      "type": "address",
+      "weight": 16115,
+      "accountId": "1453072434211341468873053744617438072696508595223"
+    }
+  ]
+}

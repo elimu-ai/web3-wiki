@@ -120,11 +120,13 @@ The DAO can also decide to adjust the monthly liquidity provider rewards.
 ### DAO Roles
 
 #### DAO Proposer 🗳️
+![](https://github.com/user-attachments/assets/fa87aab6-af17-4820-80a0-14d2b11eedcb)
 > Holds at least 0.1% of the total supply cap: 387,000 `$ELIMU` tokens.
 * Permission to publish proposals on [Snapshot⚡](https://snapshot.box/#/s:elimu.eth).
 * Permission to suggest new tasks on [Dework🔥](https://app.dework.xyz/elimuai).
 
 #### DAO Operator 🛞
+![](https://github.com/user-attachments/assets/322f8ba9-9bb0-4703-be87-8e7aad25a63d)
 > Holds at least 0.5% of the total supply cap: 1,935,000 `$ELIMU` tokens.
 * Permission to approve/reject distributions made through the education [Sponsors 🫶🏽](https://sponsors.elimu.ai) program.
 * Personalized ENS subname (`<name>.elimu.eth`) and e-mail address (`<name>@elimu.ai`).
@@ -136,6 +138,7 @@ The DAO can also decide to adjust the monthly liquidity provider rewards.
 * Member of the DAO's [Safe{Wallet🔏}](https://app.safe.global/home?safe=eth:0xD452c1321E03c6e34aD8c6F60b694b1E780c4B75).
 
 #### DAO Administrator 🔐
+![](https://github.com/user-attachments/assets/7fd32c85-6484-4e36-aff6-a3e58e815d3a)
 > Holds at least 1% of the total supply cap: 3,870,000 `$ELIMU` tokens.
 * Permission to publish proposals on [Aragon🦅](https://app.aragon.org/dao/ethereum-mainnet/elimu.dao.eth).
 * Permission to role management ([Guild.xyz🏰](https://guild.xyz/elimu)).
