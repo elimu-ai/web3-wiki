@@ -46,5 +46,11 @@
     "ipfsHash": "QmSobYUyF5xsKwAXaGJ9qFGgBe4JCfmJMecZ2E4ZX7yPrQ",
     "timestamp": 1770703091,
     "txHash": "0xc95e14a22707deaba52904f86505fab0876f4b9f9c4a947c69593153890076a5"
+  },
+  {
+    "dripListKey": "distribution-VIE",
+    "ipfsHash": "QmcjzFjFDQ2SiC88gbxJ5gfTy36Zucd9miWg7SAhiTE6F5",
+    "timestamp": 1770789239,
+    "txHash": "0x8af7b9982303286fd95eaefd9a2c117967e186a4eb72fe6c18f0978d3755bc6b"
   }
 ]
