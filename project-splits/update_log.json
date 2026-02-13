@@ -232,5 +232,11 @@
     "ipfsHash": "QmcV1fDpPrLo8T3GSRBEBuMKLzHofmSnUAvn9BEPTYQq6a",
     "timestamp": 1769253047,
     "txHash": "0x41ee937fa4bc0d21b8e4c71c87fd377e9adf8bfd45a8d32e91dd3ce6a3624a97"
+  },
+  {
+    "repo": "webapp-lfs",
+    "ipfsHash": "QmZ2ZRByTFftHqdz2268D6fDJVNwP3xVuzaJ1XKrCZbHwJ",
+    "timestamp": 1771024895,
+    "txHash": "0x2ee0e896044c84b6ed422dbe03ab2c07c7ac3e9dd6d2d95464dd61f8f4c01d6a"
   }
 ]
