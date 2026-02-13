@@ -6,12 +6,6 @@
     "txHash": "0x2e474730ce6453db2cde38861363bb78782d3c0b863a62dbb5c017c8f379cb7f"
   },
   {
-    "dripListKey": "content-ENG",
-    "ipfsHash": "QmWqLg26AraNbAJPmrnpQmB3PzaKD96fiRh2eRCaQndttx",
-    "timestamp": 1769666879,
-    "txHash": "0x917d5979d0e2df765be2e1b04a21bc680a6a74d46c907fbc1c44b357797edb29"
-  },
-  {
     "dripListKey": "content-TGL",
     "ipfsHash": "QmaKyJccmTFH7MSebDZWjvtFVwTjQ4gjfUYd6vZzdaUzYn",
     "timestamp": 1769671595,
