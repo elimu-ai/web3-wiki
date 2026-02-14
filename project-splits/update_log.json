@@ -238,5 +238,11 @@
     "ipfsHash": "QmZ2ZRByTFftHqdz2268D6fDJVNwP3xVuzaJ1XKrCZbHwJ",
     "timestamp": 1771024895,
     "txHash": "0x2ee0e896044c84b6ed422dbe03ab2c07c7ac3e9dd6d2d95464dd61f8f4c01d6a"
+  },
+  {
+    "repo": "maneno",
+    "ipfsHash": "QmNUfdJLJFBWPNMnFbSL8rsF9TPjCLkV7VK1fSXhQBdF6w",
+    "timestamp": 1771050767,
+    "txHash": "0x86bf5d59c025607f5943924c12a1584b40eb2964ac716c941219b5b3a520b3ec"
   }
 ]
