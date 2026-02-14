@@ -46,5 +46,11 @@
     "ipfsHash": "QmcjzFjFDQ2SiC88gbxJ5gfTy36Zucd9miWg7SAhiTE6F5",
     "timestamp": 1770789239,
     "txHash": "0x8af7b9982303286fd95eaefd9a2c117967e186a4eb72fe6c18f0978d3755bc6b"
+  },
+  {
+    "dripListKey": "content-ENG",
+    "ipfsHash": "QmUizzr951A449pJLVAe7ko7hk8zofBUv7oWtrbXfxanSw",
+    "timestamp": 1771045043,
+    "txHash": "0x2e116faf246bc41e8e43c83f3baeaf79dd4e6988b3c7a5eb770b1a158d23980c"
   }
 ]
