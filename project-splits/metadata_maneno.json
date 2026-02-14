@@ -1,0 +1,48 @@
+{
+  "driver": "repo",
+  "describes": {
+    "driver": "repo",
+    "accountId": "80921563202612637598894411516289362787629653882352721538152073789440"
+  },
+  "source": {
+    "forge": "github",
+    "repoName": "maneno",
+    "ownerName": "elimu-ai",
+    "url": "https://github.com/elimu-ai/maneno"
+  },
+  "color": "#27C537",
+  "splits": {
+    "dependencies": [],
+    "maintainers": [
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 96774,
+        "accountId": "0"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 116129,
+        "accountId": "88600549353254076863730619763637335896701389226"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 638710,
+        "accountId": "238366265372958912101532997030110604904803695310"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 148387,
+        "accountId": "899472904405402829687978390856910167658508383589"
+      }
+    ]
+  },
+  "avatar": {
+    "type": "emoji",
+    "emoji": "👩🏽‍💻"
+  },
+  "isVisible": true
+}
