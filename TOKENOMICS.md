@@ -81,21 +81,21 @@ For weekly updates of the token supply, see our [Dune Analytics dashboard](https
 sankey-beta
 
 %% source,target,value
-Contributor Rewards,Drip List,1935000
-Drip List,Content,645000
-Drip List,Engineering,645000
-Drip List,Distribution,645000
+Contributor Rewards,Drip List,2128500
+Drip List,Content,709500
+Drip List,Engineering,709500
+Drip List,Distribution,709500
 Reserve for the Future,DAO Treasury,645000
-Token Liquidity,LP Rewards,645000
-LP Rewards,SushiSwap,387000
-LP Rewards,Uniswap,258000
+Token Liquidity,LP Rewards,451500
+LP Rewards,SushiSwap,270900
+LP Rewards,Uniswap,180600
 ```
 
-While 60% of the monthly token allocation is directed to contributor rewards, the remaining 40% is directed to the [DAO Treasury](https://app.aragon.org/dao/ethereum-mainnet/elimu.dao.eth) (20%) and to [Liquidity Provider (LP) rewards](https://rewards.elimu.ai) (20%).
+While 66% of the monthly token allocation is directed to contributor rewards, the remaining 34% is directed to the [DAO Treasury](https://app.aragon.org/dao/ethereum-mainnet/elimu.dao.eth) (20%) and to [Liquidity Provider (LP) rewards](https://rewards.elimu.ai) (14%).
 
 ### Contributor Rewards
 
-The 1,935,000 `$ELIMU` tokens reserved for contributor rewards are distributed through the elimu.ai [Drip List 💧](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698), which automatically splits the tokens between `Content Creation 🎶🎙️`, `Engineering & AI/ML 👩🏽‍💻📱`, and `Distribution & Data Collection 🛵💨`.
+The 2,128,500 `$ELIMU` tokens reserved for contributor rewards are distributed through the elimu.ai [Drip List 💧](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698), which automatically splits the tokens between `Content Creation 🎶🎙️`, `Engineering & AI/ML 👩🏽‍💻📱`, and `Distribution & Data Collection 🛵💨`.
 
 [![Drip List 💧](https://github.com/elimu-ai/web3-wiki/assets/15718174/f7684d02-659e-4b06-8b21-20d3d39ea961)](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698)
 
