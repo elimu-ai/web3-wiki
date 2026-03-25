@@ -16,7 +16,34 @@
     },
     {
       "inputs": [],
+      "name": "DuplicateAndroidId",
+      "type": "error"
+    },
+    {
+      "inputs": [],
       "name": "InvalidLanguageCode",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnableInvalidOwner",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "OwnableUnauthorizedAccount",
       "type": "error"
     },
     {
@@ -55,13 +82,19 @@
       "anonymous": false,
       "inputs": [
         {
-          "indexed": false,
+          "indexed": true,
           "internalType": "address",
-          "name": "",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
           "type": "address"
         }
       ],
-      "name": "OwnerUpdated",
+      "name": "OwnershipTransferred",
       "type": "event"
     },
     {
@@ -96,7 +129,13 @@
       "type": "function"
     },
     {
-      "inputs": [],
+      "inputs": [
+        {
+          "internalType": "bool",
+          "name": "rejected",
+          "type": "bool"
+        }
+      ],
       "name": "dequeue",
       "outputs": [
         {
@@ -256,14 +295,8 @@
       "type": "function"
     },
     {
-      "inputs": [
-        {
-          "internalType": "address",
-          "name": "languages_",
-          "type": "address"
-        }
-      ],
-      "name": "updateLanguages",
+      "inputs": [],
+      "name": "renounceOwnership",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
@@ -272,11 +305,24 @@
       "inputs": [
         {
           "internalType": "address",
-          "name": "owner_",
+          "name": "newOwner",
           "type": "address"
         }
       ],
-      "name": "updateOwner",
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "languages_",
+          "type": "address"
+        }
+      ],
+      "name": "updateLanguages",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
