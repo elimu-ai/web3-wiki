@@ -4,10 +4,10 @@ import DistributionQueue from './abis/DistributionQueue.json'
 import DistributionVerifier from './abis/DistributionVerifier.json'
 import { createObjectCsvWriter as createCsvWriter } from 'csv-writer'
 
-const rpcServerAddress: string = 'https://ethereum-sepolia-rpc.publicnode.com' // Max 50k blocks per request
+const rpcServerAddress: string = 'https://ethereum-rpc.publicnode.com' // Max 50k blocks per request
 console.log('rpcServerAddress:', rpcServerAddress)
 
-const chainId: number = 11155111
+const chainId: number = 1
 console.log('chainId:', chainId)
 
 const provider: JsonRpcProvider = new ethers.JsonRpcProvider(rpcServerAddress, ethers.Network.from(chainId))
@@ -16,31 +16,31 @@ const provider: JsonRpcProvider = new ethers.JsonRpcProvider(rpcServerAddress, e
  * Deployment details: https://github.com/elimu-ai/web3-sponsors/tree/main/backend/ignition/deployments
  */
 const sponsorshipQueueContract: Contract = new ethers.Contract(
-    '0xfc99678699eEcCB3c542Ad673801C8398450d038',
+    '0xd0F6F372Ae2b640AE3b3875100Ce301d66f74607',
     SponsorshipQueue.abi,
     provider
 )
-const SPONSORSHIP_QUEUE_DEPLOY_BLOCK = 9_907_880 // https://sepolia.etherscan.io/tx/0x12d1df9571a53d6b85911c1beae93f409c77a14d0f8e948a0021eb3f9da5e3d7
+const SPONSORSHIP_QUEUE_DEPLOY_BLOCK = 24_470_201 // https://etherscan.io/tx/0xb55bf4d0fb7e32877ab9d132ec62bbbd5b882e3b0408244c3ed2b5d08bacdca9
 
 /**
  * Deployment details: https://github.com/elimu-ai/web3-sponsors/tree/main/backend/ignition/deployments
  */
 const distributionQueueContract: Contract = new ethers.Contract(
-    '0xcCC411B4388B6C56e8DAF5e22666399c0E44D20a',
+    '0xA8a3D53AC04D91BaA6105E453eb46Ce2E2a14c77',
     DistributionQueue.abi,
     provider
 )
-const DISTRIBUTION_QUEUE_DEPLOY_BLOCK = 9_907_888 // https://sepolia.etherscan.io/tx/0x13219d5cb19b555e8f7ca875b4d03759c7eb087b162c92c4321dbc9115910668
+const DISTRIBUTION_QUEUE_DEPLOY_BLOCK = 24_470_224 // https://etherscan.io/tx/0x4f935fe485fba5160d1de31a5daa76ea1c0688cb90e18002c311f3f09266a685
 
 /**
  * Deployment details: https://github.com/elimu-ai/web3-sponsors/tree/main/backend/ignition/deployments
  */
 const distributionVerifierContract: Contract = new ethers.Contract(
-    '0x91d58eD405CBEd825d8499917C1A828A9E55D31c',
+    '0xed7FaF4cBB44dF170FBaf5Bf87aA6B8889fe8923',
     DistributionVerifier.abi,
     provider
 )
-const DISTRIBUTION_VERIFIER_DEPLOY_BLOCK = 9_907_896 // https://sepolia.etherscan.io/tx/0xb087a52b94f22eb49b7b288e7a8371241e0e5d7dcb11638b2f2ec7b829f6ab57
+const DISTRIBUTION_VERIFIER_DEPLOY_BLOCK = 24_470_251 // https://etherscan.io/tx/0x681a7a527160bf5077597a73f4798a76297bde0731269b9eeacecedf3708920d
 
 query()
 
@@ -50,6 +50,7 @@ query()
 async function queryEventsInChunks(contract: Contract, startBlock: number): Promise<any[]> {
     console.log('queryEventsInChunks for contract ', contract.target)
     const currentBlock = await provider.getBlockNumber()
+    console.log('currentBlock:', currentBlock)
     const chunkSize = 50_000
     let allEvents: any[] = []
 
