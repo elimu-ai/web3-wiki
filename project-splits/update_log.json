@@ -31,9 +31,9 @@
   },
   {
     "repo": "chat",
-    "ipfsHash": "QmdbR78yR8gCKvmYbVGDnXgWM1FSxiZhk46KxJtg5xxfwF",
-    "timestamp": 1768759631,
-    "txHash": "0x883777ae9f72879ab45bba489940afea1ec8e7aca6288866063f2dd2507df164"
+    "ipfsHash": "QmerP1uCxH3uJZqn1j6w6E4XhGV7ujK3mpvc7c1NtVdwEW",
+    "timestamp": 1774401227,
+    "txHash": "0x62cf79c34b2848039cfa362d3488eb4f20dd51774f67ad2200e9023be92425fa"
   },
   {
     "repo": "common-utils",
