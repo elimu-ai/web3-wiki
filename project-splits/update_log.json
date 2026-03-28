@@ -229,9 +229,9 @@
   },
   {
     "repo": "start-guide",
-    "ipfsHash": "QmcV1fDpPrLo8T3GSRBEBuMKLzHofmSnUAvn9BEPTYQq6a",
-    "timestamp": 1769253047,
-    "txHash": "0x41ee937fa4bc0d21b8e4c71c87fd377e9adf8bfd45a8d32e91dd3ce6a3624a97"
+    "ipfsHash": "QmVcggsy2mrJJMjhYdY32EgwZbtQvtSK46f5bRdfY32gKx",
+    "timestamp": 1774686467,
+    "txHash": "0x835dd6be1a721ff53a8ff1303d97db6c420e02877f0d50179d4a64d6aec2a0c2"
   },
   {
     "repo": "webapp-lfs",
