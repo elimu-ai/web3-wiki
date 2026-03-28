@@ -199,9 +199,9 @@
   },
   {
     "repo": "appstore",
-    "ipfsHash": "QmUNVwpGxGenfzFJRhme5DbzaUMHGbhtv54W26h1RCXtsj",
-    "timestamp": 1769226971,
-    "txHash": "0x280466429f9cdab04342d25925d86adee9d5581a717515248883a2c07bb656f8"
+    "ipfsHash": "QmU7b1GgFGGcsrqJ7uCfkurXsWrjkg7xsvwXk8RZdzCJej",
+    "timestamp": 1774660403,
+    "txHash": "0xa9a76a29f6ffd7f925b6cc2d5a5d248cc191269c5d11152f695936c2ff2a2b94"
   },
   {
     "repo": "launcher",
