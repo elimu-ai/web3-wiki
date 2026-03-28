@@ -205,9 +205,9 @@
   },
   {
     "repo": "launcher",
-    "ipfsHash": "QmUbhqRTeLL45NiPp26gnBe5LGf8T884tseauUBLpzif6U",
-    "timestamp": 1769231687,
-    "txHash": "0xdef29de013fe6a4a792f8e2b19276e8db63c26728ca28bf9bf8d9382abfe90ef"
+    "ipfsHash": "Qmes7nBT7VCCuXMxz1vE2mAy8d1xHu8sgCFTSWPCR9wF9E",
+    "timestamp": 1774671023,
+    "txHash": "0x4de03c4dcdaf53bb43244f2a6df7f43dd25a2876d25afa0e856c50e6dd3b2710"
   },
   {
     "repo": "ml-authentication",
