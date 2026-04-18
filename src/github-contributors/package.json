@@ -11,6 +11,6 @@
   "dependencies": {
     "@types/node": "^25.5.2",
     "csv-writer": "^1.6.0",
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.3"
   }
 }
