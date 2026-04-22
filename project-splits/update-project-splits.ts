@@ -118,7 +118,7 @@ async function updateProjectSplits() {
 
         // Prepare batched calls
         const batchedCalls = [
-            [repoDriverContract.target, splitsEncoded, 0 ],
+            [repoDriverContract.target, splitsEncoded, 0],
             [repoDriverContract.target, metadataEncoded, 0]
         ]
         // console.log('batchedCalls:', batchedCalls)
@@ -151,7 +151,7 @@ async function updateProjectSplits() {
         const existingIndex = update_log.findIndex(entry => entry.repo === repo)
         if (existingIndex == -1) {
             // Initial update
-            if (gasPriceInGwei >= 0.04) {
+            if (gasPriceInGwei >= 0.08) {
                 // console.warn('Gas price too high, skipping update for repo:', repo)
                 continue
             }
@@ -163,16 +163,29 @@ async function updateProjectSplits() {
             // console.log('timeOfLastUpdate:', timeOfLastUpdate.toISOString())
             const daysSinceLastUpdate = (new Date().getTime() - timeOfLastUpdate.getTime()) / (1000 * 60 * 60 * 24)
             // console.log('daysSinceLastUpdate:', daysSinceLastUpdate)
-            if (daysSinceLastUpdate <= 7) {
+            
+            if (daysSinceLastUpdate > 28) {
+                if (gasPriceInGwei >= 0.08) {
+                    // console.warn('Gas price higher than 0.04 Gwei, skipping update for repo:', repo)
+                    continue
+                }
+            } else if (daysSinceLastUpdate > 21) {
+                if (gasPriceInGwei >= 0.06) {
+                    // console.warn('Gas price higher than 0.03 Gwei, skipping update for repo:', repo)
+                    continue
+                }
+            } else if (daysSinceLastUpdate > 14) {
+                if (gasPriceInGwei >= 0.04) {
+                    // console.warn('Gas price higher than 0.02 Gwei, skipping update for repo:', repo)
+                    continue
+                }
+            } else if (daysSinceLastUpdate > 7) {
+                if (gasPriceInGwei >= 0.02) {
+                    // console.warn('Gas price higher than 0.01 Gwei, skipping update for repo:', repo)
+                    continue
+                }
+            } else {
                 // console.warn('Splits already updated within the past 7 days, skipping update for repo:', repo)
-                continue
-            } else if (
-                (daysSinceLastUpdate > 28) && (gasPriceInGwei >= 0.04) ||
-                (daysSinceLastUpdate > 21) && (gasPriceInGwei >= 0.03) ||
-                (daysSinceLastUpdate > 14) && (gasPriceInGwei >= 0.02) ||
-                (daysSinceLastUpdate >  7) && (gasPriceInGwei >= 0.01)
-            ) {
-                // console.warn('Gas price too high, skipping update for repo:', repo)
                 continue
             }
         }

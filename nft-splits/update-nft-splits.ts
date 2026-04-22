@@ -114,7 +114,7 @@ async function updateNFTSplits() {
 
         // Prepare batched calls
         const batchedCalls = [
-            [nftDriverContract.target, splitsEncoded, 0 ],
+            [nftDriverContract.target, splitsEncoded, 0],
             [nftDriverContract.target, metadataEncoded, 0]
         ]
         // console.log('batchedCalls:', batchedCalls)
@@ -147,7 +147,7 @@ async function updateNFTSplits() {
         const existingIndex = update_log.findIndex(entry => entry.dripListKey === dripListKey)
         if (existingIndex == -1) {
             // Initial update
-            if (gasPriceInGwei >= 0.04) {
+            if (gasPriceInGwei >= 0.08) {
                 // console.warn('Gas price too high, skipping update for drip list:', dripListKey)
                 continue
             }
@@ -159,16 +159,29 @@ async function updateNFTSplits() {
             // console.log('timeOfLastUpdate:', timeOfLastUpdate.toISOString())
             const daysSinceLastUpdate = (new Date().getTime() - timeOfLastUpdate.getTime()) / (1000 * 60 * 60 * 24)
             // console.log('daysSinceLastUpdate:', daysSinceLastUpdate)
-            if (daysSinceLastUpdate <= 7) {
+
+            if (daysSinceLastUpdate > 28) {
+                if (gasPriceInGwei >= 0.08) {
+                    // console.warn('Gas price higher than 0.04 Gwei, skipping update for drip list:', dripListKey)
+                    continue
+                }
+            } else if (daysSinceLastUpdate > 21) {
+                if (gasPriceInGwei >= 0.06) {
+                    // console.warn('Gas price higher than 0.03 Gwei, skipping update for drip list:', dripListKey)
+                    continue
+                }
+            } else if (daysSinceLastUpdate > 14) {
+                if (gasPriceInGwei >= 0.04) {
+                    // console.warn('Gas price higher than 0.02 Gwei, skipping update for drip list:', dripListKey)
+                    continue
+                }
+            } else if (daysSinceLastUpdate > 7) {
+                if (gasPriceInGwei >= 0.02) {
+                    // console.warn('Gas price higher than 0.01 Gwei, skipping update for drip list:', dripListKey)
+                    continue
+                }
+            } else {
                 // console.warn('Splits already updated within the past 7 days, skipping update for drip list:', dripListKey)
-                continue
-            } else if (
-                (daysSinceLastUpdate > 28) && (gasPriceInGwei >= 0.04) ||
-                (daysSinceLastUpdate > 21) && (gasPriceInGwei >= 0.03) ||
-                (daysSinceLastUpdate > 14) && (gasPriceInGwei >= 0.02) ||
-                (daysSinceLastUpdate >  7) && (gasPriceInGwei >= 0.01)
-            ) {
-                // console.warn('Gas price too high, skipping update for drip list:', dripListKey)
                 continue
             }
         }
