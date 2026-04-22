@@ -91,9 +91,9 @@
   },
   {
     "repo": "web3-sponsors",
-    "ipfsHash": "QmVjsgtkYexYKrLScM5T17J2TpAMCkmMeCR4YA7T2JqBeY",
-    "timestamp": 1774690055,
-    "txHash": "0x3fc010c7cf61fc64297b4cebc1164bfad705605d2b81b65c1150600376050cd0"
+    "ipfsHash": "QmX3Juz9DiwhupFR5nRhcfsyDmLTExRm7F5uuwVxquyfd7",
+    "timestamp": 1776141527,
+    "txHash": "0x3aab9637c808b4ad337d1e3fe83aefbe90862b321866f955655d16022ab895e0"
   },
   {
     "repo": "missing-number",
@@ -193,9 +193,9 @@
   },
   {
     "repo": "analytics",
-    "ipfsHash": "QmYBwtYL64Simve2a69ZGqtkNPuwMXYB93TxDs6ckVXmkd",
-    "timestamp": 1774653743,
-    "txHash": "0x6d76d6f156d32ef437659dbf769bf474f5c93129173e1aeb614e13a58c01a4d8"
+    "ipfsHash": "QmfQxmpc26PaoGsBiCri9HgTQE1434PKUv1RTSxPLfMc6d",
+    "timestamp": 1775870291,
+    "txHash": "0x79e3bf47951a2ae9b81f7dbd6c09ddf2f24026c9442a15e230a373f8e2c8cf11"
   },
   {
     "repo": "appstore",
