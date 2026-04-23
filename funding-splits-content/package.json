@@ -11,7 +11,7 @@
   "dependencies": {
     "@types/node": "^25.4.0",
     "csv-parse": "^5.5.6",
-    "csv-stringify": "^6.6.0",
+    "csv-stringify": "^6.7.0",
     "funding-splits-content": "file:",
     "typescript": "^5.9.3"
   }

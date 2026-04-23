@@ -37,15 +37,15 @@
   },
   {
     "dripListKey": "distribution-THA",
-    "ipfsHash": "QmNveKGaRJVbzvcBz6f46wi9E3QFu7Bg92FDNpGVYY7Kzp",
-    "timestamp": 1774496267,
-    "txHash": "0x3dd7ea0401a0895a899dcbc6663228dfe59bff4aee7fc663a8b3a76eef9d25d5"
+    "ipfsHash": "QmZbskahYCqQ1qdDhy4vZpU8jYmZswPkPqejVjQ6RnkyqZ",
+    "timestamp": 1776138671,
+    "txHash": "0xf69c75fceace85c507473b3f1fb7855d2a17fd783c113f328dec382fa1731e85"
   },
   {
     "dripListKey": "distribution-VIE",
-    "ipfsHash": "QmRY4Wy6Kyxv41pCfy3xZVuVaYvRH9Y742Pp2dSRodggns",
-    "timestamp": 1774504679,
-    "txHash": "0xf305947bef07d3f9f323ac1da4a2f5dbef237a1a65d2aa29b8962f7770da3d95"
+    "ipfsHash": "Qmb8PUPQ4F944G6LCYXY6Hx73EwpbtkE2PaauHZRQbHSL5",
+    "timestamp": 1776147467,
+    "txHash": "0x3a5a968f293dd5615e48d380cffb13bb021c89dbcaa9c202de02bf27efdddbf3"
   },
   {
     "dripListKey": "content-ENG",
