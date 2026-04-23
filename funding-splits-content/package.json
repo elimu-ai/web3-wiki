@@ -9,7 +9,7 @@
   "author": "Ξlimu DAO",
   "license": "CC0-1.0",
   "dependencies": {
-    "@types/node": "^25.4.0",
+    "@types/node": "^25.6.0",
     "csv-parse": "^5.5.6",
     "csv-stringify": "^6.7.0",
     "funding-splits-content": "file:",
