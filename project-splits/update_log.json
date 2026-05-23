@@ -37,9 +37,9 @@
   },
   {
     "repo": "common-utils",
-    "ipfsHash": "QmWExXADM7gCQjhaT3UrLchViQZBWKiFtmZKuwG2E3KnKJ",
-    "timestamp": 1774411847,
-    "txHash": "0x7e51deb3241de749276f7536815f1292e8302fb4df5d9f588d817883dc8bf1ae"
+    "ipfsHash": "QmUDJnakz3K256ASmbBuA4WTkXRKroeR56Pmym4y8uUVnS",
+    "timestamp": 1779503903,
+    "txHash": "0xb223c7bd6c7328af51ab82cae9cce8d620992210c2526b4db914e54caa753970"
   },
   {
     "repo": "content-provider",
