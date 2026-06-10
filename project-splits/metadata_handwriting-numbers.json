@@ -17,20 +17,26 @@
       {
         "sublist": "maintainers",
         "type": "address",
-        "weight": 421053,
+        "weight": 346154,
         "accountId": "88600549353254076863730619763637335896701389226"
       },
       {
         "sublist": "maintainers",
         "type": "address",
-        "weight": 105263,
+        "weight": 76923,
         "accountId": "238366265372958912101532997030110604904803695310"
       },
       {
         "sublist": "maintainers",
         "type": "address",
-        "weight": 473684,
+        "weight": 346154,
         "accountId": "414884770874562894329148963610076218185414818146"
+      },
+      {
+        "sublist": "maintainers",
+        "type": "address",
+        "weight": 230769,
+        "accountId": "899472904405402829687978390856910167658508383589"
       }
     ]
   },

@@ -6,7 +6,7 @@
 The mission of elimu.ai is to build innovative learning software that empowers out-of-school children to teach themselves basic reading📖, writing✍🏽 and math🔢. You can read more at https://github.com/elimu-ai/wiki#readme
 
 ## Organization
-The product built by elimu.ai is Free and Open Source Software (FOSS), and the organization building it is structured as a non-profit. Any type of income (e.g. donations) or profit will be re-invested into the organization's purpose—help solving the global learning crisis.
+The product built by elimu.ai is Free and Open Source Software (FOSS), and the organization building it is structured as a non-profit. Any type of income (e.g. donations) or profit will be re-invested into the organization's purpose—to help solving the global learning crisis.
 
 <a name="dao"></a>
 ## Decentralized Autonomous Organization
@@ -44,7 +44,7 @@ The Ξlimu DAO uses a combination of Web3 tools for handling organizational mech
   <img src="https://github.com/elimu-ai/webapp/blob/main/src/main/webapp/static/img/logo-text-256x78.png" />
 </p>
 <p align="center">
-  elimu.ai - Free open-source learning software for out-of-school children ✨🚀
+  elimu.ai - Free open-source learning software for out-of-school children 🚀✨
 </p>
 <p align="center">
   <a href="https://elimu.ai">Website 🌐</a>
