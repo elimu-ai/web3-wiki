@@ -9,7 +9,7 @@
   "author": "Ξlimu DAO",
   "license": "CC0-1.0",
   "dependencies": {
-    "@types/node": "^25.9.3",
+    "@types/node": "^26.1.0",
     "csv-writer": "^1.6.0",
     "typescript": "^6.0.3"
   }
