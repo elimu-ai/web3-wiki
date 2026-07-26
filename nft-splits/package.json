@@ -10,7 +10,7 @@
   "license": "CC0-1.0",
   "dependencies": {
     "@types/node": "^25.9.3",
-    "ethers": "^6.16.0",
+    "ethers": "^6.17.0",
     "typescript": "^6.0.3"
   },
   "devDependencies": {
