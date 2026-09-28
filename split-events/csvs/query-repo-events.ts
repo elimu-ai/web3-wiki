@@ -3,7 +3,7 @@ import Drips from './abis/Drips.json'
 import fs from 'node:fs'
 import gitHubRepos from '../../src/github-contributors/github-repos.json'
 
-const provider = new ethers.JsonRpcProvider('https://ethereum-rpc.publicnode.com') // Max 50k blocks per request
+const provider = new ethers.JsonRpcProvider('https://ethereum-rpc.publicnode.com/781114a270bebc37c808abf96189a8ac4149edca29ca5a8cc4dee291b6dedd8e') // Max 50k blocks per request
 
 /**
  * https://etherscan.io/address/0xd0dd053392db676d57317cd4fe96fc2ccf42d0b4#code
