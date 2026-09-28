@@ -81,27 +81,27 @@ For weekly updates of the token supply, see our [Dune Analytics dashboard](https
 sankey-beta
 
 %% source,target,value
-Contributor Rewards,Drip List,2128500
-Drip List,Content,709500
-Drip List,Engineering,709500
-Drip List,Distribution,709500
-Reserve for the Future,DAO Treasury,645000
-Token Liquidity,LP Rewards,451500
-LP Rewards,SushiSwap,270900
-LP Rewards,Uniswap,180600
+Contributor Rewards,Drip List,2176875
+Drip List,Content,725625
+Drip List,Engineering,725625
+Drip List,Distribution,725625
+Reserve for the Future,DAO Treasury,725625
+Token Liquidity,LP Rewards,322500
+LP Rewards,SushiSwap,193500
+LP Rewards,Uniswap,129000
 ```
 
-While 66% of the monthly token allocation is directed to contributor rewards, the remaining 34% is directed to the [DAO Treasury](https://app.aragon.org/dao/ethereum-mainnet/elimu.dao.eth) (20%) and to [Liquidity Provider (LP) rewards](https://rewards.elimu.ai) (14%).
+While 67.50% of the monthly token allocation is directed to contributor rewards, the remaining 32.50% is directed to the [DAO Treasury](https://app.aragon.org/dao/ethereum-mainnet/elimu.dao.eth) (22.50%) and to [Liquidity Provider (LP) rewards](https://rewards.elimu.ai) (10%).
 
 ### Contributor Rewards
 
-The 2,128,500 `$ELIMU` tokens reserved for contributor rewards are distributed through the elimu.ai [Drip List 💧](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698), which automatically splits the tokens between `Content Creation 🎶🎙️`, `Engineering & AI/ML 👩🏽‍💻📱`, and `Distribution & Data Collection 🛵💨`.
+The 2,176,875 `$ELIMU` tokens reserved for contributor rewards are distributed through the elimu.ai [Drip List 💧](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698), which automatically splits the tokens between `Content Creation 🎶🎙️`, `Engineering & AI/ML 👩🏽‍💻📱`, and `Distribution & Data Collection 🛵💨`.
 
 [![Drip List 💧](https://github.com/elimu-ai/web3-wiki/assets/15718174/f7684d02-659e-4b06-8b21-20d3d39ea961)](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698)
 
 ### Token Reserve for the Future
 
-The 645,000 `$ELIMU` tokens that are being set aside each month get added to the DAO's treasury: https://app.aragon.org/dao/ethereum-mainnet/elimu.dao.eth
+The 725,625 `$ELIMU` tokens that are being set aside each month get added to the DAO's treasury: https://app.aragon.org/dao/ethereum-mainnet/elimu.dao.eth
 
 DAO members can use their governance tokens to vote on how to spend from the DAO's treasury to fund future projects, as long as they align with the organization's mission—Building free open-source learning software for out-of-school children 🚀✨
 
