@@ -2,7 +2,7 @@ name: Drips💧 Drip List (NFT) Splits - Hourly
 
 on:
   schedule:
-    - cron: 30 * * * *
+    - cron: 09 * * * *
   workflow_dispatch:
 
 jobs:

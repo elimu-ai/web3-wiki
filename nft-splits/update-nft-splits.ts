@@ -20,7 +20,7 @@ const update_log = updateLogData as LogEntry[]
 
 dotenv.config({ quiet: true })
 
-const provider = new ethers.JsonRpcProvider('https://ethereum-rpc.publicnode.com')
+const provider = new ethers.JsonRpcProvider('https://ethereum-rpc.publicnode.com/781114a270bebc37c808abf96189a8ac4149edca29ca5a8cc4dee291b6dedd8e')
 
 const nftDriverContract: Contract = new ethers.Contract(
     '0xcf9c49B0962EDb01Cdaa5326299ba85D72405258', // https://github.com/drips-network/contracts/blob/main/deployments/ethereum.json

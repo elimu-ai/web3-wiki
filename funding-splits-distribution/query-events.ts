@@ -4,7 +4,7 @@ import DistributionQueue from './abis/DistributionQueue.json'
 import DistributionVerifier from './abis/DistributionVerifier.json'
 import { createObjectCsvWriter as createCsvWriter } from 'csv-writer'
 
-const rpcServerAddress: string = 'https://ethereum-rpc.publicnode.com' // Max 50k blocks per request
+const rpcServerAddress: string = 'https://ethereum-rpc.publicnode.com/781114a270bebc37c808abf96189a8ac4149edca29ca5a8cc4dee291b6dedd8e' // Max 50k blocks per request
 console.log('rpcServerAddress:', rpcServerAddress)
 
 const chainId: number = 1
