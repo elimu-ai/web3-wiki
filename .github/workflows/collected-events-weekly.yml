@@ -1,0 +1,65 @@
+name: Drips💧 Collected Events - Weekly
+
+on:
+  schedule:
+    - cron: 45 18 * * 0
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    defaults:
+        run:
+            working-directory: collected-events
+
+    steps:
+    - uses: actions/checkout@v6
+
+    - name: Use Node.js 22.x
+      uses: actions/setup-node@v7
+      with:
+        node-version: 22.x
+        cache: 'npm'
+        cache-dependency-path: collected-events/package-lock.json
+
+    - run: npm ci
+    - run: npx tsc
+
+    - run: node query-collected-events.js
+
+    - name: Git Config
+      run: |
+        git config user.name 'Nya Ξlimu'
+        git config user.email 'info@elimu.ai'
+
+    - name: Git Generate Short Diffstat
+      run: |
+        git --no-pager diff --shortstat
+
+    - name: Count File Changes
+      id: count_changes
+      run: |
+        git add *.csv
+        CHANGED_FILES_COUNT=$(git diff --staged --name-only | wc -l)
+        echo "changed_files_count=$CHANGED_FILES_COUNT" >> $GITHUB_OUTPUT
+        echo "Changed files count: $CHANGED_FILES_COUNT"
+    
+    - name: Git Commit
+      if: steps.count_changes.outputs.changed_files_count > 0
+      run: |
+        git commit -m 'chore(drips💧): split events csvs, nightly build'
+
+    - name: Git Push
+      if: steps.count_changes.outputs.changed_files_count > 0
+      run: |
+        git push
+
+    - name: Discord Notification on Failure
+      if: failure() && github.ref == 'refs/heads/main' # Only notify if `main` branch fails
+      run: |
+        curl -H "Content-Type: application/json" \
+             -X POST \
+             -d "{\"content\": \"❌ **Workflow Failed**\nJob: ${{ github.job }}\nWorkflow: ${{ github.workflow }}\nBranch: ${{ github.ref_name }}\nRun: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}\n<@&1466158362453348649>\"}" \
+             ${{ secrets.DISCORD_WEBHOOK_URL }} 
