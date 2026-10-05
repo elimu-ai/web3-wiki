@@ -2,7 +2,7 @@ name: Drips💧 Project Splits - Hourly
 
 on:
   schedule:
-    - cron: 0 * * * *
+    - cron: 14 * * * *
   workflow_dispatch:
 
 jobs:
