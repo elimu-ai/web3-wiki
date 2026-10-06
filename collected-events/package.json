@@ -9,8 +9,12 @@
   "author": "Ξlimu DAO",
   "license": "MIT",
   "dependencies": {
+    "csv-parse": "^7.0.3",
     "csvs": "file:",
     "ethers": "^6.13.2",
     "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "dotenv": "^18.0.5"
   }
 }

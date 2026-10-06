@@ -1,0 +1,38 @@
+name: Drips💧 Collected Events - Hourly
+
+on:
+  schedule:
+    - cron: 19 * * * *
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    defaults:
+        run:
+            working-directory: collected-events
+
+    steps:
+    - uses: actions/checkout@v6
+
+    - name: Use Node.js 22.x
+      uses: actions/setup-node@v7
+      with:
+        node-version: 22.x
+        cache: 'npm'
+        cache-dependency-path: collected-events/package-lock.json
+
+    - run: npm ci
+    - run: npx tsc
+
+    - run: node update-contributors.js
+
+    - name: Discord Notification on Failure
+      if: failure() && github.ref == 'refs/heads/main' # Only notify if `main` branch fails
+      run: |
+        curl -H "Content-Type: application/json" \
+             -X POST \
+             -d "{\"content\": \"❌ **Workflow Failed**\nJob: ${{ github.job }}\nWorkflow: ${{ github.workflow }}\nBranch: ${{ github.ref_name }}\nRun: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}\n<@&1466158362453348649>\"}" \
+             ${{ secrets.DISCORD_WEBHOOK_URL }} 
