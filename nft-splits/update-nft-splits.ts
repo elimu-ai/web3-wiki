@@ -122,7 +122,7 @@ async function updateNFTSplits() {
         // Prepare signer account
         const privateKey = process.env[`PRIVATE_KEY_${dripList.category}`]
         if (!privateKey) {
-            throw new Error('PRIVATE_KEY not set in environment variables')
+            throw new Error(`PRIVATE_KEY_${dripList.category} not set in environment variables`)
         }
         // console.log('privateKey length:', privateKey.length)
         const wallet = new ethers.Wallet(privateKey)
