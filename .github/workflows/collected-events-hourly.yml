@@ -27,7 +27,11 @@ jobs:
     - run: npm ci
     - run: npx tsc
 
-    - run: node update-contributors.js
+    - name: Update Contributors
+      env:
+        PRIVATE_KEY_CONTRIBUTORS: ${{ secrets.PRIVATE_KEY_CONTRIBUTORS }}
+      run: |
+        node update-contributors.js
 
     - name: Discord Notification on Failure
       if: failure() && github.ref == 'refs/heads/main' # Only notify if `main` branch fails
