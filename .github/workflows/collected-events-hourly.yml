@@ -1,8 +1,8 @@
-name: Drips💧 Collected Events - Hourly
+name: Drips💧 Collected Events - Every 3 Hours
 
 on:
   schedule:
-    - cron: 19 * * * *
+    - cron: 19 */3 * * *
   workflow_dispatch:
 
 jobs:
