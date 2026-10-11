@@ -22,15 +22,16 @@ The Ξlimu DAO is the financial layer surrounding the elimu.ai software, enablin
 The Ξlimu DAO uses a combination of Web3 tools for handling organizational mechanisms like voting, fundraising, payments, etc:
 
 - Governance token: [`$ELIMU`💎](https://etherscan.io/token/0xe29797910d413281d2821d5d9a989262c8121cc2)
-  - See [`TOKENOMICS.md`](./TOKENOMICS.md)
+  * See [`TOKENOMICS.md`](./TOKENOMICS.md)
 - Token-weighted backlogs: [Tokenlog⬆️](https://tokenlog.generalmagic.io/elimu-ai/web3-wiki)
 - Voting (off-chain): [Snapshot⚡](https://snapshot.box/#/s:elimu.eth)
 - Voting (on-chain): [Aragon🦅](https://app.aragon.org/dao/ethereum-mainnet/elimu.dao.eth/proposals)
 - Finance & treasury (`elimu.dao.eth`): [Aragon🦅](https://app.aragon.org/dao/ethereum-mainnet/elimu.dao.eth/assets)
 - Open source fundraising: [Drips💧](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698)
-  - See [`DRIP_LIST_FUNDING_SPLITS.md`](./DRIP_LIST_FUNDING_SPLITS.md)
+  * See [`DRIP_LIST_FUNDING_SPLITS.md`](./DRIP_LIST_FUNDING_SPLITS.md)
 - Token liquidity provider rewards program: [rewards.elimu.ai💸](https://rewards.elimu.ai)
 - Education sponsorship program: [sponsors.elimu.ai🫶🏽](https://sponsors.elimu.ai)
+  * See [EAS attestation schema](https://easscan.org/schema/view/0x2228b949fb8b13a7d314bef8f9888c325d16d8f49f28a71a772ba16eb7942314)
 - Role management: [Guild.xyz🏰](https://guild.xyz/elimu)
 - Token dashboards and queries: [Dune Analytics🟠](https://dune.com/elimu_ai)
 - Token data API: [token-api.elimu.ai🔢](https://token-api.elimu.ai)
