@@ -78,7 +78,7 @@ function exportToCSV(sumPerAddressMap: Map<string, number>) {
     ].join('\r\n')
     console.log('csvData:\n', csvData)
 
-    const csvFile: string = `collected-events.csv`
+    const csvFile: string = `collected-sum.csv`
     console.log('csvFile:', csvFile)
     try {
         fs.writeFileSync(csvFile, csvData)
