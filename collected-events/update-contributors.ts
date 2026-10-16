@@ -72,6 +72,9 @@ async function updateContributors() {
                 console.log('Transaction submitted. Hash:', tx.hash)
                 const receipt = await tx.wait()
                 console.log('Transaction confirmed. Receipt:', receipt)
+
+                // Only process one contributor at the time
+                return
             } else {
                 console.log(`No update needed for ${ethereumAddress}`)
             }
