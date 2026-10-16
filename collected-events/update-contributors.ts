@@ -35,7 +35,7 @@ async function updateContributors() {
 
     const columns = [ 'ethereum_address', 'collected_sum' ]
     const parser = fs
-        .createReadStream('collected-events.csv')
+        .createReadStream('collected-sum.csv')
         .pipe(parse({ from_line: 2 }))
     for await (const row of parser) {
         console.log('\n')
