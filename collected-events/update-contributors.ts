@@ -44,7 +44,7 @@ async function updateContributors() {
         const ethereumAddress = row[columns.indexOf('ethereum_address')]
         const collectedSum = Number(row[columns.indexOf('collected_sum')])
 
-        if (collectedSum >= 387_000) {
+        if (collectedSum >= (387_000 / 2)) {
             const collectedSumInWei = ethers.parseUnits(collectedSum.toString(), 18)
             console.log('collectedSumInWei:', collectedSumInWei)
 
