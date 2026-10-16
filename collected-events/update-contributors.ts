@@ -35,7 +35,7 @@ async function updateContributors() {
 
     const columns = [ 'ethereum_address', 'collected_sum' ]
     const parser = fs
-        .createReadStream('collected-events.csv')
+        .createReadStream('collected-sum.csv')
         .pipe(parse({ from_line: 2 }))
     for await (const row of parser) {
         console.log('\n')
@@ -44,7 +44,7 @@ async function updateContributors() {
         const ethereumAddress = row[columns.indexOf('ethereum_address')]
         const collectedSum = Number(row[columns.indexOf('collected_sum')])
 
-        if (collectedSum >= 387_000) {
+        if (collectedSum >= (387_000 / 2)) {
             const collectedSumInWei = ethers.parseUnits(collectedSum.toString(), 18)
             console.log('collectedSumInWei:', collectedSumInWei)
 
@@ -72,6 +72,9 @@ async function updateContributors() {
                 console.log('Transaction submitted. Hash:', tx.hash)
                 const receipt = await tx.wait()
                 console.log('Transaction confirmed. Receipt:', receipt)
+
+                // Only process one contributor at the time
+                return
             } else {
                 console.log(`No update needed for ${ethereumAddress}`)
             }
