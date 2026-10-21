@@ -211,9 +211,9 @@
   },
   {
     "repo": "ml-authentication",
-    "ipfsHash": "QmfGTeVexomdWx8Ffi4Ta6VsSvnZqQD7ibRvPpxTrMtby2",
-    "timestamp": 1774676999,
-    "txHash": "0xfa80260ef091c687cc81d61de5331d235449beb1ce7461476cc143525a702e47"
+    "ipfsHash": "QmWvpdJV2kb8fu84XxKZxYt4mhUpd65YpDHXsButUL2bUm",
+    "timestamp": 1792546379,
+    "txHash": "0x2f497639b9222bc81441b59b40d445e667823aaef2aa6bc15c165699ff43a6c5"
   },
   {
     "repo": "ml-datasets",
