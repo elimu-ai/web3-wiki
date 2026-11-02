@@ -146,6 +146,9 @@ The DAO can also decide to adjust the monthly liquidity provider rewards.
 * Permission to manage the community chat server (Discord).
 * Permission to manage the DAO's servers and domain names.
 
+> [!NOTE]
+> Only tokens earned via the DAO's [Drip List💧](https://www.drips.network/app/drip-lists/41305178594442616889778610143373288091511468151140966646158126636698) will be counted when determining a contributor's role.
+
 ### Donated Funds
 
 Donors have two options when making a donation to the organization: 1) via Drip List, 2) via DAO Treasury
