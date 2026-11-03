@@ -109,9 +109,9 @@
   },
   {
     "repo": "ml-storybook-recommender",
-    "ipfsHash": "QmQxnWwPzbs3uo1YAtnr6N6KKeP7ZjPYNAxEGSzf7VdsSS",
-    "timestamp": 1792190975,
-    "txHash": "0x0eafcde2777c2b6240291341473abee30a1dcb6dacdf2cc9c2f71885acc5ec86"
+    "ipfsHash": "QmQNLfUniJVaxs8CA59TXe7NUHGj6rmdsEdjPXyqghwq1C",
+    "timestamp": 1793750303,
+    "txHash": "0xdf4f1436ea5af867c5d96b148e3d88225c40d2d8e5d66f102cbaef31af48e71e"
   },
   {
     "repo": "model",
