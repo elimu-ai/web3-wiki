@@ -223,9 +223,9 @@
   },
   {
     "repo": "ml-event-simulator",
-    "ipfsHash": "QmeV4e9XjbLmW8N5eVBxsEWqeZZFZJTGzcfzUdqW9wqZkG",
-    "timestamp": 1792632647,
-    "txHash": "0x893f5f6038e36935c7e7e8596d3d8093ddb39398a0a9b5d2570228d44d18ce12"
+    "ipfsHash": "QmWFegtXBxP42bwv9jG71LctM1M9a2sUzpkoYp1F7dovxc",
+    "timestamp": 1794481127,
+    "txHash": "0xe63a5bb0141f874a9ce2b014ffd2a198bbf151d59e285dea9cadd42c646ff02c"
   },
   {
     "repo": "start-guide",
